@@ -159,7 +159,7 @@
 						<div class="label searchLabel cbg">结果筛选</div>
 						<div class="toggleFilter"></div>
 					</div>
-					<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
+					<form id="form1" action="" method="get" class="filter manage">
 						<div class="items">
 							<div>
 								<i>会员名称：</i> <input type="text" name="user.userName" class="w100" value="" />
@@ -170,37 +170,10 @@
 							<div class="btns">
 								<input type="hidden" name="type" value="1">
 								<input id="search" type="button" value="筛选结果" class="button" class="link-add" /><a
-									href="/manage/user_listUser.action?type=1" class="ml20">重新查询</a><a id="export"
+									href="" class="ml20">重新查询</a><a id="export"
 									class="ml20">批量导出</a>
 							</div>
-							<script type="text/javascript">
-								$(function () {
-									$('#search')
-										.click(
-											function () {
-												$('#form1')
-													.attr(
-														'action',
-														'/manage/user_listUser.action?type=1');
-												$('#form1').submit();
-											});
-			
-								});
-							</script>
-							<script type="text/javascript">
-								$(function () {
-									$('#export')
-										.click(
-											function () {
-												$('#form1')
-													.attr(
-														'action',
-														'/manage/user_exportUser.action?type=1');
-												$('#form1').submit();
-											});
-			
-								});
-							</script>
+							
 						</div>
 					</form>
 				</div>
@@ -224,8 +197,8 @@
 							<td width="80">职位</td>
 							<td width="80">性别</td>
 			
-							<!-- <td width="10" class="manage">详情</td>
-							<td width="10" class="manage">管理</td> -->
+							<!-- <td width="10" class="manage">详情</td>-->
+							<td width="10" class="manage">管理</td> 
 						</tr>
 			
 						<tr _id="">
@@ -236,14 +209,14 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>请选择 请选择 请选择</td>
+							<td></td>
 							<td></td>
 							<td></td>
 			
 							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
-									href="javascript:void(0);">列表</a></td>
-							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
-									class="del" title="删除"></a></td> -->
+									href="javascript:void(0);">列表</a></td>-->
+							<td class="manage"><a
+									class="del" title="删除"></a></td> 
 						</tr>
 			
 						<tr _id="">
@@ -254,14 +227,12 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>请选择 请选择 请选择</td>
+							<td></td>
 							<td></td>
 							<td></td>
 			
-							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
-									href="javascript:void(0);">列表</a></td>
-							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
-									class="del" title="删除"></a></td> -->
+							<td class="manage"><a
+								class="del" title="删除"></a></td>
 						</tr>
 			
 						<tr _id="">
@@ -272,14 +243,12 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>请选择 请选择 请选择</td>
+							<td></td>
 							<td></td>
 							<td></td>
 			
-							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
-									href="javascript:void(0);">列表</a></td>
-							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
-									class="del" title="删除"></a></td> -->
+							<td class="manage"><a
+								class="del" title="删除"></a></td>
 						</tr>
 			
 						<tr _id="">
@@ -290,14 +259,12 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>请选择 请选择 请选择</td>
+							<td></td>
 							<td></td>
 							<td></td>
 			
-							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
-									href="javascript:void(0);">列表</a></td>
-							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
-									class="del" title="删除"></a></td> -->
+							<td class="manage"><a
+								class="del" title="删除"></a></td>
 						</tr>
 			
 						<tr _id="">
@@ -308,14 +275,12 @@
 							<td></td>
 							<td></td>
 							<td></td>
-							<td>请选择 请选择 请选择</td>
+							<td></td>
 							<td></td>
 							<td></td>
 			
-							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
-									href="javascript:void(0);">列表</a></td>
-							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
-									class="del" title="删除"></a></td> -->
+							<td class="manage"><a
+								class="del" title="删除"></a></td>
 						</tr>
 			
 					</table>
@@ -331,34 +296,15 @@
 								onKeyPress="_page_go(this,event,'/manage/user_listUser.action?user.userName=&user.tel=&type=1&page=')" /><i
 								class="i555">回车跳转</i>
 						</div>
-						<div id="pager"></div>
+						<div id="pager">
+								<div class="pager-box">
+									<div class="pager">
+										<a class="prev " href="javascrpt:;">上一页</a><a class="number "
+											href="javascript:void(0);">1</a><a class="next " href="javascrpt:;">下一页</a></div>
+								</div>
+							</div>
 					</div>
 				</div>
-			
-                <script>
-					var t = 0;
-					console.log(t);
-			
-					function doChangePage(obj) {
-						//TO DO
-						console.log($(".js-selected").text());
-						console.log(obj);
-					}
-					var pagerBox = document.getElementById('pager');
-			
-					var pager = new Pager({
-						lianjie: '/manage/user_listUser.action?user.userName=&user.tel=&type=1&page=',
-						index: 1,
-						total: 1,
-						parent: pagerBox,
-						onchange: doChangePage,
-						label: {
-							"prev": "上一页",
-							"next": "下一页"
-						}
-					});
-				</script>
-
 			</div>
 		</div>
 		<script type="text/javascript" src="./asset/js/tingyun.js"></script>
