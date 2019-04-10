@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>维修报告单</title>
+    <link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
+    <link type="text/css" rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
+    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
+    <script type="text/javascript" src="./asset/js/timer.js"></script>
+    <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
+    <script type="text/javascript" src="./asset/js/pager.js"></script>
+    <script type="text/javascript" src="./asset/js/window.js"></script>
+</head>
+</head>
+
+<body>
+
+    <div class="TY-mainLay">
+        <div class="TY-leftNav">
+            <div class="TY-leftInfor">
+                <div class="partPic">
+                    <i class="pic" style=""></i>
+                    <div class="infor">
+                        <i>系统管理员</i> <i>admin123</i>
+                    </div>
+                </div>
+                <div class="partIco">
+                    <a href="" target="_blank" title="前台页面"></a> <a class="backtop" href="" target="" title="退出登录"></a>
+                </div>
+            </div>
+            <div class="leftNav">
+                <div class="uInfo hide">
+                    <a class="hp" style=""></a>
+                </div>
+                <div class="bars">
+                    <div onclick="menuLeft(this)" index="0" class="home cur">
+                        <div>
+                            <i></i>基本设置
+                        </div>
+                    </div>
+                    <div onclick="toggleLeft(this)" class="toggle">
+                        <div>
+                            <i></i>展开收起
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leftLink mCustomScrollbar _mCS_1">
+                <div class="mCustomScrollBox mCS-leftnav" id="mCSB_1"
+                    style="position:relative; height:100%; overflow:hidden; max-width:100%;">
+                    <div class="mCSB_container" style="position:relative; top:0;">
+                        <div class="menus">
+                            <!-- 管理首页 -->
+                            <div menu="">
+
+
+                                <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+                                        class="ico-tg"></i><i>登录用户分类</i></a>
+                                <dl>
+
+                                    <dd>
+                                        <a target="page" href="./hospital.html"><i class="ico"></i><i>医院用户</i></a>
+                                    </dd>
+
+                                    <dd>
+                                        <a target="page" href="./channel.html"><i class="ico"></i><i>渠道用户</i></a>
+                                    </dd>
+
+                                    <dd>
+                                        <a target="page" href="./employees.html"><i class="ico"></i><i>员工列表</i></a>
+                                    </dd>
+
+                                </dl>
+
+                                <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+                                        class="ico-tg"></i><i>客户服务</i></a>
+                                <dl>
+
+                                    <dd>
+                                        <a target="page" href="./repair.html"><i class="ico"></i><i>产品报修</i></a>
+                                    </dd>
+
+
+
+                                    <dd>
+                                        <a target="page" href="./progress.html"><i class="ico"></i><i>进度查询</i></a>
+                                    </dd>
+
+
+
+                                    <dd>
+                                        <a target="page" href="./product.html"><i class="ico"></i><i>产品信息</i></a>
+                                    </dd>
+
+
+
+                                    <dd>
+                                        <a target="page" href=""><i class="ico"></i><i>配件购买</i></a>
+                                    </dd>
+
+
+
+                                    <dd>
+                                        <a target="page" href=""><i class="ico"></i><i>意见反馈</i></a>
+                                    </dd>
+
+                                </dl>
+
+                                <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+                                        class="ico-tg"></i><i>员工服务</i></a>
+                                <dl>
+
+
+                                    <dd>
+                                        <a target="page" href=""><i class="ico"></i><i>客户管理</i></a>
+                                    </dd>
+
+
+
+                                    <dd>
+                                        <a target="page" href=""><i class="ico"></i><i>提报工单</i></a>
+                                    </dd>
+                                    <dd>
+                                        <a target="page" href=""><i class="ico"></i><i>工单列表</i></a>
+                                    </dd>
+                                    <dd>
+                                        <a target="page" href=""><i class="ico"></i><i>维修知识</i></a>
+                                    </dd>
+
+                                </dl>
+                                <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+                                        class="ico-tg"></i><i>日志管理</i></a>
+                                <dl>
+                                    <dd>
+                                        <a target="page" href=""><i class="ico"></i><i>操作日志</i></a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="TY-rightBox">
+            <div class="phead">
+                <div class="curnav">
+                    <label>产品维修列表</label>
+                </div>
+            </div>
+
+            <form action="/manage/product_updateProductType.action" method="post" class="manage mt20"
+                enctype="multipart/form-data">
+                <div class="section sectionEdit">
+                    <div class="title" onclick="toggleFilter(this)">
+                        <div class="label cbg">维修报告单</div>
+                        <div class="toggleFilter"></div>
+                    </div>
+                    <div class="data">
+                        <div class="line">
+                            <i class="label">一、客户、产品基本信息</i>
+                        </div>
+                        <div class="line">
+                            <i class="label">医院名称 :</i><input class="w200" type="text" name="productType.name"
+                                value="医院医疗产品"><i class="desc" id="i1"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">级别:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">使用科室:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">产品型号:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">产品编号:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">维修类别:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+
+                        <div class="line">
+                            <i class="label">联系人 :</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">联系电话:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+
+                        <div class="line">
+                            <i class="label">邮编:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">地址:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">二、服务前产品信息</i>
+                        </div>
+                        <div class="line">
+                            <i class="label">约定时间:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">到位时间:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">产品状态:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">三、故障信息</i>
+                        </div>
+                        <div class="line">
+                            <i class="label">故障部件:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">故障现象:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">四、服务信息</i>
+                        </div>
+                        <div class="line">
+                            <i class="label">维修内容:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">更换配件的名称及数量:</i><input type="text" name="productType.sort" class="w200"
+                                value="1" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">备注（如受控件编号）:</i><input type="text" name="productType.sort" class="w200"
+                                value="1" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">维修结果确认:</i><input type="text" name="productType.sort" class="w200"
+                                value="1" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">故障原因分析:</i><input type="text" name="productType.sort" class="w200"
+                                value="1" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">其它:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">五、客户评价</i>
+                        </div>
+                        <div class="line">
+                            <i class="label">产品故障是否消除:</i><input type="text" name="productType.sort" class="w200"
+                                value="1" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">综合服务评价:</i><input type="text" name="productType.sort" class="w200"
+                                value="1" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+
+                        <div class="line">
+                                <i class="label">六、联系我们</i>
+                            </div>
+    
+                            <div class="line">
+                                <i class="label"></i>
+                                <i class="desc">非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线。</i>
+                            </div>
+                            <div class="line">
+                                <i class="label"></i>
+                                <i class="desc">800-810-8333&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;400-610-8333</i>
+                            </div>
+                            <div class="line">
+                                <i class="label"></i>
+                                <i class="desc">http://www.aeonmed.com</i>
+                            </div>
+
+
+                        <div class="line">
+                            <i class="label">七、客户确认</i>
+                        </div>
+                        <div class="line">
+                            <i class="label">服务人员签名:</i><input type="text" name="productType.sort" class="w200"
+                                value="1" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">服务人员签字日期:</i><input type="text" name="productType.sort" class="w200"
+                                value="1" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">客户签名:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">客户签名日期:</i><input type="text" name="productType.sort" class="w200"
+                                value="1" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">现场照片:</i><input type="text" name="productType.sort" class="w200" value="1"
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+
+                        <div class="line">
+                            <a href="./repair.html" class="button button-sub ml140 ">修改</a>
+                            <a href="./repair.html" class="button button-sub ml140 ">返回</a>
+                            <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
+                            <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
+    <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
+    <script type="text/javascript" src="./asset/js/index.js"></script>
+</body>
+
+</html>

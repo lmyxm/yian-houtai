@@ -1,0 +1,131 @@
+/**
+ * 缃戠珯鍚庡彴棣栭〉鏍峰紡鏂囦欢
+ * Author : Mr. XiangYun
+ */
+html, body, div, form, dd, dl, dt, ul, li, span, font, b, input { margin:0; padding:0; font-size:12px; font-family:'寰蒋闆呴粦'}
+html, body { width:100%; height:100%; overflow:hidden; background:#f6f6f6 url() center no-repeat}
+a { display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; text-decoration:none; cursor:pointer; color:#0080C0}
+b { display:-moz-inline-stack; display:inline-block; font-weight:normal; vertical-align:middle}
+i { display:-moz-inline-stack; display:inline-block; font-style:normal}
+ul, li { list-style:none}
+img { border:none}
+
+.TY-mainLay { width:auto; height:100%; overflow:hidden; padding-left:210px}
+.TY-mainLay .TY-leftNav { width:210px; height:100%; position:absolute; left:0px; top:0px; bottom:0px; background:#263847; z-index:2; box-shadow:2px 2px 5px #ccc}
+.TY-mainLay .TY-rightBox { position:relative; height:100%; z-index:1; overflow:auto; -webkit-overflow-scrolling:touch;}
+.TY-mainLay .TY-rightBox > iframe { position:relative; width:100%; height:100%; z-index:4; background:#fff}
+/* .TY-mainLay .TY-rightBox > div { position:absolute; top:0px;  width:96.5%; height:100%; z-index:3; background:url() no-repeat center ;background: #fff;} */
+/* .TY-mainLay .TY-rightBox > div.currentLoading { background:#fff; opacity:0; z-index:5} */
+.TY-mainLay.hd { padding-left:40px}
+.TY-mainLay.hd .TY-leftNav { width:40px}
+.TY-mainLay.hd .TY-leftNav div.menus { display:none}
+
+/*** 鍚庡彴宸﹀鑸�***/
+.TY-leftNav { width:180px; vertical-align:top; background:#374a58; border-right:1px solid #293038}
+.TY-leftNav .partNav{ width:100%; height:auto; overflow:hidden; float:left;}
+.TY-leftNav .leftNav { position:absolute; clear:both; float:left; width:40px; top:93px; bottom:0px; height:auto; background:#1b262f; border-right:1px solid #415464}
+.TY-leftNav .leftNav .bars > div { position:relative; width:40px; height:40px; background:#293038; background:#1b262f url(../img/bg.png) no-repeat; cursor:pointer; transition:all .3s ease-out; -webkit-transition:all .3s ease-out; margin-bottom:1px}
+.TY-leftNav .leftNav .bars > div > div { position:absolute; width:auto; height:40px; line-height:40px; left:80px; padding:0 15px; white-space:nowrap; background:#1b262f; color:#869fb1; font-weight:bold; opacity:0; transition:all .3s ease-out; -webkit-transition:all .3s ease-out; z-index:-11; border-radius:3px; filter:alpha(opacity=0)}
+.TY-leftNav .leftNav .bars > div > div > i { position:absolute; width:4px; height:8px; overflow:hidden; background:url(../img/bg.png) no-repeat -13px -809px; margin-left:-19px; margin-top:16px}
+.TY-leftNav .leftNav .bars > div:hover, .TY-leftNav .leftNav .bars > div.cur { background-color:#0d9cee}
+.TY-leftNav .leftNav .bars > div:hover > div { opacity:1; left:45px; z-index:98; background:#27affd; color:#fff; filter:alpha(opacity=100)}
+.TY-leftNav .leftNav .bars > div.home { margin-top:20px; background-position:0 -119px}
+.TY-leftNav .leftNav .bars > div.new { background-position:1px -1164px}
+.TY-leftNav .leftNav .bars > div.niche { background-position:0 -1233px}
+.TY-leftNav .leftNav .bars > div.area { background-position:2px -1300px}
+.TY-leftNav .leftNav .bars > div.ad { background-position:1px -1355px;}
+.TY-leftNav .leftNav .bars > div.weixin { background-position:0 -7px}
+.TY-leftNav .leftNav .bars > div.system { background-position:0 -63px}
+.TY-leftNav .leftNav .bars > div.util { background-position:0 -175px}
+.TY-leftNav .leftNav .bars > div.toggle { position:absolute; left:0; bottom:0; background-position:0 -288px}
+.TY-leftNav .leftNav .bars > div.toggleHide { background-position:0 -234px}
+.TY-leftNav .leftNav .bars > div.home:hover, .TY-leftNav .leftNav .bars > div.home.cur { background-position:-39px -119px}
+.TY-leftNav .leftNav .bars > div.new:hover,.TY-leftNav .leftNav .bars > div.new.hover { background-position:-40px -1164px}
+.TY-leftNav .leftNav .bars > div.niche:hover,.TY-leftNav .leftNav .bars > div.niche.hover { background-position:-39px -1233px}
+.TY-leftNav .leftNav .bars > div.area:hover,.TY-leftNav .leftNav .bars > div.area.hover { background-position:-41px -1300px}
+.TY-leftNav .leftNav .bars > div.ad:hover,.TY-leftNav .leftNav .bars > div.ad.hover { background-position:-40px -1355px;}
+.TY-leftNav .leftNav .bars > div.weixin:hover, .TY-leftNav .leftNav .bars > div.weixin.cur { background-position:-39px -7px}
+.TY-leftNav .leftNav .bars > div.system:hover, .TY-leftNav .leftNav .bars > div.system.cur { background-position:-39px -63px}
+.TY-leftNav .leftNav .bars > div.util:hover, .TY-leftNav .leftNav .bars > div.util.cur { background-position:-39px -175px}
+.TY-leftNav .leftNav .bars > div.toggle:hover, .TY-leftNav .leftNav .bars > div.toggle.cur { background-position:-39px -288px}
+.TY-leftNav .leftNav .bars > div.toggleHide:hover, .TY-leftNav .leftNav .bars > div.toggleHide.cur { background-position:-39px -234px}
+.TY-leftNav .leftLink { position:absolute; width:171px; top:93px; bottom:0px; height:auto; margin-left:40px; padding:0px; z-index:3}
+.TY-leftNav .leftLink div.uInfo { height:71px; padding:0 10px; padding-top:10px; background:#223341; border-bottom:1px solid #1b262f; box-shadow:-2px -2px 15px #1b262f}
+.TY-leftNav .leftLink div.uInfo a { max-width:100%; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; color:#9fbdd2; font-weight:bold; line-height:18px}
+.TY-leftNav .leftLink .nav { clear:both; display:block; width:165px; height:38px; line-height:38px; font-size:14px; color:#fff; overflow:hidden; white-space:nowrap; border-left:2px solid #263847}
+.TY-leftNav .leftLink .nav i { width:88px; vertical-align:middle; color:#9fbdd0; font-weight:bold; overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
+.TY-leftNav .leftLink .nav i.ico { width:18px; height:12px; margin-right:5px; margin-left:5px; background:url(../img/bg.png) no-repeat -56px -808px}
+.TY-leftNav .leftLink .nav i.ico-tg { float:right; width:14px; height:14px; margin-top:13px; margin-right:5px; background:url(../img/bg.png) no-repeat -12px -457px}
+.TY-leftNav .leftLink .nav i.label { width:111px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding:0; text-align:left}
+.TY-leftNav .leftLink .nav_select i.ico-tg { background-position:-52px -457px}
+.TY-leftNav .leftLink .nav.select { background:#446381; border-left:2px solid #27affd}
+.TY-leftNav .leftLink .navLink i.ico { background-position:-11px -966px}
+.TY-leftNav .leftLink .navLink i.ico-tg { display:none}
+.TY-leftNav .leftLink .menus { padding-top:10px}
+.TY-leftNav .leftLink dl { height:auto; padding-top:5px; overflow:hidden; padding:5px 0px}
+.TY-leftNav .leftLink dl dd { width:171px; overflow:hidden}
+.TY-leftNav .leftLink dl dd:first-child { border:none}
+.TY-leftNav .leftLink dl dd a { float:left; width:100%; padding:8px 0px; margin-top:1px; color:#94b2ca; font-weight:bold; overflow:hidden; white-space:nowrap; transition:all .3s ease-out; -webkit-transition:all .3s ease-out; border-left:2px solid #263847}
+.TY-leftNav .leftLink dl dd a i { margin-left:5px; width:135px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-weight:normal}
+.TY-leftNav .leftLink dl dd a i.ico { width:4px; height:4px; border-radius:50%; margin-left:13px; margin-right:7px; float:left; margin-top:7px; background:#4b6b8a; transition:all .3s ease-out; -webkit-transition:all .3s ease-out}
+.TY-leftNav .leftLink dl dd:first-child a { margin-top:0px}
+.TY-leftNav .leftLink dl dd.hover { position:relative; width:280px; color:red; z-index:91; background:#fff}
+.TY-leftNav .leftLink dl dd a:hover , .TY-leftNav dl dd a.select { background:#446381; border-left:2px solid #27affd}
+.TY-leftNav .leftLink dl dd a:hover i.ico, .TY-leftNav .leftLink dl dd a.select i.ico{ width:4px; height:4px; background:#FFF; border-radius:50%; background:#27affd}
+.hide { display:none}
+.nullBox { height:20px; overflow:hidden}
+
+
+/* 鏂颁慨鏀圭殑瀵艰埅 */
+.TY-welmain { clear:both }
+.TY-leftInfor{ width:100%; height:auto; overflow:hidden; padding:10px 0 0px 2px}
+.TY-leftInfor .partPic{ width:209px; height:44px; overflow:hidden; border-bottom:1px solid #415464; float:left}
+.TY-leftInfor .partPic .pic{ width:36px; height:36px; margin-right:10px; border-radius:50%; float:left; background:no-repeat center; background-size:cover}
+.TY-leftInfor .partPic .infor > i{ float:left; color:#9fbdd2; width:110px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom:3px;}
+.TY-leftInfor .partIco{ width:209px; padding:6px 0; border-bottom:1px solid #415464; height:25px; overflow:hidden; float:left;}
+.TY-leftInfor .partIco > a{ width:34.5px; height:24px; background:url(../img/bg.png) -3px -1059px no-repeat; float:left; margin-bottom:5px}
+.TY-leftInfor .partIco > a.infor{ background-position:-55px -1059px; }
+.TY-leftInfor .partIco > a.lock{ background-position:-3px -1106px}
+.TY-leftInfor .partIco > a.password{ background-position:-55px -1008px}
+.TY-leftInfor .partIco > a.backtop{ background-position:-55px -1106px;}
+.TY-mainLay.hd .TY-leftInfor .partIco { width:39px; height:auto}
+.TY-mainLay.hd .TY-leftInfor .partIco { width:39px}
+.TY-mainLay.hd .TY-leftInfor .partIco > a { display:none}
+.TY-mainLay.hd .TY-leftInfor .partIco > a.backtop { display:block; margin-left:4px}
+.TY-mainLay.hd .TY-leftInfor .partPic .infor { display:none}
+.TY-mainLay.hd .TY-leftNav .leftLink { display:none}
+
+
+/* 婊氬姩鏉�*/
+.mCSB_container{width:auto;margin-right:30px;overflow:hidden;}
+.mCSB_container.mCS_no_scrollbar{margin-right:0;}
+.mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar,.mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar{margin-right:30px;}
+.mCustomScrollBox>.mCSB_scrollTools{width:16px;height:100%;top:0;right:0;}
+.mCSB_scrollTools .mCSB_draggerContainer{position:absolute;top:0;left:0;bottom:0;right:0;height:auto;}
+.mCSB_scrollTools a+.mCSB_draggerContainer{margin:20px 0;}
+.mCSB_scrollTools .mCSB_draggerRail{width:2px;height:100%;margin:0 auto;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
+.mCSB_scrollTools .mCSB_dragger{cursor:pointer;width:100%;height:30px;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:2px;height:100%;margin:0 auto;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;text-align:center;}
+.mCSB_scrollTools .mCSB_buttonUp,.mCSB_scrollTools .mCSB_buttonDown{display:block;position:relative;height:20px;overflow:hidden;margin:0 auto;cursor:pointer;}
+.mCSB_scrollTools .mCSB_buttonDown{top:100%;margin-top:-40px;}
+.mCS-leftnav .mCSB_container { margin-right:0px}
+.mCS-leftnav>.mCSB_scrollTools .mCSB_draggerRail{width:2px; background:#ddd; border-radius:0px}
+.mCS-leftnav>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:2px; background:#51aaf6; border-radius:0px;}
+.mCS-leftnav.mCustomScrollBox>.mCSB_scrollTools{width:2px; right:0; border-radius:0px;}
+.mCS-scroll-newlist .mCSB_container { margin-right:0px}
+.mCS-scroll-newlist>.mCSB_scrollTools .mCSB_draggerRail{width:1px; height:100%; background:#eee; border-radius:0px}
+.mCS-scroll-newlist>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:11px; height:39px; background:url(../imgs/scroll.jpg); border-radius:0px;}
+.mCS-scroll-newlist>.mCustomScrollBox>.mCSB_scrollTools{width:40px; left:0; border-radius:0px;}
+
+
+/* 鎸傛満閿�*/
+.hookLock { display:none}
+.hookLock > div { position:fixed; top:0px; left:0px; display:table; width:100%; height:100%; margin:0 auto; background:#1b262f; z-index:666}
+.hookLock form { display:table-cell; vertical-align:middle; text-align:center; color:#c1d9ed}
+.hookLock form > i { padding:15px 30px 20px 30px; box-shadow:0px 0px 10px #a0e6f8; background:#335a69; border-radius:5px}
+.hookLock form > i > i { margin-left:8px}
+.hookLock form > i > i.ml0 { margin-left:0px}
+.hookLock form input[type=password] { width:70px; border:0 none; border-radius:3px; vertical-align:middle; padding:5px 5px; -webkit-animation:none; box-shadow:none}
+.hookLock form input[type=submit], .hookLock form input[type=button] { transition:all 1s ease-out; -webkit-transition:all 1s ease-out; border-radius:3px; background:#FF8040; border:0 none; padding:5px 10px; vertical-align:middle; margin-left:8px; color:#eaf4fc}
+.hookLock form input[type=button] { background:#0a86cd; color:#c1d9ed}
+.hookLock form h3 { margin:0; padding:0; margin-bottom:15px}

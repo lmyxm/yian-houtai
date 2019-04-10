@@ -1,0 +1,198 @@
+.layui-view-body{
+    background-color: #f0f2f5;
+}
+.layui-content{
+    padding: 20px;
+}
+.layui-tab-title{
+    border-bottom-color: #e8e8e8;
+}
+.layui-card .layui-tab-brief .layui-tab-title li{
+    margin:0 15px;
+    padding: 0;
+}
+
+.layui-form-checked i, .layui-form-checked:hover i,
+.layui-form-radio>i:hover, .layui-form-radioed>i,
+.layui-breadcrumb a:hover,
+.layui-laypage a:hover,
+.layui-tab-brief>.layui-tab-title .layui-this{
+    color: #177ce3!important;
+}
+
+.layui-btn-primary:hover,
+.layui-form-onswitch,
+.layui-form-checked[lay-skin=primary] i,
+.layui-form-checkbox[lay-skin=primary]:hover i,
+.layui-form-checked, .layui-form-checked:hover,
+.layui-tab-brief>.layui-tab-more li.layui-this:after,
+.layui-tab-brief>.layui-tab-title .layui-this:after{
+    border-color: #177ce3;
+}
+
+.layui-checkbox-disbaled[lay-skin=primary]:hover i {
+    border-color: #d2d2d2!important;
+}
+
+.layui-form-onswitch,
+.layui-form-checked[lay-skin=primary] i,
+.layui-form-select dl dd.layui-this,
+.layui-laypage .layui-laypage-curr .layui-laypage-em,
+.layui-form-checked span, .layui-form-checked:hover span{
+    background-color: #177ce3;
+}
+.layui-btn-blue{
+    background-color: #177ce3;
+    background-repeat: repeat-y;
+    background-image: -moz-linear-gradient(left,#29adeb,#177ce3);
+    background-image: -webkit-linear-gradient(left,#29adeb,#177ce3);
+    background-image: -o-linear-gradient(left,#29adeb,#177ce3);
+    background-image: linear-gradient(left,#29adeb,#177ce3);
+}
+.layui-btn-gray{
+    background-color: #ddd;
+    background-repeat: repeat-y;
+}
+.layui-form-checkbox[lay-skin=primary]:hover span{
+    background: 0 0!important;
+}
+
+.layui-page-header{
+    margin: -20px -20px 20px;
+}
+
+.layui-page-header .pagewrap{
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.layui-page-header .title{
+    margin-top: 15px;
+}
+
+.chart-card{
+    padding: 20px 24px 8px;
+}
+
+.chart-card .chart-header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.chart-card .metawrap{
+    float: left;
+}
+
+.chart-card .metawrap .meta{
+    color: rgba(0,0,0,.45);
+    font-size: 14px;
+    line-height: 22px;
+    height: 22px;
+}
+
+.chart-card .metawrap .total{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+    color: rgba(0,0,0,.85);
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 38px;
+    height: 38px;
+}
+
+.chart-card .chart-body{
+    margin-bottom: 12px;
+    position: relative;
+    width: 100%;
+}
+
+.chart-card .chart-footer{
+    padding-top: 9px;
+    margin-top: 8px;
+    border-top: 1px solid #e8e8e8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.chart-card .field{
+
+}
+
+.chart-card .field span{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.chart-card .field span:last-child{
+    margin-left: 8px;
+    color: rgba(0,0,0,.85);
+}
+
+.form-box{
+    padding: 10px 0;
+}
+.layui-upload-drag {
+    position: relative;
+    padding: 30px;
+    border: 1px dashed #e2e2e2;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    color: #999;
+}
+.layui-upload-drag .layui-icon {
+    font-size: 50px;
+    color: #177ce3;
+}
+.layui-upload-file {
+    display: none!important;
+    opacity: .01;
+    filter: Alpha(opacity=1);
+}
+.layui-form-label1{
+  width:200px;   
+}
+.layui-input-label {
+    float: left;
+    display: block;
+    padding: 9px 0px;
+    width:auto;
+    font-weight: 400;
+    line-height: 20px;
+    text-align:left;
+}
+.layui-input-label img{
+    display:inline-block;
+    width:100px;
+    height:auto;
+}
+.layui-form-item1{
+    margin-bottom:0px;
+}
+.layui-tab{
+    background:white;
+}
+.tab{
+    height:50px;
+}
+.tab li{
+    height:50px;
+    line-height:50px;
+    font-weight:600;
+}
+.tab .layui-this:after{
+    height:51px;
+}
+.layui-table th{
+    font-weight:600;
+}
+.layui-table[lay-even] tr:nth-child(even){
+    background:white;
+}
+.layui-table[lay-even] tr:nth-child(even):hover{
+   background:#f2f2f2; 
+}

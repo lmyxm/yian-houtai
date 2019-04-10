@@ -1,0 +1,51 @@
+
+#pager{
+	float:right;
+	margin-top:10px;
+}
+.pager-box:after{
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+    content:'';
+}
+.pager{
+    position:relative;
+    left:50%;
+}
+ .pager>a,.pager>span{
+    position:relative;
+    left:-50%;
+    display:block;
+    float:left;
+	height:20px;
+	line-height:20px;
+    border:1px solid #27affd;
+    padding: 0 6px;
+    margin: 1px 4px;
+    border-radius: 3px;
+    color: #fff;
+    background: #27affd;
+    border: 1px solid #27affd;
+    transition: all 1s cubic-bezier(0.1,0.6,0.9,1);
+    -webkit-transition: all 1s cubic-bezier(0.1,0.6,0.9,1);
+    text-decoration:none;
+    font-family: Arial,'Microsoft YaHei';
+}
+.pager>span{
+    border:0;
+    color:#333;
+    background-color:#fff;
+}
+.pager a.js-selected{
+    background:#fff;
+    color:#27affd;
+    cursor:default;
+}
+.pager a.js-disabled{
+    background:#f1f1f1;
+    border-color:#f1f1f1;
+    cursor:default;
+    color:#fff;
+}

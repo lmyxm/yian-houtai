@@ -1,0 +1,23 @@
+.cats div dl { display:block}
+.cats dl { position:relative; clear:both; display:none; border-top:1px solid #e5e5e5; background:#fff}
+.cats dl:hover { background:#f6f6f6}
+.cats > dl:first-child { border:none 0}
+.cats dd { height:36px; line-height:36px}
+.cats dd.list-manage { position:absolute; width:190px; top:0; right:0; text-align:right; border-left:1px solid #e5e5e5; z-index:2; padding-right:15px}
+.cats dd.name { padding-left:180px; padding-right:190px; overflow:hidden}
+.cats dd.name i { width:10px; height:22px; vertical-align:middle; background:url(../img/ico_menu.png) no-repeat 0 2px; margin-right:10px }
+.cats dd.name:hover i { background:url(../img/ico_menu.png) no-repeat 0 2px;}
+.cats dd.catShow i { background-position:-31px -1px;}
+.cats dd.catShow:hover i { background-position:-51px -1px}
+.cats .c1 { display:block}
+.cats .c1 .name { padding-left:15px}
+.cats .c2 .name { padding-left:35px}
+.cats .c3 .name { padding-left:50px}
+.cats .c4 .name { padding-left:75px}
+.cats .c5 .name { padding-left:90px}
+.cats .c6 .name { padding-left:105px}
+.cats .c7 .name { padding-left:120px}
+.cats .c8 .name { padding-left:135px}
+.cats .c9 .name { padding-left:150px}
+.cats .c10 .name { padding-left:165px}
+.cats .c1 .name > i { }

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>谊安微信客服</title>
+	<link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
+	<link type="text/css" rel="stylesheet" href="./asset/css/index.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
+
+	<!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
+	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
+	<script type="text/javascript" src="./asset/js/timer.js"></script>
+	<script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
+	<script type="text/javascript" src="./asset/js/pager.js"></script>
+	<script type="text/javascript" src="./asset/js/window.js"></script>
+</head>
+</head>
+
+<body>
+
+	<div class="TY-mainLay">
+		<div class="TY-leftNav">
+			<div class="TY-leftInfor">
+				<div class="partPic">
+					<i class="pic" style=""></i>
+					<div class="infor">
+						<i>系统管理员</i> <i>admin123</i>
+					</div>
+				</div>
+				<div class="partIco">
+					<a href="" target="_blank" title="前台页面"></a> <a class="backtop" href="" target="" title="退出登录"></a>
+				</div>
+			</div>
+			<div class="leftNav">
+				<div class="uInfo hide">
+					<a class="hp" style=""></a>
+				</div>
+				<div class="bars">
+					<div onclick="menuLeft(this)" index="0" class="home cur">
+						<div>
+							<i></i>基本设置
+						</div>
+					</div>
+					<div onclick="toggleLeft(this)" class="toggle">
+						<div>
+							<i></i>展开收起
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="leftLink mCustomScrollbar _mCS_1">
+				<div class="mCustomScrollBox mCS-leftnav" id="mCSB_1"
+					style="position:relative; height:100%; overflow:hidden; max-width:100%;">
+					<div class="mCSB_container" style="position:relative; top:0;">
+						<div class="menus">
+							<!-- 管理首页 -->
+							<div menu="">
+
+
+								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+									class="ico-tg"></i><i>登录用户分类</i></a>
+									<dl >
+
+										<dd>
+											<a target="page" href="./hospital.html"><i class="ico"></i><i>医院用户</i></a>
+										</dd>
+	
+										<dd>
+											<a target="page" href="./channel.html"><i class="ico"></i><i>渠道用户</i></a>
+										</dd>
+	
+										<dd>
+											<a target="page" href="./employees.html"><i class="ico"></i><i>员工列表</i></a>
+										</dd>
+	
+									</dl>
+
+							<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+									class="ico-tg"></i><i>客户服务</i></a>
+							<dl >
+
+								<dd>
+									<a target="page" href="./repair.html"><i class="ico"></i><i>产品报修</i></a>
+								</dd>
+
+
+
+								<dd>
+									<a target="page" href="./progress.html"><i class="ico"></i><i>进度查询</i></a>
+								</dd>
+
+
+
+								<dd>
+									<a target="page" href="./product.html"><i class="ico"></i><i>产品信息</i></a>
+								</dd>
+
+
+
+								<dd>
+									<a target="page" href=""><i class="ico"></i><i>配件购买</i></a>
+								</dd>
+
+
+
+								<dd>
+									<a target="page" href=""><i class="ico"></i><i>意见反馈</i></a>
+								</dd>
+
+							</dl>
+
+							<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+									class="ico-tg"></i><i>员工服务</i></a>
+							<dl>
+
+
+								<dd>
+									<a target="page" href=""><i class="ico"></i><i>客户管理</i></a>
+								</dd>
+
+
+
+								<dd>
+									<a target="page" href=""><i class="ico"></i><i>提报工单</i></a>
+								</dd>
+								<dd>
+									<a target="page" href=""><i class="ico"></i><i>工单列表</i></a>
+								</dd>
+								<dd>
+									<a target="page" href=""><i class="ico"></i><i>维修知识</i></a>
+								</dd>
+
+							</dl>
+								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+										class="ico-tg"></i><i>日志管理</i></a>
+								<dl>
+									<dd>
+										<a target="page" href=""><i class="ico"></i><i>操作日志</i></a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="TY-rightBox">
+				<div class="phead">
+					<div class="curnav">
+						<label>医院列表</label>
+					</div>
+				</div>
+			
+				<div class="section">
+					<div class="title" onClick="toggleFilter(this)">
+						<div class="label searchLabel cbg">结果筛选</div>
+						<div class="toggleFilter"></div>
+					</div>
+					<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
+						<div class="items">
+							<div>
+								<i>会员名称：</i> <input type="text" name="user.userName" class="w100" value="" />
+							</div>
+							<div>
+								<i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
+							</div>
+							<div class="btns">
+								<input type="hidden" name="type" value="1">
+								<input id="search" type="button" value="筛选结果" class="button" class="link-add" /><a
+									href="/manage/user_listUser.action?type=1" class="ml20">重新查询</a><a id="export"
+									class="ml20">批量导出</a>
+							</div>
+							<script type="text/javascript">
+								$(function () {
+									$('#search')
+										.click(
+											function () {
+												$('#form1')
+													.attr(
+														'action',
+														'/manage/user_listUser.action?type=1');
+												$('#form1').submit();
+											});
+			
+								});
+							</script>
+							<script type="text/javascript">
+								$(function () {
+									$('#export')
+										.click(
+											function () {
+												$('#form1')
+													.attr(
+														'action',
+														'/manage/user_exportUser.action?type=1');
+												$('#form1').submit();
+											});
+			
+								});
+							</script>
+						</div>
+					</form>
+				</div>
+				<div class="section">
+					<div class="title">
+						<div class="label cbg">医院列表</div>
+						<!-- <div class="links">
+				<a href="/manage/admin_toAddAdminDepartment.action?adminDepartment.level=1" class="button addButton"><i>添加用户</i></a>
+			</div> -->
+					</div>
+					<table class="list" border=0 cellpadding=0>
+						<tr class="firstTr">
+							<td width="20"><input type="checkbox" name="_ids" onClick="_select_ids('auto',this)" /></td>
+							<td width="10">序号</td>
+							<td width="80">会员id</td>
+							<td width="80">用户名/电话</td>
+							<td width="80">短信验证码</td>
+							<td width="80">邮箱</td>
+							<td width="80">医院</td>
+							<td width="80">科室</td>
+							<td width="80">职位</td>
+							<td width="80">性别</td>
+			
+							<!-- <td width="10" class="manage">详情</td>
+							<td width="10" class="manage">管理</td> -->
+						</tr>
+			
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="14" /></td>
+							<td>1</td>
+							<td>14</td>
+							<td>13521757074</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>请选择 请选择 请选择</td>
+							<td></td>
+							<td></td>
+			
+							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
+									href="javascript:void(0);">列表</a></td>
+							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
+									class="del" title="删除"></a></td> -->
+						</tr>
+			
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="14" /></td>
+							<td>1</td>
+							<td>14</td>
+							<td>13521757074</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>请选择 请选择 请选择</td>
+							<td></td>
+							<td></td>
+			
+							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
+									href="javascript:void(0);">列表</a></td>
+							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
+									class="del" title="删除"></a></td> -->
+						</tr>
+			
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="14" /></td>
+							<td>1</td>
+							<td>14</td>
+							<td>13521757074</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>请选择 请选择 请选择</td>
+							<td></td>
+							<td></td>
+			
+							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
+									href="javascript:void(0);">列表</a></td>
+							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
+									class="del" title="删除"></a></td> -->
+						</tr>
+			
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="14" /></td>
+							<td>1</td>
+							<td>14</td>
+							<td>13521757074</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>请选择 请选择 请选择</td>
+							<td></td>
+							<td></td>
+			
+							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
+									href="javascript:void(0);">列表</a></td>
+							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
+									class="del" title="删除"></a></td> -->
+						</tr>
+			
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="14" /></td>
+							<td>1</td>
+							<td>14</td>
+							<td>13521757074</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>请选择 请选择 请选择</td>
+							<td></td>
+							<td></td>
+			
+							<!-- <td class="manage"><a onclick="openPage('','/manage/user_listUserAddress.action?user.id=14','')"
+									href="javascript:void(0);">列表</a></td>
+							<td class="manage"><a onclick="_del('/manage/user_deleteUser.action?user.id=14&page=1&type=1')"
+									class="del" title="删除"></a></td> -->
+						</tr>
+			
+					</table>
+					<div class="clear">
+						<div class="select_ids">
+							<a class="bar" onClick="_select_ids('all')">全选</a> <a class="bar" onClick="_select_ids('fan')">反选</a> <a
+								class="bar" onClick="_select_ids('wu')">全不选</a> <i></i> <a class="bar"
+								onClick="_dels('/manage/user_deleteSelectUser.action?page=1&type=1&')">批量删除</a>
+						</div>
+						<div class="paging">
+							<i class="tp">共1页(9条)
+							</i><i class="ml10">跳至</i><input type="text" class="inppage"
+								onKeyPress="_page_go(this,event,'/manage/user_listUser.action?user.userName=&user.tel=&type=1&page=')" /><i
+								class="i555">回车跳转</i>
+						</div>
+						<div id="pager"></div>
+					</div>
+				</div>
+			
+                <script>
+					var t = 0;
+					console.log(t);
+			
+					function doChangePage(obj) {
+						//TO DO
+						console.log($(".js-selected").text());
+						console.log(obj);
+					}
+					var pagerBox = document.getElementById('pager');
+			
+					var pager = new Pager({
+						lianjie: '/manage/user_listUser.action?user.userName=&user.tel=&type=1&page=',
+						index: 1,
+						total: 1,
+						parent: pagerBox,
+						onchange: doChangePage,
+						label: {
+							"prev": "上一页",
+							"next": "下一页"
+						}
+					});
+				</script>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="./asset/js/tingyun.js"></script>
+		<script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="./asset/js/mousewheel.js"></script>
+		<script type="text/javascript" src="./asset/js/index.js"></script>
+</body>
+
+</html>
