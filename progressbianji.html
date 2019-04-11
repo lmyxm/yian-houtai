@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>谊安微信客服</title>
+    <link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
+    <link type="text/css" rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
+    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
+    <script type="text/javascript" src="./asset/js/timer.js"></script>
+    <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
+    <script type="text/javascript" src="./asset/js/pager.js"></script>
+    <script type="text/javascript" src="./asset/js/window.js"></script>
+</head>
+</head>
+
+<body>
+
+    <div class="TY-mainLay">
+        <div class="TY-leftNav">
+            <div class="TY-leftInfor">
+                <div class="partPic">
+                    <i class="pic" style=""></i>
+                    <div class="infor">
+                        <i>系统管理员</i> <i>admin123</i>
+                    </div>
+                </div>
+                <div class="partIco">
+                    <a href="" target="_blank" title="前台页面"></a> <a class="backtop" href="" target="" title="退出登录"></a>
+                </div>
+            </div>
+            <div class="leftNav">
+                <div class="uInfo hide">
+                    <a class="hp" style=""></a>
+                </div>
+                <div class="bars">
+                    <div onclick="menuLeft(this)" index="0" class="home cur">
+                        <div>
+                            <i></i>基本设置
+                        </div>
+                    </div>
+                    <div onclick="toggleLeft(this)" class="toggle">
+                        <div>
+                            <i></i>展开收起
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leftLink mCustomScrollbar _mCS_1">
+                <div class="mCustomScrollBox mCS-leftnav" id="mCSB_1"
+                    style="position:relative; height:100%; overflow:hidden; max-width:100%;">
+                    <div class="mCSB_container" style="position:relative; top:0;">
+                        <div class="menus">
+                            <!-- 管理首页 -->
+                            <div menu="">
+
+
+                                    <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+                                            class="ico-tg"></i><i>登录用户分类</i></a>
+                                    <dl>
+    
+                                        <dd>
+                                            <a target="page" href="./hospital.html"><i class="ico"></i><i>医院用户</i></a>
+                                        </dd>
+    
+                                        <dd>
+                                            <a target="page" href="./channel.html"><i class="ico"></i><i>渠道用户</i></a>
+                                        </dd>
+    
+                                        <dd>
+                                            <a target="page" href="./employees.html"><i class="ico"></i><i>员工列表</i></a>
+                                        </dd>
+    
+                                    </dl>
+    
+                                    <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+                                            class="ico-tg"></i><i>客户服务</i></a>
+                                    <dl>
+    
+                                        <dd>
+                                            <a target="page" href="./repair.html"><i class="ico"></i><i>产品报修</i></a>
+                                        </dd>
+    
+    
+    
+                                        <dd>
+                                            <a target="page" href="./progress.html"><i class="ico"></i><i>进度查询</i></a>
+                                        </dd>
+    
+    
+    
+                                        <dd>
+                                            <a target="page" href="./product.html"><i class="ico"></i><i>产品信息</i></a>
+                                        </dd>
+                                        <dd>
+                                            <a target="page" href="./productclass.html"><i class="ico"></i><i>产品分类</i></a>
+                                        </dd>
+    
+                                        <dd>
+                                            <a target="page" href="./accessories.html"><i class="ico"></i><i>配件购买</i></a>
+                                        </dd>
+    
+                                        <dd>
+                                            <a target="page" href="./feedback.html"><i class="ico"></i><i>意见反馈</i></a>
+                                        </dd>
+    
+                                    </dl>
+    
+                                    <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+                                            class="ico-tg"></i><i>员工服务</i></a>
+                                    <dl>
+    
+    
+                                        <dd>
+                                            <a target="page" href="./customer.html"><i class="ico"></i><i>客户管理</i></a>
+                                        </dd>
+                                        <dd>
+                                            <a target="page" href="./knowledge.html"><i class="ico"></i><i>维修知识</i></a>
+                                        </dd>
+    
+                                    </dl>
+                                    <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
+                                            class="ico-tg"></i><i>日志管理</i></a>
+                                    <dl>
+                                        <dd>
+                                            <a target="page" href="./log.html"><i class="ico"></i><i>操作日志</i></a>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="TY-rightBox">
+            <div class="phead">
+                <div class="curnav">
+                    <label>产品维修列表</label>
+                </div>
+            </div>
+
+            <form action="/manage/product_updateProductType.action" method="post" class="manage mt20"
+                enctype="multipart/form-data">
+                <div class="section sectionEdit">
+                    <div class="title" onclick="toggleFilter(this)">
+                        <div class="label cbg">修改工单</div>
+                        <div class="toggleFilter"></div>
+                    </div>
+                    <div class="data">
+                        <div class="line">
+                            <i class="label">设备机型:</i><input class="w150" type="text" name="productType.name"
+                                value=""><i class="desc" id="i1"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">工单编号:</i><input type="text" name="productType.sort" class="w150" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">报修日期:</i><input type="text" name="productType.sort" class="w150" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">处理状态:</i><input type="text" name="productType.sort" class="w150" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                       
+                        <div class="line">
+                            <a href="./repair.html" class="button button-sub ml140 " >提交保存</a>
+                            <a href="./repair.html" class="button button-sub ml140 " >返回</a>
+                            <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
+                            <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
+    <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
+    <script type="text/javascript" src="./asset/js/index.js"></script>
+</body>
+
+</html>
