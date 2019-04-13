@@ -22,128 +22,13 @@
 <body>
 
 	<div class="TY-mainLay">
-		<div class="TY-leftNav">
-			<div class="TY-leftInfor">
-				<div class="partPic">
-					<i class="pic" style=""></i>
-					<div class="infor">
-						<i>系统管理员</i> <i>admin123</i>
-					</div>
-				</div>
-				<div class="partIco">
-					<a href="" target="_blank" title="前台页面"></a> <a class="backtop" href="" target="" title="退出登录"></a>
-				</div>
-			</div>
-			<div class="leftNav">
-				<div class="uInfo hide">
-					<a class="hp" style=""></a>
-				</div>
-				<div class="bars">
-					<div onclick="menuLeft(this)" index="0" class="home cur">
-						<div>
-							<i></i>基本设置
-						</div>
-					</div>
-					<div onclick="toggleLeft(this)" class="toggle">
-						<div>
-							<i></i>展开收起
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="leftLink mCustomScrollbar _mCS_1">
-				<div class="mCustomScrollBox mCS-leftnav" id="mCSB_1"
-					style="position:relative; height:100%; overflow:hidden; max-width:100%;">
-					<div class="mCSB_container" style="position:relative; top:0;">
-						<div class="menus">
-							<!-- 管理首页 -->
-							<div menu="">
-
-
-								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-										class="ico-tg"></i><i>登录用户分类</i></a>
-								<dl>
-
-									<dd>
-										<a target="page" href="./hospital.html"><i class="ico"></i><i>医院用户</i></a>
-									</dd>
-
-									<dd>
-										<a target="page" href="./channel.html"><i class="ico"></i><i>渠道用户</i></a>
-									</dd>
-
-									<dd>
-										<a target="page" href="./employees.html"><i class="ico"></i><i>员工列表</i></a>
-									</dd>
-
-								</dl>
-
-								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-										class="ico-tg"></i><i>客户服务</i></a>
-								<dl>
-
-									<dd>
-										<a target="page" href="./repair.html"><i class="ico"></i><i>产品报修</i></a>
-									</dd>
-
-
-
-									<dd>
-										<a target="page" href="./progress.html"><i class="ico"></i><i>进度查询</i></a>
-									</dd>
-
-
-
-									<dd>
-										<a target="page" href="./product.html"><i class="ico"></i><i>产品信息</i></a>
-									</dd>
-									<dd>
-										<a target="page" href="./productclass.html"><i class="ico"></i><i>产品分类</i></a>
-									</dd>
-
-									<dd>
-										<a target="page" href="./accessories.html"><i class="ico"></i><i>配件购买</i></a>
-									</dd>
-
-									<dd>
-										<a target="page" href="./feedback.html"><i class="ico"></i><i>意见反馈</i></a>
-									</dd>
-
-								</dl>
-
-								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-										class="ico-tg"></i><i>员工服务</i></a>
-								<dl>
-
-
-									<dd>
-										<a target="page" href="./customer.html"><i class="ico"></i><i>客户管理</i></a>
-									</dd>
-									<dd>
-										<a target="page" href="./knowledge.html"><i class="ico"></i><i>维修知识</i></a>
-									</dd>
-
-								</dl>
-								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-										class="ico-tg"></i><i>日志管理</i></a>
-								<dl>
-									<dd>
-										<a target="page" href="./log.html"><i class="ico"></i><i>操作日志</i></a>
-									</dd>
-								</dl>
-							</div>
-
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!-- 左边按钮 -->
+		<script src="./asset/js/directory.js"></script>
+		<!-- 左边按钮 -->
 		<div class="TY-rightBox">
 			<div class="phead">
 				<div class="curnav">
-					<label>产品维修列表</label>
+					<label>工单维修列表</label>
 				</div>
 			</div>
 			<div class="section">
@@ -162,12 +47,19 @@
 								<option value="d">通过</option>
 								<option value="d">拒绝</option>
 								<option value="f">进行中</option>
-								<option value="f">已完成</option>
+							</select>
+						</div>
+						<div>
+							<i>工单分类：</i>
+							<select name="">
+								<option value="s">全部</option>
+								<option value="s">医院</option>
+								<option value="d">渠道</option>
 							</select>
 						</div>
 
 						<div>
-							<i>会员名称：</i> <input type="text" name="user.userName" class="w100" value="" />
+							<i>医院名称：</i> <input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
 							<i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
@@ -188,7 +80,7 @@
 
 			<div class="section">
 				<div class="title">
-					<div class="label cbg">产品报修列表</div>
+					<div class="label cbg">工单维修列表</div>
 					<div class="links">
 						<a href="./repairAdd.html" class="button addButton"><i>添加报修单</i></a>
 					</div>
@@ -200,14 +92,12 @@
 						<td width="80">产品线</td>
 						<td width="80">设备机型</td>
 						<td width="80">故障类型</td>
-
 						<td width="80">医院</td>
 						<td width="40">科室</td>
 						<td width="40">职位</td>
 						<td width="80">联系人</td>
 						<td width="80">电话</td>
 						<td width="40">状态</td>
-						<td width="20" class="manage">详情</td>
 						<td width="20" class="manage">派单</td>
 						<td width="20" class="manage">审核</td>
 						<td width="10" class="manage">管理</td>
@@ -215,7 +105,7 @@
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
@@ -225,17 +115,16 @@
 						<td>徐靖淋</td>
 						<td>13224001233</td>
 						<td>未审核</td>
-						<td class="manage"><a href="./signatureRepair.html">查看</a></td>
-						<td class="manage"><a href="./paidan.html">派单</a></td>
+						<td class="manage"><a href="./paidan.html" class="grey">派单</a></td>
 						<td class="manage"><a href="./yulan.html">审核</a></td>
-						<td class="manage">
-							<a href="./repairBianji.html" class="edit" title="编辑"></a>
-							<a class="del" title="删除"></a></td>
+						<td class="manage"><a href="##">撤单</a>
+							<a href="##">结束</a>
+						</td>
 					</tr>
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
@@ -244,19 +133,18 @@
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td>通过</td>
-						<td class="manage"><a href="./signatureAnn.html">查看</a></td>
-						<td class="manage"><a href="./paidan.html">派单</a></td>
+						<td>已通过</td>
+						<td class="manage"><a href="./paidan.html" class="grey">派单</a></td>
 						<td class="manage"><a href="./yulan.html">审核</a></td>
 
-						<td class="manage">
-							<a href="./repairBianji.html" class="edit" title="编辑"></a>
-							<a class="del" title="删除"></a></td>
+						<td class="manage"><a href="##">撤单</a>
+							<a href="##">结束</a>
+						</td>
 					</tr>
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
@@ -266,17 +154,16 @@
 						<td>徐靖淋</td>
 						<td>13224001233</td>
 						<td>进行中</td>
-						<td class="manage"><a href="./signatureTraining.html">查看</a></td>
-						<td class="manage"><a href="./paidan.html">派单</a></td>
+						<td class="manage"><a href="./paidan.html" class="grey">派单</a></td>
 						<td class="manage"><a href="./yulan.html">审核</a></td>
-						<td class="manage">
-							<a href="./repairBianji.html" class="edit" title="编辑"></a>
-							<a class="del" title="删除"></a></td>
+						<td class="manage"><a href="##">撤单</a>
+							<a href="##">结束</a>
+						</td>
 					</tr>
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
@@ -286,18 +173,17 @@
 						<td>徐靖淋</td>
 						<td>13224001233</td>
 						<td>拒绝</td>
-						<td class="manage"><a href="./signatureSpecial.html">查看</a></td>
 						<td class="manage"><a href="./paidan.html">派单</a></td>
 						<td class="manage"><a href="./yulan.html">审核</a></td>
 
-						<td class="manage">
-							<a href="./repairBianji.html" class="edit" title="编辑"></a>
-							<a class="del" title="删除"></a></td>
+						<td class="manage"><a href="##">撤单</a>
+							<a href="##">结束</a>
+						</td>
 					</tr>
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
@@ -306,22 +192,18 @@
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td>已完成</td>
-						<td class="manage"><a href="./signaturebreathing.html">查看</a></td>
-						<td class="manage"><a href="./paidan.html">派单</a></td>
+						<td>进行中</td>
+						<td class="manage"><a href="./paidan.html" class="grey">派单</a></td>
 						<td class="manage"><a href="./yulan.html">审核</a></td>
 
 
-						<td class="manage">
-							<a href="./repairBianji.html" class="edit" title="编辑"></a>
-							<a class="del" title="删除">
-							</a>
-
+						<td class="manage"><a href="##">撤单</a>
+							<a href="##">结束</a>
 						</td>
 					</tr>
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
@@ -330,22 +212,16 @@
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td>已完成</td>
-						<td class="manage"><a href="./signatureAnesthesia.html">查看</a></td>
+						<td>进行中</td>
 						<td class="manage"><a href="./paidan.html">派单</a></td>
 						<td class="manage"><a href="./yulan.html">审核</a></td>
-
-
-						<td class="manage">
-							<a href="./repairBianji.html" class="edit" title="编辑"></a>
-							<a class="del" title="删除">
-							</a>
-
+						<td class="manage"><a href="##">撤单</a>
+							<a href="##">结束</a>
 						</td>
 					</tr>
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
@@ -354,22 +230,16 @@
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td>已完成</td>
-						<td class="manage"><a href="./signatureSurgery.html">查看</a></td>
+						<td>进行中</td>
 						<td class="manage"><a href="./paidan.html">派单</a></td>
 						<td class="manage"><a href="./yulan.html">审核</a></td>
-
-
-						<td class="manage">
-							<a href="./repairBianji.html" class="edit" title="编辑"></a>
-							<a class="del" title="删除">
-							</a>
-
+						<td class="manage"><a href="##">撤单</a>
+							<a href="##">结束</a>
 						</td>
 					</tr>
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
@@ -378,17 +248,11 @@
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td>已完成</td>
-						<td class="manage"><a href="./signatureLamp.html">查看</a></td>
+						<td>进行中</td>
 						<td class="manage"><a href="./paidan.html">派单</a></td>
 						<td class="manage"><a href="./yulan.html">审核</a></td>
-
-
-						<td class="manage">
-							<a href="./repairBianji.html" class="edit" title="编辑"></a>
-							<a class="del" title="删除">
-							</a>
-
+						<td class="manage"><a href="##">撤单</a>
+							<a href="##">结束</a>
 						</td>
 					</tr>
 
@@ -400,6 +264,14 @@
 						<i></i> <a class="bar"
 							onClick="_dels('/manage/user_deleteSelectUser.action?page=1&type=1&')">批量删除</a>
 					</div>
+					<ul style="    float: left;
+					height: 40px;
+					line-height: 40px;
+					padding-left: 15px;">
+						<li style="display:inline-block;vertical-align: top;">未审核：12</li>
+						<li style="display:inline-block;vertical-align: top;margin-left: 10px">已审核：42</li>
+						<li style="display:inline-block;vertical-align: top;margin-left: 10px">已完成：345</li>
+					</ul>
 					<div class="paging">
 						<i class="tp">共1页(9条)
 						</i><i class="ml10">跳至</i><input type="text" class="inppage" /><i class="i555">回车跳转</i>

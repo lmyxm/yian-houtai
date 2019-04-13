@@ -775,6 +775,13 @@ table.list td.manage a.preView {
     margin-right: 5px
 }
 
+table.list td.manage a.grey{
+    background:#e1e1e1 ;
+    pointer-events: none;
+}
+
+
+
 table.list tr.firstTr td {
     min-width: 50px
 }
@@ -1178,6 +1185,15 @@ form.filter input[type=submit].button {
     margin-bottom: 0px
 }
 
+.section  .data {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px
+}
+
+
+
+
 /**
  * 宸ュ叿鏍峰紡
  */
@@ -1191,9 +1207,10 @@ i.label {
 
 i.desc {
     color: #888;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     vertical-align: middle
 }
+
 
 i.x {
     color: red;
@@ -1559,4 +1576,16 @@ div.desc i.desc {
     right: 0;
     top: 0;
     opacity: 0;
+}
+.section .data .line dl{
+    display: inline-block;
+    vertical-align: top
+}
+.section .data .line dl dd{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.section .data .line .w200px{
+    width: 260px;
 }

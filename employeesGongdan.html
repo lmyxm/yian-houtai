@@ -28,7 +28,7 @@
 		<div class="TY-rightBox">
 			<div class="phead">
 				<div class="curnav">
-					<label>派单列表</label>
+					<label>工单维修列表</label>
 				</div>
 			</div>
 			<div class="section">
@@ -43,14 +43,23 @@
 							<i>状态：</i>
 							<select name="">
 								<option value="s">全部</option>
+								<option value="s">未通过</option>
+								<option value="d">通过</option>
+								<option value="d">拒绝</option>
+								<option value="f">进行中</option>
+							</select>
+						</div>
+						<div>
+							<i>工单分类：</i>
+							<select name="">
+								<option value="s">全部</option>
 								<option value="s">医院</option>
 								<option value="d">渠道</option>
-								
 							</select>
 						</div>
 
 						<div>
-							<i>会员名称：</i> <input type="text" name="user.userName" class="w100" value="" />
+							<i>医院名称：</i> <input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
 							<i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
@@ -71,120 +80,198 @@
 
 			<div class="section">
 				<div class="title">
-					<div class="label cbg">派单列表</div>
-					
+					<div class="label cbg">工单维修列表</div>
+					<div class="links">
+						<a href="./repairAdd.html" class="button addButton"><i>添加报修单</i></a>
+					</div>
 				</div>
 				<table class="list" border=0 cellpadding=0>
 					<tr class="firstTr">
 						<td width="20"><input type="checkbox" name="_ids" onClick="_select_ids('auto',this)" /></td>
 						<td width="80">工单编号</td>
-						<!-- <td width="80">产品图片</td> -->
 						<td width="80">产品线</td>
 						<td width="80">设备机型</td>
 						<td width="80">故障类型</td>
 						<td width="80">医院</td>
-						<td width="80">代理机构</td>
 						<td width="40">科室</td>
 						<td width="40">职位</td>
 						<td width="80">联系人</td>
 						<td width="80">电话</td>
 						<td width="40">状态</td>
-						<td width="40" class="manage">服务评价</td>
-						<td width="40" class="manage">工单详情</td>
+						<td width="20" class="manage">派单</td>
+						<td width="20" class="manage">审核</td>
+						<td width="10" class="manage">管理</td>
 					</tr>
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
 						<td>重庆医科大学附属第一医院</td>
-						<td></td>
 						<td>手术室</td>
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td>未接单</td>
-						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./signatureRepair.html">查看详情</a></td>
-						
+						<td>未审核</td>
+						<td class="manage"><a href="./paidan.html" class="grey">派单</a></td>
+						<td class="manage"><a href="./yulan.html">审核</a></td>
+						<td class="manage"><a href="##"  >撤单</a>
+							<a href="##">结束</a>
+						</td>
 					</tr>
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
 						<td>重庆医科大学附属第一医院</td>
-						<td></td>
 						<td>手术室</td>
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td>拒单</td>
-						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./signatureAnn.html">查看详情</a></td>
-						
+						<td>已通过</td>
+						<td class="manage"><a href="./paidan.html" class="grey">派单</a></td>
+						<td class="manage"><a href="./yulan.html">审核</a></td>
+
+						<td class="manage"><a href="##"  >撤单</a>
+							<a href="##">结束</a>
+						</td>
 					</tr>
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
 						<td>重庆医科大学附属第一医院</td>
-						<td></td>
 						<td>手术室</td>
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td>已接单</td>
-						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./signatureTraining.html">查看详情</a></td>
-						
+						<td>进行中</td>
+						<td class="manage"><a href="./paidan.html" class="grey">派单</a></td>
+						<td class="manage"><a href="./yulan.html">审核</a></td>
+						<td class="manage"><a href="##"  >撤单</a>
+							<a href="##">结束</a>
+						</td>
 					</tr>
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
 						<td>重庆医科大学附属第一医院</td>
-						<td></td>
 						<td>手术室</td>
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td></td>
-						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./signatureSpecial.html">查看详情</a></td>
-					
+						<td>拒绝</td>
+						<td class="manage"><a href="./paidan.html">派单</a></td>
+						<td class="manage"><a href="./yulan.html">审核</a></td>
+
+						<td class="manage"><a href="##"  >撤单</a>
+							<a href="##">结束</a>
+						</td>
 					</tr>
 
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
 						<td>麻醉机</td>
 						<td>7200A麻醉机</td>
 						<td>维护不当造成产品故障</td>
 						<td>重庆医科大学附属第一医院</td>
-						<td></td>
 						<td>手术室</td>
 						<td>主任</td>
 						<td>徐靖淋</td>
 						<td>13224001233</td>
-						<td>未接单</td>
-						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./paidan.html">查看详情</a></td>
+						<td>进行中</td>
+						<td class="manage"><a href="./paidan.html">派单</a></td>
+						<td class="manage"><a href="./yulan.html">审核</a></td>
+
+
+						<td class="manage"><a href="##"  >撤单</a>
+							<a href="##">结束</a>
+						</td>
+					</tr>
+					<tr _id="">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
+						<td>麻醉机</td>
+						<td>7200A麻醉机</td>
+						<td>维护不当造成产品故障</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>手术室</td>
+						<td>主任</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td>进行中</td>
+						<td class="manage"><a href="./paidan.html">派单</a></td>
+						<td class="manage"><a href="./yulan.html">审核</a></td>
+						<td class="manage"><a href="##"  >撤单</a>
+							<a href="##">结束</a>
+						</td>
+					</tr>
+					<tr _id="">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
+						<td>麻醉机</td>
+						<td>7200A麻醉机</td>
+						<td>维护不当造成产品故障</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>手术室</td>
+						<td>主任</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td>进行中</td>
+						<td class="manage"><a href="./paidan.html">派单</a></td>
+						<td class="manage"><a href="./yulan.html">审核</a></td>
+						<td class="manage"><a href="##"  >撤单</a>
+							<a href="##">结束</a>
+						</td>
+					</tr>
+					<tr _id="">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td><a href="./signatureAnn.html">WX-20190215-0041</a></td>
+						<td>麻醉机</td>
+						<td>7200A麻醉机</td>
+						<td>维护不当造成产品故障</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>手术室</td>
+						<td>主任</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td>进行中</td>
+						<td class="manage"><a href="./paidan.html">派单</a></td>
+						<td class="manage"><a href="./yulan.html">审核</a></td>
+						<td class="manage"><a href="##"  >撤单</a>
+							<a href="##">结束</a>
+						</td>
 					</tr>
 
 				</table>
 				<div class="clear">
-					
+					<div class="select_ids">
+						<a class="bar" onClick="_select_ids('all')">全选</a> <a class="bar"
+							onClick="_select_ids('fan')">反选</a> <a class="bar" onClick="_select_ids('wu')">全不选</a>
+						<i></i> <a class="bar"
+							onClick="_dels('/manage/user_deleteSelectUser.action?page=1&type=1&')">批量删除</a>
+					</div>
+					<ul style="    float: left;
+					height: 40px;
+					line-height: 40px;
+					padding-left: 15px;">
+						<li style="display:inline-block;vertical-align: top;">未审核：12</li>
+						<li style="display:inline-block;vertical-align: top;margin-left: 10px">已审核：42</li>
+						<li style="display:inline-block;vertical-align: top;margin-left: 10px">已完成：345</li>
+					</ul>
 					<div class="paging">
 						<i class="tp">共1页(9条)
 						</i><i class="ml10">跳至</i><input type="text" class="inppage" /><i class="i555">回车跳转</i>

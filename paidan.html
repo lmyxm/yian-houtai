@@ -22,124 +22,9 @@
 <body>
 
 	<div class="TY-mainLay">
-		<div class="TY-leftNav">
-			<div class="TY-leftInfor">
-				<div class="partPic">
-					<i class="pic" style=""></i>
-					<div class="infor">
-						<i>系统管理员</i> <i>admin123</i>
-					</div>
-				</div>
-				<div class="partIco">
-					<a href="" target="_blank" title="前台页面"></a> <a class="backtop" href="" target="" title="退出登录"></a>
-				</div>
-			</div>
-			<div class="leftNav">
-				<div class="uInfo hide">
-					<a class="hp" style=""></a>
-				</div>
-				<div class="bars">
-					<div onclick="menuLeft(this)" index="0" class="home cur">
-						<div>
-							<i></i>基本设置
-						</div>
-					</div>
-					<div onclick="toggleLeft(this)" class="toggle">
-						<div>
-							<i></i>展开收起
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="leftLink mCustomScrollbar _mCS_1">
-				<div class="mCustomScrollBox mCS-leftnav" id="mCSB_1"
-					style="position:relative; height:100%; overflow:hidden; max-width:100%;">
-					<div class="mCSB_container" style="position:relative; top:0;">
-						<div class="menus">
-							<!-- 管理首页 -->
-							<div menu="">
-
-
-								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-										class="ico-tg"></i><i>登录用户分类</i></a>
-								<dl>
-
-									<dd>
-										<a target="page" href="./hospital.html"><i class="ico"></i><i>医院用户</i></a>
-									</dd>
-
-									<dd>
-										<a target="page" href="./channel.html"><i class="ico"></i><i>渠道用户</i></a>
-									</dd>
-
-									<dd>
-										<a target="page" href="./employees.html"><i class="ico"></i><i>员工列表</i></a>
-									</dd>
-
-								</dl>
-
-								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-										class="ico-tg"></i><i>客户服务</i></a>
-								<dl>
-
-									<dd>
-										<a target="page" href="./repair.html"><i class="ico"></i><i>产品报修</i></a>
-									</dd>
-
-
-
-									<dd>
-										<a target="page" href="./progress.html"><i class="ico"></i><i>进度查询</i></a>
-									</dd>
-
-
-
-									<dd>
-										<a target="page" href="./product.html"><i class="ico"></i><i>产品信息</i></a>
-									</dd>
-									<dd>
-										<a target="page" href="./productclass.html"><i class="ico"></i><i>产品分类</i></a>
-									</dd>
-
-									<dd>
-										<a target="page" href="./accessories.html"><i class="ico"></i><i>配件购买</i></a>
-									</dd>
-
-									<dd>
-										<a target="page" href="./feedback.html"><i class="ico"></i><i>意见反馈</i></a>
-									</dd>
-
-								</dl>
-
-								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-										class="ico-tg"></i><i>员工服务</i></a>
-								<dl>
-
-
-									<dd>
-										<a target="page" href="./customer.html"><i class="ico"></i><i>客户管理</i></a>
-									</dd>
-									<dd>
-										<a target="page" href="./knowledge.html"><i class="ico"></i><i>维修知识</i></a>
-									</dd>
-
-								</dl>
-								<a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-										class="ico-tg"></i><i>日志管理</i></a>
-								<dl>
-									<dd>
-										<a target="page" href="./log.html"><i class="ico"></i><i>操作日志</i></a>
-									</dd>
-								</dl>
-							</div>
-
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!-- 左边按钮 -->
+		<script src="./asset/js/directory.js"></script>
+		<!-- 左边按钮 -->
 		<div class="TY-rightBox">
 
 			<div class="phead">
@@ -189,8 +74,11 @@
 
 						<div class="line">
 							<i class="label" >
-								<i class="x">*</i>选择人员 :</i>
-								<input class="w150" type="text" name="productType.name" class="radio">
+								<i class="x">*</i>选择人员 :</i><select name="">
+									<option value="s">张三</option>
+									<option value="d">李四</option>
+									<option value="f">王五</option>
+								</select>
 								
 							</i>
 						</div>
@@ -208,8 +96,10 @@
 
 
 						<div class="line">
-							<a href="./repair.html" class="button button-sub ml140 ">手动派单</a>
-							<a href="./repair.html" class="button button-sub ml140 ">自动派单</a>
+							<a href="./repair.html" class="button button-sub ml140 ">派单</a>
+							<a href="./repair.html" class="button button-sub ml140 ">返回</a>
+							<a href="./repair.html" class="button button-sub ml140 ">再次派单</a>
+							<!-- <a href="./repair.html" class="button button-sub ml140 ">自动派单</a> -->
 							<!-- <input type="button" class="button button-sub ml140" value="手动派单">
                                          <input type="button" class="button button-sub ml140" value="自动派单"> -->
 						</div>

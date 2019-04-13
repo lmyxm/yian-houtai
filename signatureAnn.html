@@ -22,125 +22,9 @@
 <body>
 
     <div class="TY-mainLay">
-        <div class="TY-leftNav">
-            <div class="TY-leftInfor">
-                <div class="partPic">
-                    <i class="pic" style=""></i>
-                    <div class="infor">
-                        <i>系统管理员</i> <i>admin123</i>
-                    </div>
-                </div>
-                <div class="partIco">
-                    <a href="" target="_blank" title="前台页面"></a> <a class="backtop" href="" target="" title="退出登录"></a>
-                </div>
-            </div>
-            <div class="leftNav">
-                <div class="uInfo hide">
-                    <a class="hp" style=""></a>
-                </div>
-                <div class="bars">
-                    <div onclick="menuLeft(this)" index="0" class="home cur">
-                        <div>
-                            <i></i>基本设置
-                        </div>
-                    </div>
-                    <div onclick="toggleLeft(this)" class="toggle">
-                        <div>
-                            <i></i>展开收起
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="leftLink mCustomScrollbar _mCS_1">
-                <div class="mCustomScrollBox mCS-leftnav" id="mCSB_1"
-                    style="position:relative; height:100%; overflow:hidden; max-width:100%;">
-                    <div class="mCSB_container" style="position:relative; top:0;">
-                        <div class="menus">
-                            <!-- 管理首页 -->
-                            <div menu="">
-
-
-                                    <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-                                            class="ico-tg"></i><i>登录用户分类</i></a>
-                                    <dl>
-    
-                                        <dd>
-                                            <a target="page" href="./hospital.html"><i class="ico"></i><i>医院用户</i></a>
-                                        </dd>
-    
-                                        <dd>
-                                            <a target="page" href="./channel.html"><i class="ico"></i><i>渠道用户</i></a>
-                                        </dd>
-    
-                                        <dd>
-                                            <a target="page" href="./employees.html"><i class="ico"></i><i>员工列表</i></a>
-                                        </dd>
-    
-                                    </dl>
-    
-                                    <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-                                            class="ico-tg"></i><i>客户服务</i></a>
-                                    <dl>
-    
-                                        <dd>
-                                            <a target="page" href="./repair.html"><i class="ico"></i><i>产品报修</i></a>
-                                        </dd>
-    
-    
-    
-                                        <dd>
-                                            <a target="page" href="./progress.html"><i class="ico"></i><i>进度查询</i></a>
-                                        </dd>
-    
-    
-    
-                                        <dd>
-                                            <a target="page" href="./product.html"><i class="ico"></i><i>产品信息</i></a>
-                                        </dd>
-                                        <dd>
-                                            <a target="page" href="./productclass.html"><i class="ico"></i><i>产品分类</i></a>
-                                        </dd>
-    
-                                        <dd>
-                                            <a target="page" href="./accessories.html"><i class="ico"></i><i>配件购买</i></a>
-                                        </dd>
-    
-                                        <dd>
-                                            <a target="page" href="./feedback.html"><i class="ico"></i><i>意见反馈</i></a>
-                                        </dd>
-    
-                                    </dl>
-    
-                                    <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-                                            class="ico-tg"></i><i>员工服务</i></a>
-                                    <dl>
-    
-    
-                                        <dd>
-                                            <a target="page" href="./customer.html"><i class="ico"></i><i>客户管理</i></a>
-                                        </dd>
-                                        <dd>
-                                            <a target="page" href="./knowledge.html"><i class="ico"></i><i>维修知识</i></a>
-                                        </dd>
-    
-                                    </dl>
-                                    <a class="nav nav_select" onclick="secMenu(this)"><i class="ico"></i><i
-                                            class="ico-tg"></i><i>日志管理</i></a>
-                                    <dl>
-                                        <dd>
-                                            <a target="page" href="./log.html"><i class="ico"></i><i>操作日志</i></a>
-                                        </dd>
-                                    </dl>
-                                </div>
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- 左边按钮 -->
+		<script src="./asset/js/directory.js"></script>
+		<!-- 左边按钮 -->
         <div class="TY-rightBox">
             <div class="phead">
                 <div class="curnav">
@@ -206,12 +90,12 @@
                         </div>
                         <div class="line">
                             <i class="label">机器安装:</i>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
+                            <dl class="w200px">
+                                <dd class="w200px">
                                     <input type="checkbox"><i>产品安装位置，符合客户要求</i>
                                 </dd>
 
-                                <dd style="display: inline-block;vertical-align: middle ;height: 20px;">
+                                <dd class="w200px">
 
                                     <input type="checkbox" name="ids" value="27"><i>产品安装后，现场清理完毕</i>
                                 </dd>
@@ -222,8 +106,8 @@
                         </div>
                         <div class="line">
                             <i class="label">产品培训人员范围:</i>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
+                            <dl class="w200px">
+                                <dd >
                                     <input type="checkbox"><i>受训人员，符合客户产品培训范围要求</i>
                                 </dd>
                             </dl>
@@ -231,49 +115,53 @@
                         </div>
                         <div class="line">
                             <i class="label">培训内容:</i>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>组件、配件介绍</i>
-                                </dd>
+                            
+                            <i class="desc w200px">
 
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>组件附件连接演示</i>
-                                </dd>
+                                    <dl >
+                                            <dd>
+                                                <input type="checkbox"><i>组件、配件介绍</i>
+                                            </dd>
+            
+                                        </dl>
+                                        <dl >
+                                            <dd >
+                                                <input type="checkbox"><i>组件附件连接演示</i>
+                                            </dd>
+            
+                                        </dl>
+                                        <dl >
+                                            <dd >
+                                                <input type="checkbox"><i>功能介绍</i>
+                                            </dd>
+            
+                                        </dl>
+                                        <dl >
+                                            <dd >
+                                                <input type="checkbox"><i>操作指导讲解</i>
+                                            </dd>
+            
+                                        </dl>
+                                        <dl >
+                                            <dd >
+                                                <input type="checkbox"><i>清洁和消毒</i>
+                                            </dd>
+            
+                                        </dl>
+                                        <dl >
+                                            <dd >
+                                                <input type="checkbox"><i>维护保养及常见故障处理</i>
+                                            </dd>
+            
+                                        </dl>
+                                        <dl >
+                                            <dd >
+                                                <input type="checkbox"><i>产品使用注意事项</i>
+                                            </dd>
+            
+                                        </dl>
 
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>功能介绍</i>
-                                </dd>
-
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>操作指导讲解</i>
-                                </dd>
-
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>清洁和消毒</i>
-                                </dd>
-
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>维护保养及常见故障处理</i>
-                                </dd>
-
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>产品使用注意事项</i>
-                                </dd>
-
-                            </dl>
-                            <i class="desc"></i>
+                            </i>
                         </div>
 
                         <div class="line">
@@ -344,104 +232,109 @@
                             <i class="desc"></i>
                         </div>
 
-                        <div class="line">
-                            <i class="label">三、产品保修和免责声明</i>
-                        </div>
+                        
 
 
-                        <div class="line">
-                            <i class="label">保修日期:</i> <input type="text" name="startCreateTime" readonly=""
-                                class="w100 inp_timer" value="">
-                            - <input type="text" name="endCreateTime" readonly="" class="w100 inp_timer" value="">
-                        </div>
+                        
+                    </div>
 
-
-                        <div class="line">
-                            <i class="label">声明:</i><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">1、产品主机保修参照保修期限；</i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">2、产品零配件保修3个月；</i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">3、产品消耗品不保修。</i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">注：1、具体产品保修相关内容以订货合同为准。</i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、产品外包装自安装之日起，保留2周。</i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">注 意：因客户未能严格按照产品使用说明书要求使用，而造成的产品损坏,将不列入保修范围,，包括但不局限于以下情形：</i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">1、非授权人员擅自拆机检查，造成的产品损坏；</i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">2、非正常使用或产品防护不当，造成的产品损坏；</i>
-                        </div>
-
-
-                        <div class="line">
-                            <i class="label">四、联系我们</i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线。</i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">800-810-8333&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;400-610-8333</i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">http://www.aeonmed.com</i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">五、产品验收确认</i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">服务人员签名:</i><input type="text" name="productType.sort" class="w100"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">服务人员签字日期:</i><input type="text" name="startCreateTime" readonly=""
-                                class="w100 inp_timer" value="">
-                        </div>
-                        <div class="line">
-                            <i class="label">客户签名:</i><input type="text" name="productType.sort" class="w100" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">客户签名日期:</i><input type="text" name="startCreateTime" readonly=""
-                                class="w100 inp_timer" value="">
-
-                        </div>
-
-
-                        <div class="line">
+                    <div class="data">
+                            <div class="line">
+                                    <i class="label">三、产品保修和免责声明</i>
+                                </div>
+        
+        
+                                <div class="line">
+                                    <i class="label">保修日期:</i> <input type="text" name="startCreateTime" readonly=""
+                                        class="w100 inp_timer" value="">
+                                    - <input type="text" name="endCreateTime" readonly="" class="w100 inp_timer" value="">
+                                </div>
+        
+        
+                                <div class="line">
+                                    <i class="label">声明:</i><i class="desc"></i>
+                                </div>
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">1、产品主机保修参照保修期限；</i>
+                                </div>
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">2、产品零配件保修3个月；</i>
+                                </div>
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">3、产品消耗品不保修。</i>
+                                </div>
+        
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">注：1、具体产品保修相关内容以订货合同为准。</i>
+                                </div>
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、产品外包装自安装之日起，保留2周。</i>
+                                </div>
+        
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">注 意：因客户未能严格按照产品使用说明书要求使用，而造成的产品损坏,将不列入保修范围,，包括但不局限于以下情形：</i>
+                                </div>
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">1、非授权人员擅自拆机检查，造成的产品损坏；</i>
+                                </div>
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">2、非正常使用或产品防护不当，造成的产品损坏；</i>
+                                </div>
+        
+        
+                                <div class="line">
+                                    <i class="label">四、联系我们</i>
+                                </div>
+        
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc w200">非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线。</i>
+                                </div>
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">800-810-8333&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;400-610-8333</i>
+                                </div>
+                                <div class="line">
+                                    <i class="label"></i>
+                                    <i class="desc">http://www.aeonmed.com</i>
+                                </div>
+        
+                                <div class="line">
+                                    <i class="label">五、产品验收确认</i>
+                                </div>
+        
+                                <div class="line">
+                                    <i class="label">服务人员签名:</i><input type="text" name="productType.sort" class="w100"
+                                        value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                                </div>
+                                <div class="line">
+                                    <i class="label">服务人员签字日期:</i><input type="text" name="startCreateTime" readonly=""
+                                        class="w100 inp_timer" value="">
+                                </div>
+                                <div class="line">
+                                    <i class="label">客户签名:</i><input type="text" name="productType.sort" class="w100" value=""
+                                        onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                                </div>
+                                <div class="line">
+                                    <i class="label">客户签名日期:</i><input type="text" name="startCreateTime" readonly=""
+                                        class="w100 inp_timer" value="">
+        
+                                </div>
+                    </div>
+                    <div class="line">
                             <a href="./repair.html" class="button button-sub ml140 ">修改</a>
                             <a href="./repair.html" class="button button-sub ml140 ">返回</a>
                             <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
                             <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
                         </div>
-                    </div>
                 </div>
             </form>
 
