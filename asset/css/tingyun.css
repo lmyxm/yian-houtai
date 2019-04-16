@@ -460,6 +460,13 @@ form.manage .line {
     overflow: hidden;
     padding: 6px 0
 }
+form.manage .boxlist{
+    width:100%;height:300px;overflow: hidden;
+}
+form.manage .boxlist ul{
+    width:100%;height:320px;overflow: scroll
+}
+
 
 form.manage textarea {
     vertical-align: top;
@@ -733,6 +740,9 @@ table.list td.manage a {
     background: url(../img/bg.png) no-repeat
 }
 
+
+
+
 table.list td.manage a.toggle {
     padding: 0;
     border: 0 none;
@@ -755,6 +765,7 @@ table.list td.manage a.edit {
     height: 20px;
     background-position: -12px -568px;
     margin-right: 5px;
+    
 }
 
 table.list td.manage a.del {
@@ -763,8 +774,11 @@ table.list td.manage a.del {
     width: 20px;
     height: 20px;
     background-position: -51px -568px;
-    margin-right: 5px
+    margin-right: 5px;
 }
+
+
+
 
 table.list td.manage a.preView {
     padding: 0;
@@ -776,8 +790,33 @@ table.list td.manage a.preView {
 }
 
 table.list td.manage a.grey{
-    background:#e1e1e1 ;
+    background:#ccc ;
     pointer-events: none;
+    border: none;
+    color: #666
+}
+table.list td  u{
+    color: #fff;
+    display: block;
+    height: 15px;
+    line-height: 15px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    padding: 2px 3px;
+    border-radius: 2px;
+    margin-top: 5px;
+    background: red;
+    overflow: hidden;
+}
+table.list td u.ac01{
+    background: #05e110
+}
+table.list td u.ac02{
+    background: #e79e02
+}
+table.list td u.ac03{
+    background: #e73802
 }
 
 
