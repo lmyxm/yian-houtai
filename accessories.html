@@ -35,11 +35,12 @@
                 <div class="title" onClick="toggleFilter(this)">
                     <div class="label searchLabel cbg">结果筛选</div>
                     <div class="toggleFilter"></div>
+                    
                 </div>
                 <form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
                     <div class="items">
                         <div>
-                            <i>会员名称：</i> <input type="text" name="user.userName" class="w100" value="" />
+                            <i>名称：</i> <input type="text" name="user.userName" class="w100" value="" />
                         </div>
                         <div>
                             <i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
@@ -58,7 +59,10 @@
             <div class="section">
                 <div class="title">
                     <div class="label cbg">配件购买</div>
-
+                    
+                        <div class="links" >
+                            <a href="./accessorieslist.html" class="button addButton"><i>添加配件</i></a>
+                        </div>
                 </div>
                 <table class="list" border=0 cellpadding=0>
                     <tr class="firstTr">

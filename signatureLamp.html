@@ -15,7 +15,7 @@
     <script type="text/javascript" src="./asset/js/timer.js"></script>
     <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
     <script type="text/javascript" src="./asset/js/window.js"></script>
-
+    
 </head>
 </head>
 
@@ -23,12 +23,12 @@
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
-		<script src="./asset/js/directory.js"></script>
-		<!-- 左边按钮 -->
+        <script src="./asset/js/directory.js"></script>
+        <!-- 左边按钮 -->
         <div class="TY-rightBox">
             <div class="phead">
                 <div class="curnav">
-                    <label>上门回访报告单</label>
+                    <label>上门回访维护记录单</label>
                 </div>
             </div>
 
@@ -39,294 +39,299 @@
                         <div class="label cbg">无影灯</div>
                         <div class="toggleFilter"></div>
                     </div>
-                    <div class="data">
+                    <div class="data biaoge">
                         <div class="line">
-                            <i class="label">一、产品使用维护基本信息</i>
+                            <h3>一、产品使用维护基本信息</h3>
                         </div>
                         <div class="line">
-                            <i class="label">医院名称 :</i><input class="w200" type="text" name="productType.name"
-                                value=""><i class="desc" id="i1"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">使用科室:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">产品型号:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">机器编号:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">安装时间:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <ul>
+                                <li>
+                                    <b>服务单号</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="line">
-                            <i class="label">使用频率 -小时/周:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">维护频率 -次/周:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
+                            <ul>
+                                <li>
+                                    <b>医院名称：</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>使用科室：</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>产品型号：</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>机器编号：</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>安装时间：</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>使用频率：小时/周</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>维护频率：次/周</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>维护科室：</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
 
-                        <div class="line">
-                            <i class="label">维护科室:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">二、产品参数检测（运行检查）</i>
-                        </div>
-                        <div class="line">
-                            <i class="label">基础设定:</i><input class="w200" type="text" name="productType.name"
-                                value=""><i class="desc" id="i1"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">基础项目:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">旋转体绕底座转到360°:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">平衡体上下折:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">灯头绕灯头弯管转动180°:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">检查固定螺钉:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">平衡体绕旋转体转动360°:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">平衡体限位功能:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">平衡体弯管绕平衡体转动360°:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">灯头控制面板功能:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">灯头弯管绕平衡体弯管转动180°:</i><input type="text" name="productType.sort"
-                                class="w200" value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i
-                                class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">检查、调整漂移现象:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">情况说明:</i><textarea type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea><i
-                                class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">检测结论:</i><textarea type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea><i
-                                class="desc"></i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">三、进行项目单</i>
-                        </div>
-
-
-                        <div class="line">
-                            <i class="label">产品维护保养逐项进行项目单</i>
-                            <i class="desc">
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>APL阀功能检查</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>排水阀清洁及检查</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>压紧装置功能检查</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>支脚和脚轮紧固检查</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>回路压力表功能检查</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>流量计浮标及联动检查</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>转换开关模块功能检查</i>
-                                    </dd>
-                                </dl>
-                            </i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>整机回路风箱表面清洁</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>蒸发器度盘灵活度检查</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>折叠囊密封圈老化检查</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>平行管及探头老化检查</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>波纹管活瓣罩老化检查</i>
-                                    </dd>
-
-                                </dl>
-
-                            </i>
-                        </div>
-                        <div class="line">
-                            <i class="label">维护保养结果确认</i>
-                            <i class="desc">
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>状态良好</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>部分部件老化，建议更换</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>停止使用，更换老化部件</i>
-                                    </dd>
-
-                                </dl>
-
-                            </i>
-                        </div>
-
-
-                        <div class="line">
-                            <i class="label">四、工程师建议</i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">产品维护情况:</i><textarea type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea><i
-                                class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">建议更换部件:</i><textarea type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea><i
-                                class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">其他:</i><textarea type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">服务人员签字:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">服务人员签字日期:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">五、客户确认及建议</i>
-                        </div>
-                        <div class="line">
-                            <i class="label">工程师的服务水平是否满意:</i><i class="desc">
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>满意</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>一般</i>
-                                    </dd>
-
-                                </dl>
-                                <dl style="display: inline-block;vertical-align: middle">
-                                    <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                        <input type="checkbox"><i>不满意</i>
-                                    </dd>
-
-                                </dl>
-                            </i>
-                        </div>
-                        <div class="line">
-                            <i class="label">产品质量综合评价是否满意:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">客户建议:</i><textarea type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea>
-                        </div>
-                        <div class="line">
-                            <i class="label">客户签名:</i><input type="text" name="startCreateTime" readonly=""
-                                class="w200 inp_timer" value="">
+                            </ul>
 
                         </div>
                         <div class="line">
-                            <i class="label">联系电话:</i><input type="text" name="startCreateTime" readonly=""
-                                class="w200 inp_timer" value="">
+                            <h3>二、产品参数检测（运行检查）</h3>
+                        </div>
+                        <div class="line">
+                            <ul class="tiankuang">
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:80px">基础设定：</b>
+                                    <input type="text" name="" id="">
+                                </li>
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:80px">基础项目：</b>
+                                    <input type="text" name="" id="">
+                                </li>
+                                <li>
+                                    <u class="label" style="width:80px"></u>
+                                    <div class="box_hezi">
+                                        <dl>
+                                            <dd>
+                                                <i style="margin-right:10px">旋转体绕底座转到360°&nbsp;&nbsp;&nbsp;</i><input
+                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
+                                                    type="checkbox" name="x"><i>故障</i>
+
+                                                <i style="margin-right:10px;margin-left: 30px">平衡体上下折</i><input
+                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
+                                                    type="checkbox" name="x"><i>故障</i>
+                                            </dd>
+                                            <dd>
+                                                <i style="margin-right:10px">灯头绕灯头弯管转动180°</i><input type="checkbox"
+                                                    name="x"><i style="margin-right:10px">正常</i><input type="checkbox"
+                                                    name="x"><i>故障</i>
+                                                <i style="margin-right:10px;margin-left: 30px">检查固定螺钉</i><input
+                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
+                                                    type="checkbox" name="x"><i>故障</i>
+
+                                            </dd>
+                                            <dd>
+                                                <i style="margin-right:10px">平衡体绕旋转体转动360°</i><input type="checkbox"
+                                                    name="x"><i style="margin-right:10px">正常</i><input type="checkbox"
+                                                    name="x"><i>故障</i>
+                                                <i style="margin-right:10px;margin-left: 30px">平衡体限位功能</i><input
+                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
+                                                    type="checkbox" name="x"><i>故障</i>
+
+                                            </dd>
+                                            <dd>
+                                                <i style="margin-right:10px">平衡体弯管绕平衡体转动360°</i><input type="checkbox"
+                                                    name="x"><i style="margin-right:20px">正常</i><input type="checkbox"
+                                                    name="x"><i>故障</i>
+                                                <i style="margin-right:10px;margin-left: 30px">灯头控制面板功能</i><input
+                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
+                                                    type="checkbox" name="x"><i>故障</i>
+
+                                            </dd>
+                                            <dd>
+                                                <i style="margin-right:10px">灯头弯管绕平衡体弯管转动180°</i><input type="checkbox"
+                                                    name="x"><i style="margin-right:10px">正常</i><input type="checkbox"
+                                                    name="x"><i>故障</i>
+                                                <i style="margin-right:10px;margin-left: 30px">检查、调整漂移现象</i><input
+                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
+                                                    type="checkbox" name="x"><i>故障</i>
+
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:80px">情况说明：</b>
+                                    <textarea type="text" name="" id=""></textarea>
+                                </li>
+                                <li>
+                                    <u class="label" style="font-weight:400">检测结论</u>
+                                    <div class="box_hezi">
+                                        <dl>
+                                            <dd>
+                                                <input type="checkbox" name="x"><i
+                                                    style="margin-right:20px">各项参数正常，运行良好</i><input type="checkbox"
+                                                    name="x"><i>停止使用，建议维修</i>
+                                            </dd>
+
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ul>
 
                         </div>
+
+                        <div class="line">
+                            <h3>三、产品维护保养逐项进行项目单</h3>
+                        </div>
+                        <div class="line">
+                            <ul class="tiankuang">
+                                <li>
+                                    <dl style="margin-left:150px">
+                                        <dd>
+                                            <input type="checkbox"><i>整机清洁擦拭</i>
+                                        </dd>
+                                    </dl>
+
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>消毒手柄消毒</i>
+                                        </dd>
+                                    </dl>
+
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>消毒手柄检查 </i>
+                                        </dd>
+                                    </dl>
+
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>阻尼螺钉  </i>
+                                        </dd>
+                                    </dl>
+
+                                </li>
+                               
+                                <li>
+                                    <u class="label" style="font-weight:400;width:147px">维护保养结果确认</u>
+                                    <div class="box_hezi">
+                                        <dl>
+                                            <dd>
+                                                <input type="checkbox" name="x">
+                                                <i style="margin-right:20px">状态良好</i>
+                                                <input type="checkbox" name="x">
+                                                <i>部分部件老化，建议更换</i>
+                                                <input type="checkbox" name="x">
+                                                <i style="margin-right:20px">停止使用，更换老化部件</i>
+                                            </dd>
+
+                                        </dl>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                        <div class="line">
+                            <h3>四、工程师建议：</h3>
+                        </div>
+                        <div class="line">
+                            <ul class="tiankuang">
+                                <li>
+                                    <div class="line">
+                                        <i class="label">产品维护情况:</i><textarea type="text" name="productType.sort"
+                                            class="w250" value=""></textarea><i class="desc"></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="line">
+                                        <i class="label">建议更换部件:</i><textarea type="text" name="productType.sort"
+                                            class="w250" value=""></textarea><i class="desc"></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="line">
+                                        <i class="label">其他:</i><textarea type="text" name="productType.sort"
+                                            class="w250" value=""></textarea><i class="desc"></i>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <b class="label"
+                                        style="width:150px;height: 100px;text-align:right;margin-right: 30px">服务人员签名</b>
+                                    <img src="./asset/img/bg.png" alt=""
+                                        style="width:120px;height:150px;display:inline-block;vertical-align: top;margin: 20px 100px 20px 0">
+
+                                </li>
+                                <li>
+                                    <div class="rili"></div>
+                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
+                                    <input type="text" name="" id="" class="w200">
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="line">
+                            <h3>五、客户确认及建议</h3>
+                        </div>
+                        <div class="line">
+
+                            <ul class="tiankuang">
+                                <li>
+                                    <div class="box_hezi">
+                                        <dl>
+                                            <dd>
+                                                <i
+                                                    style="margin-right:10px;margin-left: 100px">工程师对规定项目栏内项目是否逐一检查确认</i><input
+                                                    type="checkbox" name="x"><i style="margin-right:20px">是</i><input
+                                                    type="checkbox" name="x"><i>否</i>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box_hezi">
+                                        <dl>
+                                            <dd>
+                                                <i style="margin-right:10px;margin-left: 100px">工程师的服务水平是否满意</i><input
+                                                    type="checkbox" name="x"><i style="margin-right:20px">是</i><input
+                                                    type="checkbox" name="x"><i>否</i>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box_hezi">
+                                        <dl>
+                                            <dd>
+                                                <i style="margin-right:10px;margin-left: 100px">产品质量综合评价是否满意</i><input
+                                                    type="checkbox" name="x"><i style="margin-right:20px">是</i><input
+                                                    type="checkbox" name="x"><i>否</i>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <b class="label"
+                                        style="width:150px;height: 100px;text-align:right;margin-right: 30px;margin-left: 50px">客户签字</b>
+                                    <img src="./asset/img/bg.png" alt=""
+                                        style="width:120px;height:150px;display:inline-block;vertical-align: top;margin: 0 50px 20px 0">
+
+                                </li>
+                                <li>
+                                    <div class="rili"></div>
+                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
+                                    <input type="text" name="" id="" class="w200">
+                                </li>
+                            </ul>
+
+                        </div>
+
 
 
                         <div class="line">
@@ -336,7 +341,6 @@
                             <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
                         </div>
                     </div>
-                </div>
             </form>
 
         </div>

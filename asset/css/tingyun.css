@@ -35,7 +35,7 @@ input {
     margin: 0;
     padding: 0;
     font-size: 12px;
-    font-family: Arial, 'Microsoft YaHei', 
+    font-family: Arial, 'Microsoft YaHei',
 }
 
 body {
@@ -460,11 +460,26 @@ form.manage .line {
     overflow: hidden;
     padding: 6px 0
 }
-form.manage .boxlist{
-    width:100%;height:300px;overflow: hidden;
+
+form.manage .boxlist {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
 }
-form.manage .boxlist ul{
-    width:100%;height:320px;overflow: scroll
+
+form.manage .boxlist ul {
+    width: 100%;
+    height: 320px;
+    overflow: scroll
+}
+
+form.manage .boxlist ul li {
+    line-height: 30px;
+    height: 30px;
+}
+
+form.manage .boxlist ul .ac {
+    color: #27affd
 }
 
 
@@ -765,7 +780,7 @@ table.list td.manage a.edit {
     height: 20px;
     background-position: -12px -568px;
     margin-right: 5px;
-    
+
 }
 
 table.list td.manage a.del {
@@ -789,13 +804,14 @@ table.list td.manage a.preView {
     margin-right: 5px
 }
 
-table.list td.manage a.grey{
-    background:#ccc ;
+table.list td.manage a.grey {
+    background: #ccc;
     pointer-events: none;
     border: none;
     color: #666
 }
-table.list td  u{
+
+table.list td u {
     color: #fff;
     display: block;
     height: 15px;
@@ -809,13 +825,16 @@ table.list td  u{
     background: red;
     overflow: hidden;
 }
-table.list td u.ac01{
+
+table.list td u.ac01 {
     background: #05e110
 }
-table.list td u.ac02{
+
+table.list td u.ac02 {
     background: #e79e02
 }
-table.list td u.ac03{
+
+table.list td u.ac03 {
     background: #e73802
 }
 
@@ -1224,7 +1243,7 @@ form.filter input[type=submit].button {
     margin-bottom: 0px
 }
 
-.section  .data {
+.section .data {
     display: inline-block;
     vertical-align: top;
     margin-bottom: 20px
@@ -1361,13 +1380,23 @@ input[type=text].w80 {
 input[type=text].w100 {
     width: 101px
 }
-input[type=text].w150{
+
+input[type=text].w150 {
     width: 150px;
+}
+
+input[type=text].w130 {
+    width: 130px;
 }
 
 input[type=text].w200 {
     width: 250px
 }
+
+input[type=text].w257 {
+    width: 257px
+}
+
 textarea[type=text].w200 {
     width: 250px
 }
@@ -1616,15 +1645,109 @@ div.desc i.desc {
     top: 0;
     opacity: 0;
 }
-.section .data .line dl{
+
+.section .data .line dl {
     display: inline-block;
     vertical-align: top
 }
-.section .data .line dl dd{
+
+.section .data .line dl dd {
     display: inline-block;
     vertical-align: top;
-    
+
 }
-.section .data .line .w200px{
+
+.section .data .line .w200px {
     width: 260px;
+}
+
+.section .biaoge {
+    width: 800px;
+    margin-left: 50px;
+}
+
+.section .biaoge h3 {
+    text-align: left;
+    font-size: 16px;
+    margin-left: 50px
+}
+
+.section .biaoge b {
+    width: 70px;
+    font-size: 14px;
+    font-weight: normal
+}
+
+.section .biaoge span {
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.section .biaoge ul {
+    border-bottom: 1px dashed #e3e3e3;
+    padding-bottom: 25px
+
+}
+
+.section .biaoge ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px 0 0 33px;
+}
+
+.section .biaoge ul li dl {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+
+}
+
+.section .biaoge .box_hezi{
+    display: inline-block;
+    vertical-align: top;
+    width: 530px;
+}
+.section .biaoge ul li dd {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    width: 100%;
+    margin-left: 15px
+}
+
+.section .biaoge .tiankuang  li {
+    margin: 0 ;
+    position: relative;
+}
+
+
+.section .biaoge u {
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    font-weight: 600;
+    text-align: right;
+    font-size: 14px;
+    color: #666666
+}
+.section .biaoge .tiankuang  .rili{
+    width: 14px;
+    height: 14px;
+    background: url('../img/rili.png')no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 10px;
+    left: 425px;
+}
+.section .biaoge .tiankuang  .rili02{
+    width: 14px;
+    height: 14px;
+    background: url('../img/rili.png')no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 10px;
+    left:705px;
 }

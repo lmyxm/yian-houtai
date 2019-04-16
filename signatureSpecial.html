@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>培训报告单</title>
+    <title>安装报告单</title>
     <link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
     <link type="text/css" rel="stylesheet" href="./asset/css/index.css">
     <link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
@@ -14,8 +14,8 @@
     <script type="text/javascript" src="./asset/js/tingyun.js"></script>
     <script type="text/javascript" src="./asset/js/timer.js"></script>
     <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
-    <script type="text/javascript" src="./asset/js/pager.js"></script>
     <script type="text/javascript" src="./asset/js/window.js"></script>
+
 </head>
 </head>
 
@@ -23,8 +23,8 @@
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
-		<script src="./asset/js/directory.js"></script>
-		<!-- 左边按钮 -->
+        <script src="./asset/js/directory.js"></script>
+        <!-- 左边按钮 -->
         <div class="TY-rightBox">
             <div class="phead">
                 <div class="curnav">
@@ -39,107 +39,159 @@
                         <div class="label cbg">专项服务报告单</div>
                         <div class="toggleFilter"></div>
                     </div>
-                    <div class="data">
+                    <div class="data biaoge">
                         <div class="line">
-                            <i class="label">一、服务事项</i>
+                            <h3>一、客户信息</h3>
                         </div>
                         <div class="line">
-                            <i class="label">服务需求单位/人:</i><input class="w200" type="text" name="productType.name"
-                                value=""><i class="desc" id="i1"></i>
+                            <ul>
+                                <li>
+                                    <b>派工单号</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>产品线</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                            </ul>
                         </div>
                         <div class="line">
-                            <i class="label">申请人类型:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <ul>
+                                <li>
+                                    <b style="width:120px;">服务需求单位/人：</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b class="label">申请人类型</b>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>客户</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>非客户</i>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <b>服务人员</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>服务地点</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>服务时间</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b style="width:90px">服务内容描述</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+
+
+
+                            </ul>
+
                         </div>
                         <div class="line">
-                            <i class="label">服务人员:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <h3>二、服务标准，客户评价</h3>
                         </div>
                         <div class="line">
-                            <i class="label">服务地点:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">服务时间:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">服务内容描述:</i><textarea type="text" name="productType.sort" class="w200"></textarea>
-                            <i class="desc"></i>
+                            <ul class="tiankuang">
+                                <li>
+                                    <u class="label">服务分类</u>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>呼吸线</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>麻醉线</i>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>医疗系统</i>
+                                        </dd>
+                                    </dl>
+
+                                </li>
+                                <li>
+                                    <div class="box_hezi">
+                                        <dl style="margin-left:223px">
+                                            <dd>
+                                                <input type="checkbox"><i>展会</i>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dd>
+                                                <input type="checkbox"><i>验收</i>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dd>
+                                                <input type="checkbox"><i>其它</i>
+                                            </dd>
+                                        </dl>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <b style="width:150px">若为其它，请填写</b>
+                                    <textarea type="text" name="" id="" class="w257"></textarea>
+                                </li>
+                                <li>
+                                    <b class="label"
+                                        style="width:150px;height: 100px;text-align:right;margin-right: 30px">服务人员签名</b>
+                                    <img src="./asset/img/bg.png" alt=""
+                                        style="width:120px;height:150px;display:inline-block;vertical-align: top;margin: 0 100px 20px 0">
+                                    <b class="label"
+                                        style="width:150px;height: 100px;text-align:right;margin-right: 30px">服务人员签名</b>
+                                    <img src="./asset/img/bg.png" alt=""
+                                        style="width:120px;height:150px;display:inline-block;vertical-align: top">
+                                </li>
+                                <li>
+                                    <b class="label">联系电话</b>
+                                    <i class="desc">18381-43124</i>
+                                </li>
+                                <li>
+                                    <div class="rili"></div>
+                                    <div class="rili02"></div>
+                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
+                                    <input type="text" name="" id=""
+                                        class="w200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+                                        name="" id="" class="w200">
+                                </li>
+
+                            </ul>
+
                         </div>
 
+
                         <div class="line">
-                            <i class="label">服务分类 :</i>
-
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>呼吸线</i>
-                                </dd>
-
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>麻醉线</i>
-                                </dd>
-
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>医疗系统</i>
-                                </dd>
-
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>展会</i>
-                                </dd>
-
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>验收</i>
-                                </dd>
-
-                            </dl>
-                            <dl style="display: inline-block;vertical-align: middle">
-                                <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                    <input type="checkbox"><i>其他</i>
-                                </dd>
-
-                            </dl>
-
-                            <i class="desc"></i>
+                            <h3>四、联系我们</h3>
                         </div>
                         <div class="line">
-                            <i class="label">服务申请人:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
+                            <ul class="tiankuang">
+                                <li>
+                                    <div class="line">
+                                        <i class="label"></i><i class="desc"
+                                            style="width:550px;line-height: 30px">非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线:
+                                        </i>
+                                        <i class="label"></i><i class="desc"
+                                            style="width:500px;line-height: 30px">1、800-810-8333.或+86 10- 58411198；</i>
+                                        <i class="label"></i><i class="desc"
+                                            style="width:500px;line-height: 30px">2、登陆我们的网站:http://www.aeonmed.com。 </i>
+                                    </div>
+                                </li>
+                            </ul>
 
-                        <div class="line">
-                            <i class="label">联系电话:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">日期:</i><input type="text" name="startCreateTime" readonly="" class="w100 inp_timer" value="">
-                            <i class="desc"></i>
-                        </div>
-                       
-
-                        <div class="line">
-                            <i class="label">二、联系我们</i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线。</i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">800-810-8333&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;400-610-8333</i>
-                        </div>
-                        <div class="line">
-                            <i class="label"></i>
-                            <i class="desc">http://www.aeonmed.com</i>
                         </div>
 
                         <div class="line">
@@ -149,7 +201,6 @@
                             <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
                         </div>
                     </div>
-                </div>
             </form>
 
         </div>

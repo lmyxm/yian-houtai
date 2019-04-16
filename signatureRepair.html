@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>维修报告单</title>
+    <title>安装报告单</title>
     <link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
     <link type="text/css" rel="stylesheet" href="./asset/css/index.css">
     <link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
@@ -14,8 +14,8 @@
     <script type="text/javascript" src="./asset/js/tingyun.js"></script>
     <script type="text/javascript" src="./asset/js/timer.js"></script>
     <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
-    <script type="text/javascript" src="./asset/js/pager.js"></script>
     <script type="text/javascript" src="./asset/js/window.js"></script>
+    
 </head>
 </head>
 
@@ -23,8 +23,8 @@
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
-		<script src="./asset/js/directory.js"></script>
-		<!-- 左边按钮 -->
+        <script src="./asset/js/directory.js"></script>
+        <!-- 左边按钮 -->
         <div class="TY-rightBox">
             <div class="phead">
                 <div class="curnav">
@@ -32,177 +32,323 @@
                 </div>
             </div>
 
-            <form action="" method="post" class="manage mt20" enctype="multipart/form-data">
+            <form action="/manage/product_updateProductType.action" method="post" class="manage mt20"
+                enctype="multipart/form-data">
                 <div class="section sectionEdit">
                     <div class="title" onclick="toggleFilter(this)">
                         <div class="label cbg">维修报告单</div>
                         <div class="toggleFilter"></div>
                     </div>
-                    <div class="data" >
+                    <div class="data biaoge">
                         <div class="line">
-                            <i class="label">一、客户、产品基本信息</i>
+                            <h3>一、客户、产品基本信息</h3>
                         </div>
                         <div class="line">
-                            <i class="label">医院名称 :</i><input class="w200" type="text" name="productType.name"
-                                value=""><i class="desc" id="i1"></i>
+                            <ul>
+                                <li>
+                                    <b>医院名称</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>级&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li>
+                                    <b>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+
+                                <li>
+                                    <b>使用科室</b>
+                                    <input type="text" name="" id="" class="w130">
+                                </li>
+                                <li>
+                                    <b>联系人</b>
+                                    <input type="text" name="" id="" class="w130">
+                                </li>
+                                <li>
+                                    <b>联系电话</b>
+                                    <input type="text" name="" id="" class="w130">
+                                </li>
+                                <li>
+                                    <b>产品型号</b>
+                                    <input type="text" name="" id="" class="w130">
+                                </li>
+                                <li>
+                                    <b>产品编号</b>
+                                    <input type="text" name="" id="" class="w130">
+                                </li>
+                                <li>
+                                    <b>维修类别</b>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>保内</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>保外</i>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+
                         </div>
                         <div class="line">
-                            <i class="label">级别:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <h3>二、服务前产品信息</h3>
                         </div>
                         <div class="line">
-                            <i class="label">使用科室:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">产品型号:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">产品编号:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">维修类别:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <ul class="tiankuang">
+                                <li style="margin-bottom: 20px">
+                                    <div class="rili"></div>
+                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">约定时间</b>
+                                    <input type="text" name="" id="" class="w200">
+                                </li>
+                                <li>
+                                    <div class="rili"></div>
+                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">到位时间</b>
+                                    <input type="text" name="" id="" class="w200">
+                                </li>
+                                <li style="margin-top: 20px">
+                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">产品状态</b>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>正常使用</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>局部使用</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>完全停机</i>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+
                         </div>
 
                         <div class="line">
-                            <i class="label">联系人 :</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <h3>三、故障信息</h3>
                         </div>
                         <div class="line">
-                            <i class="label">联系电话:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <ul class="tiankuang">
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:80px">故障部件：</b>
+                                    <textarea type="text" name="" id=""></textarea>
+                                </li>
+
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:80px">故障现象：</b>
+                                    <textarea type="text" name="" id=""></textarea>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="line">
+                            <h3>四、服务信息</h3>
+                        </div>
+                        <div class="line">
+                            <ul class="tiankuang">
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:80px">维修内容：</b>
+                                    <textarea type="text" name="" id=""></textarea>
+                                </li>
+
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:10px;width: 140px">更换配件名称及数量：</b>
+                                    <textarea type="text" name="" id=""></textarea>
+                                </li>
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:10px;width: 140px">备注（如受控件编号）</b>
+                                    <textarea type="text" name="" id=""></textarea>
+                                </li>
+                                <li>
+                                    <b class="label" style="width:150px;text-align:right;">产品状态</b>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>正常使用</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>局部使用</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>停止使用，需再次维修</i>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <b class="label" style="width:150px;text-align:right;">故障原因分析</b>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>密封件老化</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>部件连接松动</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>电压变化造成电器件损坏口电器部件故障 </i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd style="margin-left:169px">
+                                            <input type="checkbox"><i>机械部件故障</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>维护不当造成产品故障</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>未按要求使用造成损坏</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd style="margin-left:169px">
+                                            <input type="checkbox"><i>非正常损坏</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>消毒保养不当，造成部件损坏</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>非授权拆机造成损坏</i>
+                                        </dd>
+                                    </dl>
+
+                                </li>
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:50px;width: 100px;text-align: right">其他</b>
+                                    <textarea type="text" name="" id=""></textarea>
+                                </li>
+                            </ul>
+
                         </div>
 
                         <div class="line">
-                            <i class="label">邮编:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <h3>五、客户评价</h3>
                         </div>
                         <div class="line">
-                            <i class="label">地址:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <ul class="tiankuang">
+
+                                <li style="margin-top: 20px">
+                                    <b class="label"
+                                        style="width:150px;text-align:right;margin-right: 10px">产品故障是否消除</b>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>正常使用</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>故障未解决，希望继续维修</i>
+                                        </dd>
+                                    </dl>
+
+                                </li>
+                                <li style="margin-top: 20px">
+                                    <b class="label" style="width:150px;text-align:right;margin-right: 10px">综合服务评价 </b>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>非常满意</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>满意</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>一般</i>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dd>
+                                            <input type="checkbox"><i>不满意</i>
+                                        </dd>
+                                    </dl>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="line">
+                            <h3>六、服务信息</h3>
                         </div>
                         <div class="line">
-                            <i class="label">二、服务前产品信息</i>
+                            <ul class="tiankuang">
+                                <li>
+                                    <div class="line">
+                                        <i class="label"></i><i class="desc"
+                                            style="width:550px;line-height: 30px">非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线:
+                                        </i>
+                                        <i class="label"></i><i class="desc"
+                                            style="width:500px;line-height: 30px">1、800-810-8333.或+86 10- 58411198；</i>
+                                        <i class="label"></i><i class="desc"
+                                            style="width:500px;line-height: 30px">2、登陆我们的网站:http://www.aeonmed.com。 </i>
+                                    </div>
+                                </li>
+                            </ul>
+
                         </div>
                         <div class="line">
-                            <i class="label">约定时间:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <h3>七、客户确认</h3>
                         </div>
                         <div class="line">
-                            <i class="label">到位时间:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <ul class="tiankuang">
+                                <li>
+                                    <b class="label"
+                                        style="width:150px;height: 100px;text-align:right;margin-right: 30px">服务人员签名</b>
+                                    <img src="./asset/img/bg.png" alt=""
+                                        style="width:120px;height:150px;display:inline-block;vertical-align: top;margin: 0 100px 20px 0">
+                                    <b class="label"
+                                        style="width:150px;height: 100px;text-align:right;margin-right: 30px">服务人员签名</b>
+                                    <img src="./asset/img/bg.png" alt=""
+                                        style="width:120px;height:150px;display:inline-block;vertical-align: top">
+                                </li>
+                                <li>
+                                    <div class="rili"></div>
+                                    <div class="rili02"></div>
+                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
+                                    <input type="text" name="" id=""
+                                        class="w200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+                                        name="" id="" class="w200">
+                                </li>
+                            </ul>
+
                         </div>
+
+
+
                         <div class="line">
-                            <i class="label">产品状态:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                            <a href="./repair.html" class="button button-sub ml140 ">修改</a>
+                            <a href="./repair.html" class="button button-sub ml140 ">返回</a>
+                            <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
+                            <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
                         </div>
-                        <div class="line">
-                            <i class="label">三、故障信息</i>
-                        </div>
-                        <div class="line">
-                            <i class="label">故障部件:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">故障现象:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        
-                        
                     </div>
-                    <div class="data" >
-
-                        <div class="line">
-                            <i class="label">四、服务信息</i>
-                        </div>
-                        <div class="line">
-                            <i class="label">维修内容:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">更换配件的名称及数量:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">备注（如受控件编号）:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">维修结果确认:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">故障原因分析:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">其它:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">五、客户评价</i>
-                        </div>
-                        <div class="line">
-                            <i class="label">产品故障是否消除:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">综合服务评价:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-
-                        <div class="line">
-                                <i class="label">六、联系我们</i>
-                            </div>
-    
-                            <div class="line">
-                                <i class="label"></i>
-                                <i class="desc" style="width: 280px">非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线。</i>
-                            </div>
-                            <div class="line">
-                                <i class="label"></i>
-                                <i class="desc">800-810-8333&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;400-610-8333</i>
-                            </div>
-                            <div class="line">
-                                <i class="label"></i>
-                                <i class="desc">http://www.aeonmed.com</i>
-                            </div>
-
-                        <div class="line">
-                            <i class="label">七、客户确认</i>
-                        </div>
-                        <div class="line">
-                            <i class="label">服务人员签名:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">服务人员签字日期:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">客户签名:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">客户签名日期:</i><input type="text" name="productType.sort" class="w200"
-                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">现场照片:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                    </div>
-
-                    <div class="line">
-                        <a href="./repair.html" class="button button-sub ml140 ">修改</a>
-                        <a href="./repair.html" class="button button-sub ml140 ">返回</a>
-                        <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
-                        <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
-                    </div>
-                </div>
             </form>
 
         </div>
