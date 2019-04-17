@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>谊安微信客服</title>
+    <link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
+    <link type="text/css" rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
+    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
+    <script type="text/javascript" src="./asset/js/timer.js"></script>
+    <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
+    <script type="text/javascript" src="./asset/js/pager.js"></script>
+    <script type="text/javascript" src="./asset/js/window.js"></script>
+</head>
+</head>
+
+<body>
+
+    <div class="TY-mainLay">
+        <!-- 左边按钮 -->
+        <script src="./asset/js/directory.js"></script>
+        <!-- 左边按钮 -->
+        <div class="TY-rightBox">
+
+            <div class="phead">
+                <div class="curnav">
+                    <label>产品维修列表</label>
+                </div>
+            </div>
+
+            <form action="/manage/product_updateProductType.action" method="post" class="manage mt20"
+                enctype="multipart/form-data">
+                <div class="section sectionEdit">
+                    <div class="title" onclick="toggleFilter(this)">
+                        <div class="label cbg">派单</div>
+                        <div class="toggleFilter"></div>
+                    </div>
+                    <div class="data">
+                        <div class="line">
+                            <i class="label"><i class="x">*</i>地区 :</i><i class="radio">
+                                <select name="">
+                                    <option value="s">1</option>
+                                    <option value="d">2</option>
+                                    <option value="f">3</option>
+                                </select>
+
+                            </i><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label"><i class="x">*</i>选择省 :</i><i class="radio">
+                                <select name="">
+                                    <option value="s">1</option>
+                                    <option value="d">2</option>
+                                    <option value="f">3</option>
+                                </select>
+
+                            </i><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label"><i class="x">*</i>城市 :</i><i class="radio">
+                                <select name="">
+                                    <option value="s">1</option>
+                                    <option value="d">2</option>
+                                    <option value="f">3</option>
+                                </select>
+
+                            </i><i class="desc"></i>
+                        </div>
+
+                        <div class="line">
+                            <i class="label"><i class="x">*</i>医院:</i><i class="radio">
+                                <select name="">
+                                    <option value="s">1</option>
+                                    <option value="d">2</option>
+                                    <option value="f">3</option>
+                                </select>
+
+                            </i><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label"><i class="x">*</i>机器编号 :</i><i class="radio">
+                                <select name="">
+                                    <option value="s">1</option>
+                                    <option value="d">2</option>
+                                    <option value="f">3</option>
+                                </select>
+
+                            </i><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">
+                                <i class="x">*</i>选择人员 :</i><select name="">
+                                <option value="s">张三</option>
+                                <option value="d">李四</option>
+                                <option value="f">王五</option>
+                            </select>
+
+                            </i>
+                        </div>
+                        <div class="line">
+                            <i class="label"><i class="x">*</i>优先级 :</i><i class="radio">
+                                <select name="">
+                                    <option value="s">正常</option>
+                                    <option value="d">加急</option>
+                                    <option value="f">紧急</option>
+                                    <option value="f">优先</option>
+                                </select>
+
+                            </i><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <ul class="tiankuang">
+                                <li style="margin-bottom:20px">
+                                    <b style="margin-left:122px;font-weight: 600" >拒单原因 :</b>
+                                    <input type="text" name="" id="" class="w257">
+                                </li>
+                                <li style="margin-bottom:20px">
+                                        <b style="margin-left:122px;font-weight: 600">拒单描述 :</b>
+                                        <textarea type="text" name="" id="" class="w257"></textarea>
+                                    </li>
+                               
+                                
+                            </ul>
+                        </div>
+
+                        <div class="line">
+                            <a href="./repair.html" class="button button-sub ml140 ">再次派单</a>
+                            <a href="./repair.html" class="button button-sub ml140 ">返回</a>
+                            <!-- <a href="./repair.html" class="button button-sub ml140 ">自动派单</a> -->
+                            <!-- <input type="button" class="button button-sub ml140" value="手动派单">
+                                         <input type="button" class="button button-sub ml140" value="自动派单"> -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
+    <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
+    <script type="text/javascript" src="./asset/js/index.js"></script>
+</body>
+
+</html>
