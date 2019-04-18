@@ -8,7 +8,7 @@
 	<link type="text/css" rel="stylesheet" href="./asset/css/index.css">
 	<link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
 	<link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
-    <link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
 
 	<!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
 	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
@@ -25,97 +25,225 @@
 		<!-- 左边按钮 -->
 		<script src="./asset/js/directory.js"></script>
 		<!-- 左边按钮 -->
-			<div class="TY-rightBox">
-				<div class="phead">
-					<div class="curnav">
-						<label>数据统计</label>
-					</div>
-                </div>
-                <div class="section">
-					<div class="title" onClick="toggleFilter(this)">
-						<div class="label searchLabel cbg">结果筛选</div>
-						<div class="toggleFilter"></div>
-					</div>
-					<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
-						<div class="items">
-							<div>
-								<i>名称：</i> <input type="text" name="user.userName" class="w100" value="" />
-							</div>
-							<div>
-								<i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
-							</div>
-							<div class="btns">
-								<input type="hidden" name="type" value="1">
-								<input id="search" type="button" value="筛选结果" class="button" class="link-add" /><a
-									href="/manage/user_listUser.action?type=1" class="ml20">重新查询</a><a id="export"
-									class="ml20">批量导出</a>
-							</div>
-							
-						</div>
-					</form>
+		<div class="TY-rightBox">
+			<div class="phead">
+				<div class="curnav">
+					<label>数据统计</label>
 				</div>
-				
-				<div class="section">
-					<div class="title">
-						<div class="label cbg">数据统计</div>
-						
-					</div>
-					<table class="list" border="0" cellpadding="0">
-                            <tbody>
-                                <tr class="firstTr">
-                                    <td width="20"><input type="checkbox" name="_ids" onclick="_select_ids('auto',this)"></td>
-                                    <td width="30">序号</td>
-                                    <td width="80">操作用户</td>
-                                    <td width="80">操作类型</td>
-                                    <td width="80">具体内容</td>
-                                    <td width="80">操作时间</td>
-                                    <td width="30" class="manage">管理</td>
-                                </tr>
-                                <tr _id="">
-                                    <td><input type="checkbox" name="ids" value="40"></td>
-                                    <td>1</td>
-                                    <td>admin123</td>
-                                    <td>
-                
-                                        增加
-                                    </td>
-                                    <td>增加了订单发货</td>
-                                    <td>2019-04-10 18:30:29</td>
-                                    <td class="manage"><a onclick="_del('/manage/log_deleteLogVisit.action?logVisit.id=40&amp;page=0')"
-                                            class="del" title="删除"></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-					<div class="clear">
-						<div class="select_ids">
-							<a class="bar" onClick="_select_ids('all')">全选</a> <a class="bar" onClick="_select_ids('fan')">反选</a> <a
-								class="bar" onClick="_select_ids('wu')">全不选</a> <i></i> <a class="bar"
-								onClick="_dels('/manage/user_deleteSelectUser.action?page=1&type=1&')">批量删除</a>
-						</div>
-						<div class="paging">
-							<i class="tp">共1页(9条)
-							</i><i class="ml10">跳至</i><input type="text" class="inppage"
-								onKeyPress="_page_go(this,event,'/manage/user_listUser.action?user.userName=&user.tel=&type=1&page=')" /><i
-								class="i555">回车跳转</i>
-						</div>
-						<div id="pager">
-								<div class="pager-box">
-									<div class="pager">
-										<a class="prev " href="javascrpt:;">上一页</a><a class="number "
-											href="javascript:void(0);">1</a><a class="next " href="javascrpt:;">下一页</a></div>
-								</div>
-							</div>
-					</div>
-				</div>
-			
-            
-
 			</div>
+			<div class="section">
+				<div class="title" onClick="toggleFilter(this)">
+					<div class="label searchLabel cbg">结果筛选</div>
+					<div class="toggleFilter"></div>
+				</div>
+				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
+					<div class="items">
+						<div style="margin-right:10px">
+							<i>年份段：</i>
+							<select name="">
+								<option value="s">请选择</option>
+								<option value="s">2014</option>
+								<option value="s">2015</option>
+								<option value="d">2016</option>
+								<option value="d">2017</option>
+								<option value="d">2018</option>
+								<option value="d">2019</option>
+							</select>
+							—
+							<select name="">
+								<option value="s">请选择</option>
+								<option value="s">2014</option>
+								<option value="s">2015</option>
+								<option value="d">2016</option>
+								<option value="d">2017</option>
+								<option value="d">2018</option>
+								<option value="d">2019</option>
+							</select>
+						</div>
+						<div class="btns">
+							<a id="export" class="ml20">批量导出</a>
+						</div>
+
+					</div>
+				</form>
+			</div>
+
+			<div class="section">
+				<div class="title">
+					<div class="label cbg">数据统计</div>
+					<div class="links" style="margin-left:50px">
+						<a href="./statisticalAdd.html" class="button addButton"><i>添加数据</i></a>
+					</div>
+				</div>
+				<table class="list" border="0" cellpadding="0">
+					<tbody>
+						<tr class="firstTr">
+							<td width="20"><input type="checkbox" name="_ids" onclick="_select_ids('auto',this)"></td>
+							<td width="30">序号</td>
+							<td width="40">年份</td>
+							<td width="30">不良配件ID</td>
+							<td width="80">不良配件名称</td>
+							<td width="80">今年数量</td>
+							<!-- <td width="80">配件总数</td> -->
+							<td width="80">总生产台数</td>
+							<td width="30" class="manage">操作</td>
+							<td width="30" class="manage">管理</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>1</td>
+							<td>2014</td>
+							<td>123456</td>
+							<td>校验</td>
+							<td>47</td>
+							<!-- <td>163</td> -->
+							<td>275</td>
+							<td class="manage"><a href="./statisticaldetail.html">详情</a></td>
+							<td class="manage">
+								<a href="./statisticalupdata.html" class="edit" title="编辑"></a>
+								<a class="del" title="删除"></a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>2</td>
+							<td>2014</td>
+							<td>123456</td>
+							<td>呼气阀</td>
+							<td>23</td>
+							<!-- <td>114</td> -->
+							<td>275</td>
+							<td class="manage"><a href="./statisticaldetail.html">详情</a></td>
+							<td class="manage">
+								<a href="./statisticalupdata.html" class="edit" title="编辑"></a>
+								<a class="del" title="删除"></a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>3</td>
+							<td>2014</td>
+							<td>123456</td>
+							<td>管路</td>
+							<!-- <td>36</td> -->
+							<td>9</td>
+							<td>275</td>
+							<td class="manage"><a href="./statisticaldetail.html">详情</a></td>
+							<td class="manage">
+								<a href="./statisticalupdata.html" class="edit" title="编辑"></a>
+								<a class="del" title="删除"></a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>4</td>
+							<td>2014</td>
+							<td>123456</td>
+							<td>连线</td>
+							<!-- <td>36</td> -->
+							<td>16</td>
+							<td>275</td>
+							<td class="manage"><a href="./statisticaldetail.html">详情</a></td>
+							<td class="manage">
+								<a href="./statisticalupdata.html" class="edit" title="编辑"></a>
+								<a class="del" title="删除"></a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>5</td>
+							<td>2015</td>
+							<td>123456</td>
+							<td>校验</td>
+							<td>69</td>
+							<!-- <td>163</td> -->
+							<td>306</td>
+							<td class="manage"><a href="./statisticaldetail.html">详情</a></td>
+							<td class="manage">
+								<a href="./statisticalupdata.html" class="edit" title="编辑"></a>
+								<a class="del" title="删除"></a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>6</td>
+							<td>2015</td>
+							<td>123456</td>
+							<td>呼气阀</td>
+							<td>39</td>
+							<!-- <td>114</td> -->
+							<td>306</td>
+							<td class="manage"><a href="./statisticaldetail.html">详情</a></td>
+							<td class="manage">
+								<a href="./statisticalupdata.html" class="edit" title="编辑"></a>
+								<a class="del" title="删除"></a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>7</td>
+							<td>2015</td>
+							<td>123456</td>
+							<td>管路</td>
+							<!-- <td>36</td> -->
+							<td>9</td>
+							<td>306</td>
+							<td class="manage"><a href="./statisticaldetail.html">详情</a></td>
+							<td class="manage">
+								<a href="./statisticalupdata.html" class="edit" title="编辑"></a>
+								<a class="del" title="删除"></a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>8</td>
+							<td>2015</td>
+							<td>123456</td>
+							<td>连线</td>
+							<!-- <td>36</td> -->
+							<td>7</td>
+							<td>306</td>
+							<td class="manage"><a href="./statisticaldetail.html">详情</a></td>
+							<td class="manage">
+								<a href="./statisticalupdata.html" class="edit" title="编辑"></a>
+								<a class="del" title="删除"></a>
+							</td>
+						</tr>
+
+
+					</tbody>
+				</table>
+				<div class="clear">
+					<div class="select_ids">
+						<a class="bar" onClick="_select_ids('all')">全选</a> <a class="bar"
+							onClick="_select_ids('fan')">反选</a> <a class="bar" onClick="_select_ids('wu')">全不选</a>
+						<i></i> <a class="bar"
+							onClick="_dels('/manage/user_deleteSelectUser.action?page=1&type=1&')">批量删除</a>
+					</div>
+					<div class="paging">
+						<i class="tp">共1页(9条)
+						</i><i class="ml10">跳至</i><input type="text" class="inppage"
+							onKeyPress="_page_go(this,event,'/manage/user_listUser.action?user.userName=&user.tel=&type=1&page=')" /><i
+							class="i555">回车跳转</i>
+					</div>
+					<div id="pager">
+						<div class="pager-box">
+							<div class="pager">
+								<a class="prev " href="javascrpt:;">上一页</a><a class="number "
+									href="javascript:void(0);">1</a><a class="next " href="javascrpt:;">下一页</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
 		</div>
-		<script type="text/javascript" src="./asset/js/tingyun.js"></script>
-		<script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
-		<script type="text/javascript" src="./asset/js/mousewheel.js"></script>
-		<script type="text/javascript" src="./asset/js/index.js"></script>
+	</div>
+	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
+	<script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="./asset/js/mousewheel.js"></script>
+	<script type="text/javascript" src="./asset/js/index.js"></script>
 </body>
 
 </html>
