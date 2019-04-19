@@ -23,8 +23,8 @@
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
-		<script src="./asset/js/directory.js"></script>
-		<!-- 左边按钮 -->
+        <script src="./asset/js/directory.js"></script>
+        <!-- 左边按钮 -->
         <div class="TY-rightBox">
             <div class="phead">
                 <div class="curnav">
@@ -40,6 +40,15 @@
                         <div class="toggleFilter"></div>
                     </div>
                     <div class="data">
+                        <div class="line">
+                            <i class="label">客户类型:</i>
+                            <select name="">
+                                <option value="s">请选择类型</option>
+                                <option value="s">医院用户</option>
+                                <option value="d">渠道用户</option>
+                            </select>
+                            <i class="desc" id="i1"></i>
+                        </div>
                         <div class="line">
                             <i class="label">设备号 :</i><input class="w200" type="text" name="productType.name"
                                 value=""><i class="desc" id="i1"></i>
@@ -80,11 +89,12 @@
                         </div>
                         <div class="line">
                             <i class="label">描述:</i><textarea type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea></textarea><i class="desc"></i>
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea></textarea><i
+                                class="desc"></i>
                         </div>
                         <div class="line">
-                                <a href="./customer.html" class="button button-sub ml140 " >修改</a>
-                            <a href="./customer.html" class="button button-sub ml140 " >返回</a>
+                            <a href="./customer.html" class="button button-sub ml140 ">修改</a>
+                            <a href="./customer.html" class="button button-sub ml140 ">返回</a>
                             <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
                             <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
                         </div>
