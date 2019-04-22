@@ -172,7 +172,7 @@
                                 <li>
                                     <div class="rili" style="left:480px"></div>
                                     <b class="label" style="width:220px;text-align:right;margin-right: 15px">日期</b>
-                                    <input type="text" name="" id="" class="w200">
+                                    <input type="text" name="" id="fuwutime" class="w200">
                                 </li>
 
                             </ul>
@@ -224,6 +224,14 @@
     <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
     <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
     <script type="text/javascript" src="./asset/js/index.js"></script>
+    <script src="./laydate/laydate.js"></script> <!-- 改成你的路径 -->
+    <script>
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#fuwutime' 
+        });
+        
+    </script>
 </body>
 
 </html>

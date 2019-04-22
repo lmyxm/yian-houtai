@@ -15,11 +15,54 @@
     <script type="text/javascript" src="./asset/js/timer.js"></script>
     <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
     <script type="text/javascript" src="./asset/js/window.js"></script>
-    
+    <style>
+        form.manage .radio {
+            height: 22px;
+            ;
+        }
+
+        form.manage .radio>a:hover,
+        form.manage .radio>a.cur {
+            height: 22px;
+            line-height: 22px
+        }
+
+        form.manage .radio>a {
+            height: 22px;
+            line-height: 22px;
+        }
+
+        form.manage .lineac {
+            width: 295px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        form.manage .lineac_w {
+            width: 600px;
+
+        }
+
+        form.manage .lineac i.label {
+            font-weight: normal;
+            width: 185px;
+        }
+
+        form.manage .lineac_w i.label {
+            width: 140px;
+            font-weight: normal;
+        }
+
+        form.manage .lineac_c i.label {
+            width: 330px;
+            font-weight: normal;
+        }
+    </style>
 </head>
 </head>
 
-<body>
+<body mods="fixedNav,radioSelected"
+    selectedConfig='"isRecHome":"1","isRecCatHome":"1","isTop":"1","isRec":"1","platform":"1","isShow":"1"'>
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
@@ -72,7 +115,7 @@
                                 </li>
                                 <li>
                                     <b>安装时间：</b>
-                                    <input type="text" name="" id="" class="w257">
+                                    <input type="text" name="" id="anzhuangtime" class="w257">
                                 </li>
                                 <li>
                                     <b>使用频率：小时/周</b>
@@ -105,72 +148,138 @@
                                 </li>
                                 <li>
                                     <u class="label" style="width:80px"></u>
-                                    <div class="box_hezi">
+                                    <div class="box_hezi" style="width:620px">
                                         <dl>
                                             <dd>
-                                                <i style="margin-right:10px">旋转体绕底座转到360°&nbsp;&nbsp;&nbsp;</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
-                                                    type="checkbox" name="x"><i>故障</i>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>旋转体绕底座转到360° :</i><i
+                                                        class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
 
-                                                <i style="margin-right:10px;margin-left: 30px">平衡体上下折</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
-                                                    type="checkbox" name="x"><i>故障</i>
-                                            </dd>
-                                            <dd>
-                                                <i style="margin-right:10px">灯头绕灯头弯管转动180°</i><input type="checkbox"
-                                                    name="x"><i style="margin-right:10px">正常</i><input type="checkbox"
-                                                    name="x"><i>故障</i>
-                                                <i style="margin-right:10px;margin-left: 30px">检查固定螺钉</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
-                                                    type="checkbox" name="x"><i>故障</i>
+                                                    </i><i class="desc"></i>
+                                                </div>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>平衡体上下折 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
 
-                                            </dd>
-                                            <dd>
-                                                <i style="margin-right:10px">平衡体绕旋转体转动360°</i><input type="checkbox"
-                                                    name="x"><i style="margin-right:10px">正常</i><input type="checkbox"
-                                                    name="x"><i>故障</i>
-                                                <i style="margin-right:10px;margin-left: 30px">平衡体限位功能</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
-                                                    type="checkbox" name="x"><i>故障</i>
+                                                    </i><i class="desc"></i>
+                                                </div>
 
                                             </dd>
                                             <dd>
-                                                <i style="margin-right:10px">平衡体弯管绕平衡体转动360°</i><input type="checkbox"
-                                                    name="x"><i style="margin-right:20px">正常</i><input type="checkbox"
-                                                    name="x"><i>故障</i>
-                                                <i style="margin-right:10px;margin-left: 30px">灯头控制面板功能</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
-                                                    type="checkbox" name="x"><i>故障</i>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>灯头绕灯头弯管转动180° :</i><i
+                                                        class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>检查固定螺钉 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
+
 
                                             </dd>
                                             <dd>
-                                                <i style="margin-right:10px">灯头弯管绕平衡体弯管转动180°</i><input type="checkbox"
-                                                    name="x"><i style="margin-right:10px">正常</i><input type="checkbox"
-                                                    name="x"><i>故障</i>
-                                                <i style="margin-right:10px;margin-left: 30px">检查、调整漂移现象</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:10px">正常</i><input
-                                                    type="checkbox" name="x"><i>故障</i>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>平衡体绕旋转体转动360° :</i><i
+                                                        class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
 
+                                                    </i><i class="desc"></i>
+                                                </div>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>平衡体限位功能 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
+
+
+                                            </dd>
+                                            <dd>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>平衡体弯管绕平衡体转动360° :</i><i
+                                                        class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>灯头控制面板功能 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
+
+
+                                            </dd>
+                                            <dd>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>灯头弯管绕平衡体弯管转动180° :</i><i
+                                                        class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>检查、调整漂移现象 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 正常</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            故障</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
                                             </dd>
                                         </dl>
                                     </div>
                                 </li>
-                                <li style="margin-bottom:20px">
+                                <li style="margin-bottom:20px;margin-top: 20px">
                                     <b style="margin-left:80px">情况说明：</b>
                                     <textarea type="text" name="" id=""></textarea>
                                 </li>
                                 <li>
-                                    <u class="label" style="font-weight:400">检测结论</u>
-                                    <div class="box_hezi">
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox" name="x"><i
-                                                    style="margin-right:20px">各项参数正常，运行良好</i><input type="checkbox"
-                                                    name="x"><i>停止使用，建议维修</i>
-                                            </dd>
+                                    <div class="line lineac_w">
+                                        <i class="label"><i class="x"></i>检测结论 :</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 各项参数正常，运行良好</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                停止使用，建议维修</a>
 
-                                        </dl>
+                                        </i><i class="desc"></i>
                                     </div>
+
                                 </li>
                             </ul>
 
@@ -208,27 +317,24 @@
                                 <li>
                                     <dl>
                                         <dd>
-                                            <input type="checkbox"><i>阻尼螺钉  </i>
+                                            <input type="checkbox"><i>阻尼螺钉 </i>
                                         </dd>
                                     </dl>
 
                                 </li>
-                               
-                                <li>
-                                    <u class="label" style="font-weight:400;width:147px">维护保养结果确认</u>
-                                    <div class="box_hezi">
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox" name="x">
-                                                <i style="margin-right:20px">状态良好</i>
-                                                <input type="checkbox" name="x">
-                                                <i>部分部件老化，建议更换</i>
-                                                <input type="checkbox" name="x">
-                                                <i style="margin-right:20px">停止使用，更换老化部件</i>
-                                            </dd>
 
-                                        </dl>
-                                    </div>
+                                <li>
+                                        <div class="line lineac_w">
+                                                <i class="label" style="width:160px">维护保养结果确认 :</i><i class="radio">
+                                                    <a class="cur"><input checked="checked" type="radio"
+                                                            name="productType.display" value="1"> 状态良好</a>
+                                                    <a><input type="radio" name="productType.display" value="0">
+                                                        部分部件老化，建议更换</a>
+                                                    <a><input type="radio" name="productType.display" value="0">
+                                                        停止使用，更换老化部件</a>
+        
+                                                </i><i class="desc"></i>
+                                            </div>
                                 </li>
 
 
@@ -269,7 +375,7 @@
                                 <li>
                                     <div class="rili"></div>
                                     <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
-                                    <input type="text" name="" id="" class="w200">
+                                    <input type="text" name="" id="qianmingtime01" class="w200">
                                 </li>
                             </ul>
 
@@ -280,40 +386,40 @@
                         <div class="line">
 
                             <ul class="tiankuang">
-                                <li>
-                                    <div class="box_hezi">
-                                        <dl>
-                                            <dd>
-                                                <i
-                                                    style="margin-right:10px;margin-left: 100px">工程师对规定项目栏内项目是否逐一检查确认</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:20px">是</i><input
-                                                    type="checkbox" name="x"><i>否</i>
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="box_hezi">
-                                        <dl>
-                                            <dd>
-                                                <i style="margin-right:10px;margin-left: 100px">工程师的服务水平是否满意</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:20px">是</i><input
-                                                    type="checkbox" name="x"><i>否</i>
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="box_hezi">
-                                        <dl>
-                                            <dd>
-                                                <i style="margin-right:10px;margin-left: 100px">产品质量综合评价是否满意</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:20px">是</i><input
-                                                    type="checkbox" name="x"><i>否</i>
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </li>
+                                    <li>
+                                            <div class="line lineac_c">
+                                                <i class="label">工程师对规定项目栏内项目是否逐一检查确认 :</i><i class="radio">
+                                                    <a class="cur"><input checked="checked" type="radio"
+                                                            name="productType.display" value="1"> 是</a>
+                                                    <a><input type="radio" name="productType.display" value="0">
+                                                        否</a>
+        
+                                                </i><i class="desc"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="line lineac_c">
+                                                <i class="label">工程师的服务水平是否满意 :</i><i class="radio">
+                                                    <a class="cur"><input checked="checked" type="radio"
+                                                            name="productType.display" value="1"> 是</a>
+                                                    <a><input type="radio" name="productType.display" value="0">
+                                                        否</a>
+        
+                                                </i><i class="desc"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="line lineac_c ">
+                                                <i class="label">产品质量综合评价是否满意 :</i><i class="radio">
+                                                    <a class="cur"><input checked="checked" type="radio"
+                                                            name="productType.display" value="1"> 是</a>
+                                                    <a><input type="radio" name="productType.display" value="0">
+                                                        否</a>
+        
+                                                </i><i class="desc"></i>
+                                            </div>
+                                        </li>
+        
 
 
                                 <li>
@@ -326,7 +432,7 @@
                                 <li>
                                     <div class="rili"></div>
                                     <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
-                                    <input type="text" name="" id="" class="w200">
+                                    <input type="text" name="" id="qianmingtime02" class="w200">
                                 </li>
                             </ul>
 
@@ -349,6 +455,19 @@
     <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
     <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
     <script type="text/javascript" src="./asset/js/index.js"></script>
+    <script src="./laydate/laydate.js"></script> <!-- 改成你的路径 -->
+    <script>
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#anzhuangtime'
+        });
+        laydate.render({
+            elem: '#qianmingtime01'
+        });
+        laydate.render({
+            elem: '#qianmingtime02'
+        });
+    </script>
 </body>
 
 </html>

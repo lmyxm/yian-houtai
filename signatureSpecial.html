@@ -84,7 +84,7 @@
                                 </li>
                                 <li>
                                     <b>服务时间</b>
-                                    <input type="text" name="" id="" class="w257">
+                                    <input type="text" name="" id="fuwutime" class="w257">
                                 </li>
                                 <li>
                                     <b style="width:90px">服务内容描述</b>
@@ -161,7 +161,7 @@
                                 <li>
                                     <div class="rili" style="left:480px"></div>
                                     <b class="label" style="width:215px;text-align:right;margin-right: 20px">日期</b>
-                                    <input type="text" name="" id="" class="w200">
+                                    <input type="text" name="" id="lianxitime" class="w200">
                                 </li>
 
                             </ul>
@@ -204,6 +204,17 @@
     <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
     <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
     <script type="text/javascript" src="./asset/js/index.js"></script>
+    <script src="./laydate/laydate.js"></script> <!-- 改成你的路径 -->
+    <script>
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#fuwutime' 
+        });
+        laydate.render({
+            elem: '#lianxitime' 
+        });
+     
+    </script>
 </body>
 
 </html>

@@ -229,7 +229,7 @@
                                     <div class="rili"></div>
                                     <div class="rili02"></div>
                                     <b class="label" style="width:150px;text-align:right;margin-right: 30px">保修期限</b>
-                                    <input type="text" name="" id="" class="w200"> - <input type="text" name="" id=""
+                                    <input type="text" name="" id="baoxitime01" class="w200"> - <input type="text" name="" id="baoxitime02"
                                         class="w200">
                                 </li>
                                 <li>
@@ -295,9 +295,9 @@
                                     <div class="rili"></div>
                                     <div class="rili02"></div>
                                     <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
-                                    <input type="text" name="" id=""
+                                    <input type="text" name="" id="qianmingtime01"
                                         class="w200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
-                                        name="" id="" class="w200">
+                                        name="" id="qianmingtime02" class="w200">
                                 </li>
                             </ul>
 
@@ -320,6 +320,23 @@
     <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
     <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
     <script type="text/javascript" src="./asset/js/index.js"></script>
+    <script src="./laydate/laydate.js"></script> <!-- 改成你的路径 -->
+    <script>
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#baoxitime01' 
+        });
+        laydate.render({
+            elem: '#baoxitime02' 
+        });
+        laydate.render({
+            elem: '#qianmingtime01' 
+        });
+        laydate.render({
+            elem: '#qianmingtime02' 
+        });
+        
+    </script>
 </body>
 
 </html>

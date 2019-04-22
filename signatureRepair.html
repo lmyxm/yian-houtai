@@ -15,11 +15,59 @@
     <script type="text/javascript" src="./asset/js/timer.js"></script>
     <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
     <script type="text/javascript" src="./asset/js/window.js"></script>
-    
+    <style>
+        form.manage .radio {
+            height: 22px;
+            ;
+        }
+
+        form.manage .radio>a:hover,
+        form.manage .radio>a.cur {
+            height: 22px;
+            line-height: 22px
+        }
+
+        form.manage .radio>a {
+            height: 22px;
+            line-height: 22px;
+        }
+
+        form.manage .lineac {
+            width: 230px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        form.manage .lineac_w {
+            width: 600px;
+
+        }
+
+        form.manage .lineac i.label {
+            font-weight: normal;
+            width: 80px;
+            text-align: left;
+            font-size: 14px;
+            padding: 0;
+        }
+
+        form.manage .lineac_w i.label {
+            width: 144px;
+            font-weight: normal;
+            font-size: 14px;
+            margin-right: 29px;
+        }
+
+        form.manage .lineac_c i.label {
+            width: 330px;
+            font-weight: normal;
+        }
+    </style>
 </head>
 </head>
 
-<body>
+<body mods="fixedNav,radioSelected"
+    selectedConfig='"isRecHome":"1","isRecCatHome":"1","isTop":"1","isRec":"1","platform":"1","isShow":"1"'>
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
@@ -83,17 +131,16 @@
                                     <input type="text" name="" id="" class="w130">
                                 </li>
                                 <li>
-                                    <b>维修类别</b>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>保内</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>保外</i>
-                                        </dd>
-                                    </dl>
+                                    <div class="line lineac">
+                                        <i class="label">维修类别</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 保内</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                保外</a>
+
+                                        </i><i class="desc"></i>
+                                    </div>
+
                                 </li>
                             </ul>
 
@@ -106,30 +153,26 @@
                                 <li style="margin-bottom: 20px">
                                     <div class="rili"></div>
                                     <b class="label" style="width:150px;text-align:right;margin-right: 30px">约定时间</b>
-                                    <input type="text" name="" id="" class="w200">
+                                    <input type="text" name="" id="yuedingtime" class="w200">
                                 </li>
                                 <li>
                                     <div class="rili"></div>
                                     <b class="label" style="width:150px;text-align:right;margin-right: 30px">到位时间</b>
-                                    <input type="text" name="" id="" class="w200">
+                                    <input type="text" name="" id="daoweitime" class="w200">
                                 </li>
                                 <li style="margin-top: 20px">
-                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">产品状态</b>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>正常使用</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>局部使用</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>完全停机</i>
-                                        </dd>
-                                    </dl>
+                                    <div class="line lineac_w">
+                                        <i class="label">产品状态</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 正常使用</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                局部使用</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                完全停机</a>
+
+                                        </i><i class="desc"></i>
+                                    </div>
+
                                 </li>
                             </ul>
 
@@ -171,22 +214,18 @@
                                     <textarea type="text" name="" id=""></textarea>
                                 </li>
                                 <li>
-                                    <b class="label" style="width:150px;text-align:right;">产品状态</b>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>正常使用</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>局部使用</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>停止使用，需再次维修</i>
-                                        </dd>
-                                    </dl>
+                                        <div class="line lineac_w" >
+                                                <i class="label" style="margin-right:10px;margin-bottom: 10px">维修结果确认</i><i class="radio">
+                                                    <a class="cur"><input checked="checked" type="radio"
+                                                            name="productType.display" value="1"> 正常使用</a>
+                                                    <a><input type="radio" name="productType.display" value="0">
+                                                        局部使用</a>
+                                                    <a><input type="radio" name="productType.display" value="0">
+                                                        停止使用，需再次维修</a>
+        
+                                                </i><i class="desc"></i>
+                                            </div>
+                                  
                                 </li>
                                 <li>
                                     <b class="label" style="width:150px;text-align:right;">故障原因分析</b>
@@ -332,9 +371,9 @@
                                     <div class="rili"></div>
                                     <div class="rili02"></div>
                                     <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
-                                    <input type="text" name="" id=""
+                                    <input type="text" name="" id="qianmingtime01"
                                         class="w200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
-                                        name="" id="" class="w200">
+                                        name="" id="qianmingtime02" class="w200">
                                 </li>
                             </ul>
 
@@ -357,6 +396,23 @@
     <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
     <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
     <script type="text/javascript" src="./asset/js/index.js"></script>
+
+    <script src="./laydate/laydate.js"></script> <!-- 改成你的路径 -->
+    <script>
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#yuedingtime'
+        });
+        laydate.render({
+            elem: '#daoweitime'
+        });
+        laydate.render({
+            elem: '#qianmingtime01'
+        });
+        laydate.render({
+            elem: '#qianmingtime02'
+        });
+    </script>
 </body>
 
 </html>
