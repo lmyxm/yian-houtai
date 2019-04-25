@@ -28,7 +28,7 @@
         <div class="TY-rightBox">
             <div class="phead">
                 <div class="curnav">
-                    <label>客户列表</label>
+                    <label>客户管理</label>
                 </div>
             </div>
 
@@ -36,7 +36,7 @@
                 enctype="multipart/form-data">
                 <div class="section sectionEdit">
                     <div class="title" onclick="toggleFilter(this)">
-                        <div class="label cbg">客户详情</div>
+                        <div class="label cbg">修改客户信息</div>
                         <div class="toggleFilter"></div>
                     </div>
                     <div class="data">
@@ -50,47 +50,83 @@
                             <i class="desc" id="i1"></i>
                         </div>
                         <div class="line">
-                            <i class="label">设备号 :</i><input class="w200" type="text" name="productType.name"
-                                value=""><i class="desc" id="i1"></i>
+                            <i class="label">省份:</i><input class="w200" type="text" name="productType.name" value=""><i
+                                class="desc" id="i1"></i>
                         </div>
                         <div class="line">
-                            <i class="label">设备机型:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">故障类型:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">故障描述:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">医院:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">职位:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">联系人 :</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">电话:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-
-                        <div class="line">
-                            <i class="label">状态:</i><input type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">描述:</i><textarea type="text" name="productType.sort" class="w200" value=""
-                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea></textarea><i
+                            <i class="label">产品线:</i><input type="text" name="productType.sort" class="w200" value=""><i
                                 class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">型号:</i><input type="text" name="productType.sort" class="w200" value=""><i
+                                class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">安装日期:</i><input type="text" name="productType.sort" class="w200"
+                                value=""><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">客户:</i><input type="text" name="productType.sort" class="w200" value=""><i
+                                class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">产品:</i><input type="text" name="productType.sort" class="w200" value=""><i
+                                class="desc"></i>
+                        </div>
+
+                        <div class="line">
+                            <i class="label">级别 :</i><input type="text" name="productType.sort" class="w200" value=""><i
+                                class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">联系人:</i><input type="text" name="productType.sort" class="w200" value=""><i
+                                class="desc"></i>
+                        </div>
+
+                        <div class="line">
+                            <i class="label">派工单号:</i><input type="text" name="productType.sort" class="w200"
+                                value=""><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">联系电话:</i><input type="text" name="productType.sort" class="w200"
+                                value=""><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">序列号:</i><input type="text" name="productType.sort" class="w200" value=""><i
+                                class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">安装人:</i><input type="text" name="productType.sort" class="w200" value=""><i
+                                class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">科室:</i><input type="text" name="productType.sort" class="w200" value=""><i
+                                class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">保修结束日期:</i><input type="text" name="productType.sort" class="w200"
+                                value=""><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">保修开始日期:</i><input type="text" name="productType.sort" class="w200"
+                                value=""><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">创建时间:</i><input type="text" name="productType.sort" class="w200"
+                                value=""><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">产品备注:</i><input type="text" name="productType.sort" class="w200"
+                                value=""><i class="desc"></i>
+                        </div>
+
+
+
+
+
+                        <div class="line">
+                            <i class="label">描述:</i><textarea type="text" name="productType.sort" class="w200"
+                                value=""></textarea></textarea><i class="desc"></i>
                         </div>
                         <div class="line">
                             <a href="./customer.html" class="button button-sub ml140 ">修改</a>

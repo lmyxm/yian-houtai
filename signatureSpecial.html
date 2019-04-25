@@ -15,11 +15,60 @@
     <script type="text/javascript" src="./asset/js/timer.js"></script>
     <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
     <script type="text/javascript" src="./asset/js/window.js"></script>
+    <style>
+        form.manage .radio {
+            height: 22px;
+            ;
+        }
 
+        form.manage .radio>a:hover,
+        form.manage .radio>a.cur {
+            height: 22px;
+            line-height: 22px
+        }
+
+        form.manage .radio>a {
+            height: 22px;
+            line-height: 22px;
+        }
+
+        form.manage .lineac {
+            width: 230px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        form.manage .lineac_w {
+            width: 600px;
+
+        }
+
+        form.manage .lineac i.label {
+            font-weight: normal;
+            width: 80px;
+            text-align: left;
+            font-size: 14px;
+            padding: 0;
+        }
+
+        form.manage .lineac_w i.label {
+            width: 210px;
+            font-weight: normal;
+            font-size: 14px;
+            margin-right: 20px;
+            margin-bottom: 20px
+        }
+
+        form.manage .lineac_c i.label {
+            width: 330px;
+            font-weight: normal;
+        }
+    </style>
 </head>
 </head>
 
-<body>
+<body mods="fixedNav,radioSelected"
+    selectedConfig='"isRecHome":"1","isRecCatHome":"1","isTop":"1","isRec":"1","platform":"1","isShow":"1"'>
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
@@ -59,7 +108,7 @@
                             <ul>
                                 <li>
                                     <b style="width:120px;">服务需求单位/人：</b>
-                                    <input type="text" name="" id="" style="width: 205px;" >
+                                    <input type="text" name="" id="" style="width: 205px;">
                                 </li>
                                 <li>
                                     <b class="label">申请人类型</b>
@@ -102,46 +151,26 @@
                         <div class="line">
                             <ul class="tiankuang">
                                 <li>
-                                    <u class="label" style="font-weight:400">服务分类</u>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>呼吸线</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>麻醉线</i>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>医疗系统</i>
-                                        </dd>
-                                    </dl>
+                                    <div class="line lineac_w">
+                                        <i class="label">服务分类</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 呼吸线</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                麻醉线</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                医疗系统</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                展会</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                验收</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                其它</a>
 
-                                </li>
-                                <li>
-                                    <div class="box_hezi">
-                                        <dl style="margin-left:223px">
-                                            <dd>
-                                                <input type="checkbox"><i>展会</i>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox"><i>验收</i>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox"><i>其它</i>
-                                            </dd>
-                                        </dl>
+                                        </i><i class="desc"></i>
                                     </div>
 
                                 </li>
+
                                 <li>
                                     <b style="width:215px;text-align: right;padding-right: 20px">若为其它，请填写</b>
                                     <textarea type="text" name="" id="" class="w257"></textarea>
@@ -157,7 +186,7 @@
                                     <b class="label" style="width:215px;text-align:right;margin-right: 20px">联系电话</b>
                                     <input type="text" name="" id="" class="w200">
                                 </li>
-                                
+
                                 <li>
                                     <div class="rili" style="left:480px"></div>
                                     <b class="label" style="width:215px;text-align:right;margin-right: 20px">日期</b>
@@ -208,12 +237,11 @@
     <script>
         //执行一个laydate实例
         laydate.render({
-            elem: '#fuwutime' 
+            elem: '#fuwutime'
         });
         laydate.render({
-            elem: '#lianxitime' 
+            elem: '#lianxitime'
         });
-     
     </script>
 </body>
 

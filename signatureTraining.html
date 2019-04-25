@@ -15,11 +15,60 @@
     <script type="text/javascript" src="./asset/js/timer.js"></script>
     <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
     <script type="text/javascript" src="./asset/js/window.js"></script>
+    <style>
+        form.manage .radio {
+            height: 21px;
 
+        }
+
+        form.manage .radio>a:hover,
+        form.manage .radio>a.cur {
+            height: 22px;
+            line-height: 22px
+        }
+
+        form.manage .radio>a {
+            height: 22px;
+            line-height: 22px;
+        }
+
+        form.manage .lineac {
+            width: 230px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        form.manage .lineac_w {
+            width: 750px;
+
+        }
+
+        form.manage .lineac i.label {
+            font-weight: normal;
+            width: 80px;
+            text-align: left;
+            font-size: 14px;
+            padding: 0;
+        }
+
+        form.manage .lineac_w i.label {
+            width: 210px;
+            font-weight: normal;
+            font-size: 14px;
+            margin-right: 20px;
+            margin-bottom: 20px
+        }
+
+        form.manage .lineac_c i.label {
+            width: 330px;
+            font-weight: normal;
+        }
+    </style>
 </head>
 </head>
 
-<body>
+<body mods="fixedNav,radioSelected"
+    selectedConfig='"isRecHome":"1","isRecCatHome":"1","isTop":"1","isRec":"1","platform":"1","isShow":"1"'>
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
@@ -98,66 +147,50 @@
                                     <textarea type="text" name="" id="" class="w257"></textarea>
                                 </li>
                                 <li>
-                                    <u class="label" style="font-weight:400">客户评价</u>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>非常满意</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>满意</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>不满意</i>
-                                        </dd>
-                                    </dl>
+                                    <div class="line lineac_w">
+                                        <i class="label">客户评价</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 非常满意</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                满意</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                不满意</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+
                                 </li>
                                 <li style="margin:10px 0 20px">
                                     <b style="width:220px;margin-right:15px;text-align: right;">操作讲解</b>
                                     <textarea type="text" name="" id="" class="w130"></textarea>
                                 </li>
                                 <li>
-                                    <u class="label" style="font-weight:400">客户评价</u>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>非常满意</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>满意</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>不满意</i>
-                                        </dd>
-                                    </dl>
+                                    <div class="line lineac_w">
+                                        <i class="label">客户评价</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 非常满意</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                满意</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                不满意</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+
                                 </li>
                                 <li style="margin:10px 0 20px">
                                     <b style="width:220px;margin-right:15px;text-align: right;">维护保养</b>
                                     <textarea type="text" name="" id="" class="w130"></textarea>
                                 </li>
                                 <li>
-                                    <u class="label" style="font-weight:400">客户评价</u>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>非常满意</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>满意</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>不满意</i>
-                                        </dd>
-                                    </dl>
+                                        <div class="line lineac_w">
+                                                <i class="label">客户评价</i><i class="radio">
+                                                    <a class="cur"><input checked="checked" type="radio"
+                                                            name="productType.display" value="1"> 非常满意</a>
+                                                    <a><input type="radio" name="productType.display" value="0">
+                                                        满意</a>
+                                                    <a><input type="radio" name="productType.display" value="0">
+                                                        不满意</a>
+                                                </i><i class="desc"></i>
+                                            </div>
                                 </li>
                                 <li>
                                     <b class="label"
@@ -228,9 +261,8 @@
     <script>
         //执行一个laydate实例
         laydate.render({
-            elem: '#fuwutime' 
+            elem: '#fuwutime'
         });
-        
     </script>
 </body>
 

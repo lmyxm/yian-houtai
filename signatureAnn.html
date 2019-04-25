@@ -15,11 +15,60 @@
     <script type="text/javascript" src="./asset/js/timer.js"></script>
     <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
     <script type="text/javascript" src="./asset/js/window.js"></script>
-    
+    <style>
+        form.manage .radio {
+            height: 21px;
+
+        }
+
+        form.manage .radio>a:hover,
+        form.manage .radio>a.cur {
+            height: 22px;
+            line-height: 22px
+        }
+
+        form.manage .radio>a {
+            height: 22px;
+            line-height: 22px;
+        }
+
+        form.manage .lineac {
+            width: 230px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        form.manage .lineac_w {
+            width: 750px;
+
+        }
+
+        form.manage .lineac i.label {
+            font-weight: normal;
+            width: 80px;
+            text-align: left;
+            font-size: 14px;
+            padding: 0;
+        }
+
+        form.manage .lineac_w i.label {
+            width: 210px;
+            font-weight: normal;
+            font-size: 14px;
+            margin-right: 20px;
+            margin-bottom: 20px
+        }
+
+        form.manage .lineac_c i.label {
+            width: 330px;
+            font-weight: normal;
+        }
+    </style>
 </head>
 </head>
 
-<body>
+<body mods="fixedNav,radioSelected"
+    selectedConfig='"isRecHome":"1","isRecCatHome":"1","isTop":"1","isRec":"1","platform":"1","isShow":"1"'>
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
@@ -106,115 +155,126 @@
                         <div class="line">
                             <ul class="tiankuang">
                                 <li>
-                                    <u class="label">机器安装</u>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>产品安装位置，符合客户要求</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>产品安装后，现场清理完毕</i>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <u class="label">产品培训人员范围</u>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>受训人员，符合客户产品培训范围要求</i>
-                                        </dd>
-                                    </dl>
+                                    <div class="line lineac_w">
+                                        <i class="label">机器安装</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 产品安装位置，符合客户要求</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                产品安装后，现场清理完毕</a>
+
+
+                                        </i><i class="desc"></i>
+                                    </div>
 
                                 </li>
                                 <li>
-                                    <u class="label">培训内容</u>
+                                    <div class="line lineac_w">
+                                        <i class="label">产品培训人员范围</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 受训人员，符合客户产品培训范围要求</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="line lineac_w">
+                                        <i class="label">培训内容</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 组件、配件介绍</a>
+                                            <a ><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 组件附件连接演示</a>
+                                            <a ><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 功能介绍</a>
+                                            <a ><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 操作指导讲解</a>
+                                            <a ><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 产品使用注意事项</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+
+
+                                </li>
+                                <li>
+                                    <i class="label" style="width: 210px;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    margin-right: 5px;
+                                    margin-bottom: 20px;">产品验收情况</i>
                                     <div class="box_hezi">
                                         <dl>
                                             <dd>
-                                                <input type="checkbox"><i>组件、配件介绍 </i>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>外观完好 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 是</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            否</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>配件齐全 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 是</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            否</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
                                             </dd>
-                                        </dl>
-                                        <dl>
+
                                             <dd>
-                                                <input type="checkbox"><i>组件附件连接演示 </i>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>调试良好 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 是</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            否</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
+                                                <div class="line lineac">
+                                                    <i class="label"><i class="x"></i>工作正常 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 是</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            否</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
                                             </dd>
-                                        </dl>
-                                        <dl>
                                             <dd>
-                                                <input type="checkbox"><i>功能介绍 </i>
+                                                <div class="line lineac">
+                                                    <i class="label" style="width:100px">随机文件齐套 :</i><i class="radio">
+                                                        <a class="cur"><input checked="checked" type="radio"
+                                                                name="productType.display" value="1"> 是</a>
+                                                        <a><input type="radio" name="productType.display" value="0">
+                                                            否</a>
+
+                                                    </i><i class="desc"></i>
+                                                </div>
+
                                             </dd>
-                                        </dl>
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox"><i>操作指导讲解 </i>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox"><i> 产品使用注意事项 </i>
-                                            </dd>
+
+
                                         </dl>
                                     </div>
 
                                 </li>
                                 <li>
-                                    <u class="label">产品验收情况</u>
-                                    <div class="box_hezi">
-                                        <dl>
-                                            <dd>
-                                                <i style="margin-right:10px">外观完好</i><input type="checkbox" name="x"><i
-                                                    style="margin-right:20px">是</i><input type="checkbox"
-                                                    name="x"><i>否</i>
+                                    <div class="line lineac_w">
+                                        <i class="label">综合服务评价</i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 非常满意</a>
+                                            <a><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 满意</a>
+                                            <a ><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 一般</a>
+                                            <a ><input checked="checked" type="radio"
+                                                    name="productType.display" value="1"> 不满意</a>
 
-                                                <i style="margin-right:10px;margin-left: 50px">配件齐全</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:20px">是</i><input
-                                                    type="checkbox" name="x"><i>否</i>
-                                            </dd>
-                                            <dd>
-                                                <i style="margin-right:10px">调试良好</i><input type="checkbox" name="x"><i
-                                                    style="margin-right:20px">是</i><input type="checkbox"
-                                                    name="x"><i>否</i>
-                                                <i style="margin-right:10px;margin-left: 50px">工作正常</i><input
-                                                    type="checkbox" name="x"><i style="margin-right:20px">是</i><input
-                                                    type="checkbox" name="x"><i>否</i>
-
-                                            </dd>
-                                            <dd>
-                                                <i style="margin-right:10px">随机文件齐套</i><input type="checkbox"
-                                                    name="x"><i style="margin-right:20px">是</i><input type="checkbox"
-                                                    name="x"><i>否</i>
-                                            </dd>
-                                        </dl>
+                                        </i><i class="desc"></i>
                                     </div>
-
-                                </li>
-                                <li>
-                                    <u class="label">综合服务评价</u>
-                                    <div class="box_hezi">
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox"><i>非常满意 </i>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox"><i>满意 </i>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox"><i>一般 </i>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dd>
-                                                <input type="checkbox"><i>不满意 </i>
-                                            </dd>
-                                        </dl>
-
-                                    </div>
-
                                 </li>
                             </ul>
 
@@ -229,8 +289,8 @@
                                     <div class="rili"></div>
                                     <div class="rili02"></div>
                                     <b class="label" style="width:150px;text-align:right;margin-right: 30px">保修期限</b>
-                                    <input type="text" name="" id="baoxitime01" class="w200"> - <input type="text" name="" id="baoxitime02"
-                                        class="w200">
+                                    <input type="text" name="" id="baoxitime01" class="w200"> - <input type="text"
+                                        name="" id="baoxitime02" class="w200">
                                 </li>
                                 <li>
                                     <div class="line">
@@ -324,18 +384,17 @@
     <script>
         //执行一个laydate实例
         laydate.render({
-            elem: '#baoxitime01' 
+            elem: '#baoxitime01'
         });
         laydate.render({
-            elem: '#baoxitime02' 
+            elem: '#baoxitime02'
         });
         laydate.render({
-            elem: '#qianmingtime01' 
+            elem: '#qianmingtime01'
         });
         laydate.render({
-            elem: '#qianmingtime02' 
+            elem: '#qianmingtime02'
         });
-        
     </script>
 </body>
 
