@@ -16,15 +16,64 @@
     <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
     <script type="text/javascript" src="./asset/js/pager.js"></script>
     <script type="text/javascript" src="./asset/js/window.js"></script>
-</head>
+
+    <style>
+        form.manage .radio {
+            height: 21px;
+
+        }
+
+        form.manage .radio>a:hover,
+        form.manage .radio>a.cur {
+            height: 22px;
+            line-height: 22px
+        }
+
+        form.manage .radio>a {
+            height: 22px;
+            line-height: 22px;
+        }
+
+        form.manage .lineac {
+            width: 230px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        form.manage .lineac_w {
+            width: 750px;
+
+        }
+
+        form.manage .lineac i.label {
+            font-weight: normal;
+            width: 80px;
+            text-align: left;
+            font-size: 14px;
+            padding: 0;
+        }
+
+        form.manage .lineac_w i.label {
+            width: 172px;
+            font-weight: normal;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        form.manage .lineac_c i.label {
+            width: 330px;
+            font-weight: normal;
+        }
+    </style>
 </head>
 
-<body>
+<body mods="fixedNav,radioSelected"
+    selectedConfig='"isRecHome":"1","isRecCatHome":"1","isTop":"1","isRec":"1","platform":"1","isShow":"1"'>
 
     <div class="TY-mainLay">
         <!-- 左边按钮 -->
-		<script src="./asset/js/directory.js"></script>
-		<!-- 左边按钮 -->
+        <script src="./asset/js/directory.js"></script>
+        <!-- 左边按钮 -->
         <div class="TY-rightBox">
             <div class="phead">
                 <div class="curnav">
@@ -57,37 +106,27 @@
                                 onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                                <i class="label">服务态度:</i><input type="text" name="productType.sort" class="w200" value=""
-                                    onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
-                            </div>
-                            <div class="line">
-                                    <i class="label">评价内容:</i><textarea type="text" name="productType.sort" class="w200" value=""
-                                        onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea><i class="desc"></i>
-                                </div>
-                                <div class="line">
-                                        <i class="label">综合服务评价:</i>
-                                        <dl style="display: inline-block;vertical-align: middle">
-                                            <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                                <input type="checkbox"><i>好评</i>
-                                            </dd>
-            
-                                        </dl>
-                                        <dl style="display: inline-block;vertical-align: middle">
-                                            <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                                <input type="checkbox"><i>中评</i>
-                                            </dd>
-            
-                                        </dl>
-                                        <dl style="display: inline-block;vertical-align: middle">
-                                            <dd style="display: inline-block;vertical-align: middle;height: 20px;">
-                                                <input type="checkbox"><i>差评</i>
-                                            </dd>
-            
-                                        </dl>
-                                    </div>
-                       
+                            <i class="label">服务态度:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
                         <div class="line">
-                            <a href="./progress.html" class="button button-sub ml140 " >返回</a>
+                            <i class="label">评价内容:</i><textarea type="text" name="productType.sort" class="w200"
+                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"></textarea><i
+                                class="desc"></i>
+                        </div>
+                        <div class="line lineac_w">
+                            <i class="label">综合服务评价</i><i class="radio">
+                                <a class="cur"><input checked="checked" type="radio" name="productType.display"
+                                        value="1"> 优</a>
+                                <a><input checked="checked" type="radio" name="productType.display" value="1"> 良好</a>
+                                <a><input checked="checked" type="radio" name="productType.display" value="1"> 差</a>
+
+                            </i><i class="desc"></i>
+                        </div>
+
+
+                        <div class="line">
+                            <a href="./progress.html" class="button button-sub ml140 ">返回</a>
                             <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
                             <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
                         </div>
