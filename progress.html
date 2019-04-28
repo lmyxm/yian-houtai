@@ -16,6 +16,15 @@
 	<script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
 	<script type="text/javascript" src="./asset/js/pager.js"></script>
 	<script type="text/javascript" src="./asset/js/window.js"></script>
+	<style>
+		.tingyunWindow {
+			display: none;
+		}
+
+		.ac {
+			display: block;
+		}
+	</style>
 </head>
 </head>
 
@@ -40,22 +49,60 @@
 				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
 					<div class="items">
 						<div>
-							<i>状态：</i>
+							<i>筛选条件：</i>
 							<select name="">
-								<option value="s">全部</option>
-								<option value="s">未接单</option>
-								<option value="d">已接单</option>
-								<option value="d">已完成</option>
+									<option value="s">请选择条件</option>
+								<option value="s">工单编号</option>
+								<option value="s">医院</option>
+								<option value="s">科室</option>
+								<option value="d">职位</option>
+								<option value="d">部门</option>
+								<option value="d">创建时间</option>
 							</select>
 						</div>
-
 						<div>
-							<i>名称：</i> <input type="text" name="user.userName" class="w100" value="" />
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
-							<i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
+							<i>筛选条件：</i>
+							<select name="">
+									<option value="s">请选择条件</option>
+									<option value="s">工单编号</option>
+									<option value="s">医院</option>
+									<option value="s">科室</option>
+									<option value="d">职位</option>
+									<option value="d">部门</option>
+									<option value="d">创建时间</option>
+								</select>
+						</div>
+						<div>
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 
+						<div>
+							<i>筛选条件：</i>
+							<select name="">
+									<option value="s">请选择条件</option>
+									<option value="s">工单编号</option>
+									<option value="s">医院</option>
+									<option value="s">科室</option>
+									<option value="d">职位</option>
+									<option value="d">部门</option>
+									<option value="d">创建时间</option>
+								</select>
+						</div>
+
+						<div>
+							<input type="text" name="user.userName" class="w100" value="" />
+						</div>
+						<div>
+							<i>时&nbsp;间&nbsp;段：&nbsp;</i> <input type="text" name="user.userName" class="w100"
+								value="" />
+							<input type="text" name="user.userName" class="w100" value="" />
+						</div>
+						<div>
+
+						</div>
 						<div class="btns">
 
 							<input type="hidden" name="type" value="1">
@@ -64,24 +111,24 @@
 								href="/manage/user_listUser.action?type=1" class="ml20">重新查询</a><a id="export"
 								class="ml20">批量导出</a>
 						</div>
-
 					</div>
 				</form>
 			</div>
 
+			<div class="tingyunWindow" style="width: 70%; left: 20%; top: 20%;">
+				<div class="tyw-menu"><label>信息查看</label><button class="tyw-close"></button></div>
+				<div class="tyw-main" style="padding: 0px; height: 400px;"><iframe src="./progress.1.html"
+						name="windowframe" scrolling="auto" frameborder="0"></iframe></div>
+			</div>
 			<div class="section">
 				<div class="title">
 					<div class="label cbg">派单列表</div>
-					
 				</div>
 				<table class="list" border=0 cellpadding=0>
 					<tr class="firstTr">
 						<td width="20"><input type="checkbox" name="_ids" onClick="_select_ids('auto',this)" /></td>
 						<td width="80">工单编号</td>
 						<!-- <td width="80">产品图片</td> -->
-						<td width="80">产品线</td>
-						<td width="80">设备机型</td>
-						<td width="80">故障类型</td>
 						<td width="80">医院</td>
 						<td width="40">科室</td>
 						<td width="40">职位</td>
@@ -92,12 +139,10 @@
 						<td width="40" class="manage">工单详情</td>
 					</tr>
 
-					<tr _id="">
+					<tr _id="" class="btnshow">
 						<td><input type="checkbox" name="ids" value="14" /></td>
 						<td>WX-20190215-0041</td>
-						<td>麻醉机</td>
-						<td>7200A麻醉机</td>
-						<td>维护不当造成产品故障</td>
+
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -105,16 +150,13 @@
 						<td>13224001233</td>
 						<td><u class="ac02">未接单</u></td>
 						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./signatureRepair.html">查看详情</a></td>
-						
+						<td class="manage"><a href="./signatureSurgery.html">查看详情</a></td>
 					</tr>
 
-					<tr _id="">
+					<tr _id="" class="btnshow">
 						<td><input type="checkbox" name="ids" value="14" /></td>
 						<td>WX-20190215-0041</td>
-						<td>麻醉机</td>
-						<td>7200A麻醉机</td>
-						<td>维护不当造成产品故障</td>
+
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -122,16 +164,14 @@
 						<td>13224001233</td>
 						<td><u class="ac01">已接单</u></td>
 						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./signatureAnn.html">查看详情</a></td>
-						
+						<td class="manage"><a href="./signatureAnesthesia.html">查看详情</a></td>
+
 					</tr>
 
-					<tr _id="">
+					<tr _id="" class="btnshow">
 						<td><input type="checkbox" name="ids" value="14" /></td>
 						<td>WX-20190215-0041</td>
-						<td>麻醉机</td>
-						<td>7200A麻醉机</td>
-						<td>维护不当造成产品故障</td>
+
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -139,16 +179,24 @@
 						<td>13224001233</td>
 						<td><u class="ac01">已接单</u></td>
 						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./signatureTraining.html">查看详情</a></td>
-						
+						<td class="manage"><a href="./signaturebreathing.html">查看详情</a></td>
 					</tr>
-
-					<tr _id="">
+					<tr class="btnshow">
 						<td><input type="checkbox" name="ids" value="14" /></td>
 						<td>WX-20190215-0041</td>
-						<td>麻醉机</td>
-						<td>7200A麻醉机</td>
-						<td>维护不当造成产品故障</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>手术室</td>
+						<td>主任</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td><u class="ac01">已接单</u></td>
+						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
+						<td class="manage"><a href="./signaturebreathing.html">查看详情</a></td>
+					</tr>
+
+					<tr _id="" class="btnshow">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td>WX-20190215-0041</td>
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -156,16 +204,13 @@
 						<td>13224001233</td>
 						<td><u class="ac02">未接单</u></td>
 						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./signatureSpecial.html">查看详情</a></td>
-					
+						<td class="manage"><a href="./signatureLamp.html">查看详情</a></td>
 					</tr>
 
-					<tr _id="">
+					<tr _id="" class="btnshow">
 						<td><input type="checkbox" name="ids" value="14" /></td>
 						<td>WX-20190215-0041</td>
-						<td>麻醉机</td>
-						<td>7200A麻醉机</td>
-						<td>维护不当造成产品故障</td>
+
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -173,12 +218,47 @@
 						<td>13224001233</td>
 						<td><u class="ac01">已完成</u></td>
 						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
-						<td class="manage"><a href="./paidan.html">查看详情</a></td>
+						<td class="manage"><a href="./signatureRepair.html">查看详情</a></td>
 					</tr>
 
+					<tr _id="" class="btnshow">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td>WX-20190215-0041</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>手术室</td>
+						<td>主任</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td><u class="ac01">已完成</u></td>
+						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
+						<td class="manage"><a href="./signatureSpecial.html">查看详情</a></td>
+					</tr>
+					<tr _id="" class="btnshow">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td>WX-20190215-0041</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>手术室</td>
+						<td>主任</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td><u class="ac01">已完成</u></td>
+						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
+						<td class="manage"><a href="./signatureAnn.html">查看详情</a></td>
+					</tr>
+					<tr _id="" class="btnshow">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td>WX-20190215-0041</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>手术室</td>
+						<td>主任</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td><u class="ac01">已完成</u></td>
+						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
+						<td class="manage"><a href="./signatureTraining.html">查看详情</a></td>
+					</tr>
 				</table>
 				<div class="clear">
-					
 					<div class="paging">
 						<i class="tp">共1页(9条)
 						</i><i class="ml10">跳至</i><input type="text" class="inppage" /><i class="i555">回车跳转</i>
@@ -198,6 +278,17 @@
 	<script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
 	<script type="text/javascript" src="./asset/js/mousewheel.js"></script>
 	<script type="text/javascript" src="./asset/js/index.js"></script>
+	<script>
+		
+		$(document).on('click','.btnshow', function (e) {
+
+				if ($('.tingyunWindow').hasClass('ac')) {
+					$('.tingyunWindow').removeClass('ac');
+				} else {
+					$('.tingyunWindow').addClass('ac');
+			}
+		})
+	</script>
 </body>
 
 </html>

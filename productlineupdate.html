@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>谊安微信客服</title>
+    <link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
+    <link type="text/css" rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
+    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
+    <script type="text/javascript" src="./asset/js/timer.js"></script>
+    <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
+    <script type="text/javascript" src="./asset/js/pager.js"></script>
+    <script type="text/javascript" src="./asset/js/window.js"></script>
+</head>
+</head>
+
+<body>
+
+    <div class="TY-mainLay">
+        <!-- 左边按钮 -->
+        <script src="./asset/js/directory.js"></script>
+        <!-- 左边按钮 -->
+        <div class="TY-rightBox">
+            <div class="phead">
+                <div class="curnav">
+                    <label>产品线</label>
+                </div>
+            </div>
+
+            <form action="/manage/product_updateProductType.action" method="post" class="manage mt20"
+                enctype="multipart/form-data">
+                
+                <div class="section sectionEdit">
+                        <div class="title" onclick="toggleFilter(this)">
+                            <div class="label cbg">修改产品线</div>
+                            <div class="toggleFilter"></div>
+                        </div>
+                        <div class="line">
+                            <i class="label"><i class="x">*</i>产品线名称 :</i><input type="text" class="w200" name="adminDepartment.name">&nbsp;&nbsp;&nbsp;<i class="desc" id="i1">请输入添加产品线名称</i>
+                        </div>
+
+                        <div class="line">
+                            <a href="./productline.html" class="button button-sub ml140 ">提交保存</a>
+                            <a href="./productline.html" class="button button-sub ml140 ">返回</a>
+                            <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
+                            <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
+                        </div>
+                    </div>
+            </form>
+
+        </div>
+        <script type="text/javascript" src="./asset/js/tingyun.js"></script>
+        <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
+        <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
+        <script type="text/javascript" src="./asset/js/index.js"></script>
+</body>
+
+</html>

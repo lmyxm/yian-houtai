@@ -63,6 +63,15 @@
             width: 330px;
             font-weight: normal;
         }
+        form.manage .linefont {
+            width: 600px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        form.manage .linefont i {
+           font-size: 20px;
+           line-height: 20px
+        }
     </style>
 </head>
 </head>
@@ -87,6 +96,19 @@
                     <div class="title" onclick="toggleFilter(this)">
                         <div class="label cbg">安装报告单</div>
                         <div class="toggleFilter"></div>
+                    </div>
+                    <div  >
+                        <div class="line linefont">
+                            <i class="label"><i class="x"></i>多个报修产品线:</i><i class="radio">
+                                <a class="cur"><input checked="checked" type="radio"
+                                        name="productType.display" value="1"> 呼吸机</a>
+                                <a><input type="radio" name="productType.display" value="0">
+                                    麻醉机</a>
+                                    <a><input type="radio" name="productType.display" value="0">
+                                        手术床</a>
+
+                            </i><i class="desc"></i>
+                        </div>
                     </div>
                     <div class="data biaoge">
                         <div class="line">
