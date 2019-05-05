@@ -39,11 +39,17 @@
 					<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
 						<div class="items">
 							<div>
-								<i>名称：</i> <input type="text" name="user.userName" class="w100" value="" />
+								<i>筛选条件：</i>
+								<select name="">
+									<option value="s">请选择</option>
+									<option value="s">操作用户</option>
+									<option value="d">操作类型</option>
+									<option value="d">操作时间</option>
+										
+								</select>
+								<input type="text" name="user.userName" class="w100" value="" />
 							</div>
-							<div>
-								<i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
-							</div>
+							
 							<div class="btns">
 								<input type="hidden" name="type" value="1">
 								<input id="search" type="button" value="筛选结果" class="button" class="link-add" /><a

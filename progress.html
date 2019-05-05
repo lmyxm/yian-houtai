@@ -17,8 +17,14 @@
 	<script type="text/javascript" src="./asset/js/pager.js"></script>
 	<script type="text/javascript" src="./asset/js/window.js"></script>
 	<style>
+		
 		.tingyunWindow {
 			display: none;
+			border-radius: 6px;
+			border:none;
+			box-shadow: none;
+			background: none;
+			z-index: 1000;
 		}
 
 		.ac {
@@ -49,50 +55,55 @@
 				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
 					<div class="items">
 						<div>
-							<i>筛选条件：</i>
-							<select name="">
-									<option value="s">请选择条件</option>
+							<i>筛选条件：</i><select name="">
+								<option value="s">请选择条件</option>
 								<option value="s">工单编号</option>
 								<option value="s">医院</option>
 								<option value="s">科室</option>
 								<option value="d">职位</option>
 								<option value="d">部门</option>
 								<option value="d">创建时间</option>
+								<option value="f">联系人</option>
+								<option value="f">电话</option>
+								<option value="f">未接单</option>
+								<option value="f">已接单</option>
+								<option value="f">已完成</option>
 							</select>
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
+					
 						<div>
+							<i>筛选条件：</i><select name="">
+								<option value="s">请选择条件</option>
+								<option value="s">工单编号</option>
+								<option value="s">医院</option>
+								<option value="s">科室</option>
+								<option value="d">职位</option>
+								<option value="d">部门</option>
+								<option value="d">创建时间</option>
+								<option value="f">联系人</option>
+								<option value="f">电话</option>
+								<option value="f">未接单</option>
+								<option value="f">已接单</option>
+								<option value="f">已完成</option>
+							</select>
 							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
-							<i>筛选条件：</i>
-							<select name="">
-									<option value="s">请选择条件</option>
-									<option value="s">工单编号</option>
-									<option value="s">医院</option>
-									<option value="s">科室</option>
-									<option value="d">职位</option>
-									<option value="d">部门</option>
-									<option value="d">创建时间</option>
-								</select>
-						</div>
-						<div>
-							<input type="text" name="user.userName" class="w100" value="" />
-						</div>
-
-						<div>
-							<i>筛选条件：</i>
-							<select name="">
-									<option value="s">请选择条件</option>
-									<option value="s">工单编号</option>
-									<option value="s">医院</option>
-									<option value="s">科室</option>
-									<option value="d">职位</option>
-									<option value="d">部门</option>
-									<option value="d">创建时间</option>
-								</select>
-						</div>
-
-						<div>
+							<i>筛选条件：</i><select name="">
+								<option value="s">请选择条件</option>
+								<option value="s">工单编号</option>
+								<option value="s">医院</option>
+								<option value="s">科室</option>
+								<option value="d">职位</option>
+								<option value="d">部门</option>
+								<option value="d">创建时间</option>
+								<option value="f">联系人</option>
+								<option value="f">电话</option>
+								<option value="f">未接单</option>
+								<option value="f">已接单</option>
+								<option value="f">已完成</option>
+							</select>
 							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
@@ -100,9 +111,7 @@
 								value="" />
 							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
-						<div>
-
-						</div>
+						
 						<div class="btns">
 
 							<input type="hidden" name="type" value="1">
@@ -115,9 +124,8 @@
 				</form>
 			</div>
 
-			<div class="tingyunWindow" style="width: 70%; left: 20%; top: 20%;">
-				<div class="tyw-menu"><label>信息查看</label><button class="tyw-close"></button></div>
-				<div class="tyw-main" style="padding: 0px; height: 400px;"><iframe src="./progress.1.html"
+			<div class="tingyunWindow" style="width: 70%; left: 20%; top: 45%;">
+				<div class="tyw-main" style="padding: 0px; height: 200px;"><iframe src="./progress.1.html"
 						name="windowframe" scrolling="auto" frameborder="0"></iframe></div>
 			</div>
 			<div class="section">
@@ -139,9 +147,9 @@
 						<td width="40" class="manage">工单详情</td>
 					</tr>
 
-					<tr _id="" class="btnshow">
+					<tr _id="" >
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="##" class="btnshow">WX-20190215-0041</a></td>
 
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
@@ -153,9 +161,9 @@
 						<td class="manage"><a href="./signatureSurgery.html">查看详情</a></td>
 					</tr>
 
-					<tr _id="" class="btnshow">
+					<tr _id="" >
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="##" class="btnshow">WX-20190215-0041</a></td>
 
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
@@ -168,9 +176,9 @@
 
 					</tr>
 
-					<tr _id="" class="btnshow">
+					<tr _id="" >
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="##" class="btnshow">WX-20190215-0041</a></td>
 
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
@@ -181,9 +189,9 @@
 						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
 						<td class="manage"><a href="./signaturebreathing.html">查看详情</a></td>
 					</tr>
-					<tr class="btnshow">
+					<tr >
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="##" class="btnshow">WX-20190215-0041</a></td>
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -194,9 +202,9 @@
 						<td class="manage"><a href="./signaturebreathing.html">查看详情</a></td>
 					</tr>
 
-					<tr _id="" class="btnshow">
+					<tr _id="" >
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="##" class="btnshow">WX-20190215-0041</a></td>
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -207,9 +215,9 @@
 						<td class="manage"><a href="./signatureLamp.html">查看详情</a></td>
 					</tr>
 
-					<tr _id="" class="btnshow">
+					<tr _id="" >
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="##" class="btnshow">WX-20190215-0041</a></td>
 
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
@@ -221,9 +229,9 @@
 						<td class="manage"><a href="./signatureRepair.html">查看详情</a></td>
 					</tr>
 
-					<tr _id="" class="btnshow">
+					<tr _id="" >
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="##" class="btnshow">WX-20190215-0041</a></td>
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -233,9 +241,9 @@
 						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
 						<td class="manage"><a href="./signatureSpecial.html">查看详情</a></td>
 					</tr>
-					<tr _id="" class="btnshow">
+					<tr _id="" >
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="##" class="btnshow">WX-20190215-0041</a></td>
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -245,9 +253,9 @@
 						<td class="manage"><a href="./progressevaluation.html">查看评价</a></td>
 						<td class="manage"><a href="./signatureAnn.html">查看详情</a></td>
 					</tr>
-					<tr _id="" class="btnshow">
+					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
-						<td>WX-20190215-0041</td>
+						<td><a href="##" class="btnshow">WX-20190215-0041</a></td>
 						<td>重庆医科大学附属第一医院</td>
 						<td>手术室</td>
 						<td>主任</td>
@@ -263,6 +271,14 @@
 						<i class="tp">共1页(9条)
 						</i><i class="ml10">跳至</i><input type="text" class="inppage" /><i class="i555">回车跳转</i>
 					</div>
+					<ul style="    float: left;
+					height: 40px;
+					line-height: 40px;
+					padding-left: 15px;">
+						<li style="display:inline-block;vertical-align: top;">未接单：12</li>
+						<li style="display:inline-block;vertical-align: top;margin-left: 10px">已接单：42</li>
+						<li style="display:inline-block;vertical-align: top;margin-left: 10px">已完成：105</li>
+					</ul>
 					<div id="pager">
 						<div class="pager-box">
 							<div class="pager">
@@ -279,13 +295,13 @@
 	<script type="text/javascript" src="./asset/js/mousewheel.js"></script>
 	<script type="text/javascript" src="./asset/js/index.js"></script>
 	<script>
-		
-		$(document).on('click','.btnshow', function (e) {
-
-				if ($('.tingyunWindow').hasClass('ac')) {
-					$('.tingyunWindow').removeClass('ac');
-				} else {
-					$('.tingyunWindow').addClass('ac');
+		$(document).on('click', '.btnshow', function (e) {
+			console.log(e.target)
+			
+			if ($('.tingyunWindow').hasClass('ac')) {
+				$('.tingyunWindow').removeClass('ac');
+			} else {
+				$('.tingyunWindow').addClass('ac');
 			}
 		})
 	</script>

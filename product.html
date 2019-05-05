@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="./asset/js/pager.js"></script>
 	<script type="text/javascript" src="./asset/js/window.js"></script>
 	<style>
-		.section table.list img{
+		.section table.list img {
 			width: 50px;
 			height: 50px;
 		}
@@ -45,21 +45,45 @@
 				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
 					<div class="items">
 						<div>
-							<i>产品线：</i>
+							<i>筛选条件：</i>
 							<select name="">
-								<option value="s">全部</option>
-								<option value="s">呼吸机</option>
-								<option value="d">麻醉机</option>
-								<option value="d">手术床</option>
-								<option value="f">无影灯</option>
+								<option value="s">请选择</option>
+								<option value="s">产品线</option>
+								<option value="d">产品名称</option>
+								<option value="d">产品型号</option>
+								<option value="f">安装人</option>
+								<option value="f">创建时间</option>
+								<option value="f">编辑时间</option>
 							</select>
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
-							<i>会员名称：</i> <input type="text" name="user.userName" class="w100" value="" />
+							<i>筛选条件：</i>
+							<select name="">
+								<option value="s">请选择</option>
+								<option value="s">产品线</option>
+								<option value="d">产品名称</option>
+								<option value="d">产品型号</option>
+								<option value="f">安装人</option>
+								<option value="f">创建时间</option>
+								<option value="f">编辑时间</option>
+							</select>
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
-							<i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
+							<i>筛选条件：</i>
+							<select name="">
+								<option value="s">请选择</option>
+								<option value="s">产品线</option>
+								<option value="d">产品名称</option>
+								<option value="d">产品型号</option>
+								<option value="f">安装人</option>
+								<option value="f">创建时间</option>
+								<option value="f">编辑时间</option>
+							</select>
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
+
 						<div class="btns">
 							<input type="hidden" name="type" value="1">
 							<input id="search" type="button" value="筛选结果" class="button" class="link-add" /><a
@@ -75,9 +99,9 @@
 				<div class="title">
 					<div class="label cbg">产品信息列表</div>
 					<div class="links">
-							<a href="./productAdd.html" class="button addButton"><i>添加产品</i></a>
-						</div>
-					<div class="links"  style="margin-right:50px">
+						<a href="./productAdd.html" class="button addButton"><i>添加产品</i></a>
+					</div>
+					<div class="links" style="margin-right:50px">
 						<a href="./productline.html" class="button addButton"><i>添加产品线</i></a>
 					</div>
 				</div>
@@ -91,7 +115,7 @@
 						<td width="80">产品型号</td>
 						<td width="80">安装日期</td>
 						<td width="80">安装人</td>
-						
+
 						<td width="80">创建时间</td>
 						<td width="80">编辑时间</td>
 						<td width="10" class="manage">管理</td>
@@ -109,9 +133,9 @@
 						<td>2019-02-03</td>
 						<td>2019-02-03</td>
 						<td class="manage">
-								<a href="./productlist.html" class="edit" title="编辑"></a>
-								<a class="del" title="删除"></a>
-							</td>
+							<a href="./productlist.html" class="edit" title="编辑"></a>
+							<a class="del" title="删除"></a>
+						</td>
 					</tr>
 
 					<tr _id="">
@@ -126,9 +150,9 @@
 						<td>2019-02-03</td>
 						<td>2019-02-03</td>
 						<td class="manage">
-								<a href="./productlist.html" class="edit" title="编辑"></a>
-								<a class="del" title="删除"></a>
-							</td>
+							<a href="./productlist.html" class="edit" title="编辑"></a>
+							<a class="del" title="删除"></a>
+						</td>
 					</tr>
 
 					<tr _id="">
@@ -143,9 +167,9 @@
 						<td>2019-02-03</td>
 						<td>2019-02-03</td>
 						<td class="manage">
-								<a href="./productlist.html" class="edit" title="编辑"></a>
-								<a class="del" title="删除"></a>
-							</td>
+							<a href="./productlist.html" class="edit" title="编辑"></a>
+							<a class="del" title="删除"></a>
+						</td>
 					</tr>
 
 					<tr _id="">
@@ -160,9 +184,9 @@
 						<td>2019-02-03</td>
 						<td>2019-02-03</td>
 						<td class="manage">
-								<a href="./productlist.html" class="edit" title="编辑"></a>
-								<a class="del" title="删除"></a>
-							</td>
+							<a href="./productlist.html" class="edit" title="编辑"></a>
+							<a class="del" title="删除"></a>
+						</td>
 					</tr>
 
 					<tr _id="">
@@ -177,9 +201,9 @@
 						<td>2019-02-03</td>
 						<td>2019-02-03</td>
 						<td class="manage">
-								<a href="./productlist.html" class="edit" title="编辑"></a>
-								<a class="del" title="删除"></a>
-							</td>
+							<a href="./productlist.html" class="edit" title="编辑"></a>
+							<a class="del" title="删除"></a>
+						</td>
 					</tr>
 
 				</table>

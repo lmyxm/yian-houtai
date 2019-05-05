@@ -40,23 +40,62 @@
                 <form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
                     <div class="items">
                         <div>
-                            <i>地区：</i>
+                            <i>筛选条件：</i>
                             <select name="">
-                                <option value="s">全部</option>
-                                <option value="s">北京</option>
-                                <option value="d">上海</option>
-                                <option value="d">深圳</option>
-                                <option value="f">江苏</option>
+                                <option value="s">请选择</option>
+                                <option value="s">客户编码</option>
+                                <option value="d">客户名称</option>
+                                <option value="d">省，市，地区</option>
+                                <option value="f">联系人</option>
+                                <option value="f">单位电话</option>
+                                <option value="f">终端客户级别</option>
+                                <option value="f">客户服务等级</option>
+                                <option value="f">邮编</option>
+                                <option value="f">使用科室</option>
+                                <option value="f">终端客户类型</option>
+                                <option value="f">国家</option>
+                                <option value="f">创建时间</option>
                             </select>
-                        </div>
-
-                        <div>
-                            <i>名称：</i> <input type="text" name="user.userName" class="w100" value="" />
+                            <input type="text" name="user.userName" class="w100" value="" />
                         </div>
                         <div>
-                            <i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
+                            <i>筛选条件：</i>
+                            <select name="">
+                                <option value="s">请选择</option>
+                                <option value="s">客户编码</option>
+                                <option value="d">客户名称</option>
+                                <option value="d">省，市，地区</option>
+                                <option value="f">联系人</option>
+                                <option value="f">单位电话</option>
+                                <option value="f">终端客户级别</option>
+                                <option value="f">客户服务等级</option>
+                                <option value="f">邮编</option>
+                                <option value="f">使用科室</option>
+                                <option value="f">终端客户类型</option>
+                                <option value="f">国家</option>
+                                <option value="f">创建时间</option>
+                            </select>
+                            <input type="text" name="user.userName" class="w100" value="" />
                         </div>
-
+                        <div>
+                            <i>筛选条件：</i>
+                            <select name="">
+                                <option value="s">请选择</option>
+                                <option value="s">客户编码</option>
+                                <option value="d">客户名称</option>
+                                <option value="d">省，市，地区</option>
+                                <option value="f">联系人</option>
+                                <option value="f">单位电话</option>
+                                <option value="f">终端客户级别</option>
+                                <option value="f">客户服务等级</option>
+                                <option value="f">邮编</option>
+                                <option value="f">使用科室</option>
+                                <option value="f">终端客户类型</option>
+                                <option value="f">国家</option>
+                                <option value="f">创建时间</option>
+                            </select>
+                            <input type="text" name="user.userName" class="w100" value="" />
+                        </div>
                         <div class="btns">
 
                             <input type="hidden" name="type" value="1">
@@ -87,15 +126,14 @@
                 <table class="list" border=0 cellpadding=0>
                     <tr class="firstTr">
                         <td width="20"><input type="checkbox" name="_ids" onClick="_select_ids('auto',this)" /></td>
+                        <td width='20'>序号</td>
                         <td width="80">客户编码</td>
                         <td width="80">客户名称</td>
-                        <td width="80">城市</td>
-                        <td width="80">省份</td>
+                        <td width="80">省，市，地区</td>
                         <td width="80">联系人</td>
                         <td width="80">单位电话</td>
                         <td width="40">终端客户级别</td>
                         <td width="80">客户服务等级</td>
-                        <td width="80">地址</td>
                         <td width="40">邮编</td>
                         <td width="40">使用科室</td>
                         <td width="40">终端客户类型</td>
@@ -107,15 +145,15 @@
                     <tr _id="">
                         <td><input type="checkbox" name="ids" value="14" /></td>
                         <td>1</td>
+                        <td>1</td>
                         <td>湖北省荆门市仁爱医院</td>
-                        <td>河北</td>
-                        <td>北京市</td>
+                        <td>河北，北京市</td>
                         <td>谭平先</td>
                         <td>19658452554</td>
-                        <td>呼吸科</td>
-                        <td>19658452554</td>
-                        <td>私立</td>
+                        <td>渠道</td>
                         <td>标准客户</td>
+                        <td>100068</td>
+
                         <td></td>
                         <td>医疗机构</td>
                         <td>中国</td>
@@ -128,15 +166,14 @@
                     <tr _id="">
                         <td><input type="checkbox" name="ids" value="14" /></td>
                         <td>1</td>
+                        <td>1</td>
                         <td>湖北省荆门市仁爱医院</td>
-                        <td>河北</td>
-                        <td>北京市</td>
+                        <td>河北，北京市</td>
                         <td>谭平先</td>
                         <td>19658452554</td>
-                        <td>呼吸科</td>
-                        <td>19658452554</td>
-                        <td>私立</td>
+                        <td>医院</td>
                         <td>标准客户</td>
+                        <td>100068</td>
                         <td></td>
                         <td>医疗机构</td>
                         <td>中国</td>
@@ -148,15 +185,14 @@
                     <tr _id="">
                         <td><input type="checkbox" name="ids" value="14" /></td>
                         <td>1</td>
+                        <td>1</td>
                         <td>湖北省荆门市仁爱医院</td>
-                        <td>河北</td>
-                        <td>北京市</td>
+                        <td>河北，北京市</td>
                         <td>谭平先</td>
                         <td>19658452554</td>
-                        <td>呼吸科</td>
-                        <td>19658452554</td>
-                        <td>私立</td>
+                        <td>医院</td>
                         <td>标准客户</td>
+                        <td>100068</td>
                         <td></td>
                         <td>医疗机构</td>
                         <td>中国</td>
@@ -168,15 +204,14 @@
                     <tr _id="">
                         <td><input type="checkbox" name="ids" value="14" /></td>
                         <td>1</td>
+                        <td>1</td>
                         <td>湖北省荆门市仁爱医院</td>
-                        <td>河北</td>
-                        <td>北京市</td>
+                        <td>河北，北京市</td>
                         <td>谭平先</td>
                         <td>19658452554</td>
-                        <td>呼吸科</td>
-                        <td>19658452554</td>
-                        <td>私立</td>
+                        <td>医院</td>
                         <td>标准客户</td>
+                        <td>100068</td>
                         <td></td>
                         <td>医疗机构</td>
                         <td>中国</td>
@@ -188,15 +223,14 @@
                     <tr _id="">
                         <td><input type="checkbox" name="ids" value="14" /></td>
                         <td>1</td>
+                        <td>1</td>
                         <td>湖北省荆门市仁爱医院</td>
-                        <td>河北</td>
-                        <td>北京市</td>
+                        <td>河北，北京市</td>
                         <td>谭平先</td>
                         <td>19658452554</td>
-                        <td>呼吸科</td>
-                        <td>19658452554</td>
-                        <td>私立</td>
+                        <td>渠道</td>
                         <td>标准客户</td>
+                        <td>100068</td>
                         <td></td>
                         <td>医疗机构</td>
                         <td>中国</td>
@@ -208,15 +242,14 @@
                     <tr _id="">
                         <td><input type="checkbox" name="ids" value="14" /></td>
                         <td>1</td>
+                        <td>1</td>
                         <td>湖北省荆门市仁爱医院</td>
-                        <td>河北</td>
-                        <td>北京市</td>
+                        <td>河北，北京市</td>
                         <td>谭平先</td>
                         <td>19658452554</td>
-                        <td>呼吸科</td>
-                        <td>19658452554</td>
-                        <td>私立</td>
+                        <td>医院</td>
                         <td>标准客户</td>
+                        <td>100068</td>
                         <td></td>
                         <td>医疗机构</td>
                         <td>中国</td>

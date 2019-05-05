@@ -17,7 +17,7 @@
     <script type="text/javascript" src="./asset/js/window.js"></script>
     <style>
         form.manage .radio {
-            height: 22px;
+            height: 20px;
             ;
         }
 
@@ -43,20 +43,26 @@
 
         }
 
+        form.manage .linefont {
+            width: 600px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        form.manage .linefont i {
+            font-size: 20px;
+            line-height: 20px
+        }
+
+
         form.manage .lineac i.label {
             font-weight: normal;
-            width: 80px;
-            text-align: left;
-            font-size: 14px;
-            padding: 0;
+            width: 120px;
         }
 
         form.manage .lineac_w i.label {
-            width: 210px;
+            width: 140px;
             font-weight: normal;
-            font-size: 14px;
-            margin-right: 20px;
-            margin-bottom: 20px
         }
 
         form.manage .lineac_c i.label {
@@ -64,14 +70,92 @@
             font-weight: normal;
         }
 
-        form.manage .linefont {
-            width: 600px;
-            display: inline-block;
-            vertical-align: top;
+
+        .section .biaoge h3 {
+            height: 14px;
+            line-height: 14px;
+            text-align: center;
+            margin-left: 0;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
         }
-        form.manage .linefont i {
-           font-size: 20px;
-           line-height: 20px
+
+        .section.sectionEdit .biaogetitle {
+            margin-left: 49px;
+            width: 683px;
+        }
+
+        .biandan td,
+        .biandan th {
+            border: 1px solid #ccc;
+        }
+
+        .pdac {
+            padding: 0 10px;
+        }
+
+        .biandan .yanse {
+            background: #ccc;
+        }
+
+        .biandan input {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .biandan a {
+            pointer-events: none;
+
+        }
+
+        .biandan h4 {
+            height: 0px;
+            line-height: 0px;
+            padding-left: 10px;
+        }
+
+        .biandan p {
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .biandan .divDetail {
+            width: 500px;
+            padding: 10px;
+            word-break: break-all;
+        }
+
+        .biandan .divDetail01 {
+            width: 539px;
+            padding: 10px;
+            word-break: break-all;
+        }
+
+
+        form.manage .lineac_w i.label {
+            width: inherit;
+        }
+
+        form.manage .lineac_w {
+            width: inherit;
+        }
+
+        form.manage textarea {
+            height: 30px;
+        }
+
+
+        .biaoge dl dd {
+            float: left;
+            width: 185px;
+            height: 30px;
+            line-height: 30px;
+            /* margin: 0 auto; */
+            padding: 0 15px;
+            border: 1px solid #b0b0ae;
+            margin: 0;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -95,89 +179,100 @@
                 enctype="multipart/form-data">
                 <div class="section sectionEdit">
                     <div class="title" onclick="toggleFilter(this)">
-                        <div class="label cbg">专项服务报告单</div>
+                        <div class="label cbg">专项服务记录单</div>
                         <div class="toggleFilter"></div>
                     </div>
-                    <div  >
-                        <div class="line linefont">
-                            <i class="label"><i class="x"></i>多个报修产品线:</i><i class="radio">
-                                <a class="cur"><input checked="checked" type="radio"
-                                        name="productType.display" value="1"> 呼吸机</a>
-                                <a><input type="radio" name="productType.display" value="0">
-                                    麻醉机</a>
-                                    <a><input type="radio" name="productType.display" value="0">
-                                        手术床</a>
-
-                            </i><i class="desc"></i>
-                        </div>
-                    </div>
                     <div class="data biaoge">
-                        <div class="line">
-                            <h3>一、客户信息</h3>
+                        <div class="biaogetitle">
+                            <img src="./asset/img/qianzilogo.jpg" alt="" style="    width: 155px;margin-bottom: -15px;">
+                            <h3>专项服务记录单</h3>
                         </div>
-                        <div class="line">
-                            <ul>
-                                <li>
-                                    <b>派工单号</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>产品线</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="line">
-                            <ul>
-                                <li>
-                                    <b style="width:120px;">服务需求单位/人：</b>
-                                    <input type="text" name="" id="" style="width: 205px;">
-                                </li>
-                                <li>
-                                    <b class="label">申请人类型</b>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>客户</i>
-                                        </dd>
-                                    </dl>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>非客户</i>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <b>服务人员</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>服务地点</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>服务时间</b>
-                                    <input type="text" name="" id="fuwutime" class="w257">
-                                </li>
-                                <li>
-                                    <b style="width:90px">服务内容描述</b>
-                                    <input type="text" name="" id="" style="width: 238px;">
-                                </li>
+                        <table cellspacing="0" align="center" class="biandan">
+
+                            <!--caption:标题标签-->
+                            <!--tr:一行-->
+
+                            <tr>
+                                <!--th:表头的单元格-->
+                                <th colspan="2" class="pdac">
+                                    <p>派工单号：</p>
+                                </th>
+                                <th colspan="8">
+                                    <p style="    width: 552px;">AEON/QP12-R5/R4</p>
+                                </th>
 
 
-
-                            </ul>
-
-                        </div>
-                        <div class="line">
-                            <h3>二、服务标准，客户评价</h3>
-                        </div>
-                        <div class="line">
-                            <ul class="tiankuang">
-                                <li>
+                            </tr>
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>一、服务事项</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">
+                                    <p>服务需求单位/人</p>
+                                </td>
+                                <td colspan="5" class="pdac">
+                                    <p style="width:150px"></p>
+                                </td>
+                                <td colspan="1" class="pdac">
+                                    <p>申请人类型</p>
+                                </td>
+                                <td colspan="2" class="pdac">
                                     <div class="line lineac_w">
-                                        <i class="label">服务分类</i><i class="radio">
+                                        <i class="label"></i><i class="radio">
                                             <a class="cur"><input checked="checked" type="radio"
-                                                    name="productType.display" value="1"> 呼吸线</a>
+                                                    name="productType.display" value="1">客户</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                非客户</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">
+                                    <p>服务人员</p>
+                                </td>
+                                <td colspan="8" class="pdac">
+                                    <p></p>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">
+                                    <p>服务地点</p>
+                                </td>
+                                <td colspan="4" class="pdac">
+                                    <p></p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p>服务时间</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p></p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="10" class="pdac">
+                                    <p>服务内容描述</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" class="pdac">
+                                    <p style="height:125px;width: 640px">服务内容描述</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">
+                                    <p>服务分类</p>
+                                </td>
+                                <td colspan="8" class="pdac">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">呼吸线</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 麻醉线</a>
                                             <a><input type="radio" name="productType.display" value="0">
@@ -186,86 +281,85 @@
                                                 展会</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 验收</a>
-                                            <a><input type="radio" name="productType.display" value="0">
-                                                其它</a>
-
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1">其他</a>
                                         </i><i class="desc"></i>
                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
 
-                                </li>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">
+                                    <p>若为其他，请输入：</p>
+                                </td>
+                                <td colspan="8" class="pdac">
+                                    <p></p>
+                                </td>
+                            </tr>
 
-                                <li>
-                                    <b style="width:215px;text-align: right;padding-right: 20px">若为其它，请填写</b>
-                                    <textarea type="text" name="" id="" class="w257"></textarea>
-                                </li>
-                                <li style="margin-top:20px">
-                                    <b class="label"
-                                        style="width:215px;height: 100px;text-align:right;margin-right: 20px ">服务申请人</b>
-                                    <img src="./asset/img/bg.png" alt=""
-                                        style="width:120px;height:150px;display:inline-block;vertical-align: top;margin: 0 100px 20px 0">
-
-                                </li>
-                                <li style="margin-bottom:20px">
-                                    <b class="label" style="width:215px;text-align:right;margin-right: 20px">联系电话</b>
-                                    <input type="text" name="" id="" class="w200">
-                                </li>
-
-                                <li>
-                                    <div class="rili" style="left:480px"></div>
-                                    <b class="label" style="width:215px;text-align:right;margin-right: 20px">日期</b>
-                                    <input type="text" name="" id="lianxitime" class="w200">
-                                </li>
-
-                            </ul>
-
-                        </div>
+                            <tr>
+                                <td colspan="2" class="pdac">
+                                    <p>服务申请人</p>
+                                </td>
+                                <td colspan="8" class="pdac">
+                                    <p></p>
+                                </td>
 
 
-                        <div class="line">
-                            <h3>四、联系我们</h3>
-                        </div>
-                        <div class="line">
-                            <ul class="tiankuang">
-                                <li>
-                                    <div class="line">
-                                        <i class="label"></i><i class="desc"
-                                            style="width:550px;line-height: 30px">非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线:
-                                        </i>
-                                        <i class="label"></i><i class="desc"
-                                            style="width:500px;line-height: 30px">1、800-810-8333.或+86 10- 58411198；</i>
-                                        <i class="label"></i><i class="desc"
-                                            style="width:500px;line-height: 30px">2、登陆我们的网站:http://www.aeonmed.com。 </i>
-                                    </div>
-                                </li>
-                            </ul>
+                            </tr>
 
-                        </div>
+                            <tr>
+                                <td colspan="8" class="pdac">
+                                    <p>联系电话：</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>123123123</p>
+                                </td>
 
-                        <div class="line">
-                            <a href="./repair.html" class="button button-sub ml140 ">修改</a>
-                            <a href="./repair.html" class="button button-sub ml140 ">返回</a>
-                            <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
-                            <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
-                        </div>
+                                <td colspan="2" class="pdac">
+                                    <p>日期：</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>123123123</p>
+                                </td>
+
+                            </tr>
+
+
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>二、联系我们</h4>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="10" class="pdac">
+                                    <p>非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线:</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" class="pdac">
+                                    <p style="    width: 628px;">1、800-810-8333.或400-610-8333</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" class="pdac">
+                                    <p>2、登陆我们的网站:http://www.aeonmed.com。</p>
+                                </td>
+                            </tr>
+
+                        </table>
                     </div>
+
+                    <div class="line" style="margin:30px 0 0 50px">
+                        <a href="./repair.html" class="button button-sub ml140 ">导出</a>
+                        <a href="./repair.html" class="button button-sub ml140 ">返回</a>
+                        <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
+                        <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
+                    </div>
+                </div>
             </form>
 
         </div>
     </div>
     <script type="text/javascript" src="./asset/js/tingyun.js"></script>
-    <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
-    <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
-    <script type="text/javascript" src="./asset/js/index.js"></script>
-    <script src="./laydate/laydate.js"></script> <!-- 改成你的路径 -->
-    <script>
-        //执行一个laydate实例
-        laydate.render({
-            elem: '#fuwutime'
-        });
-        laydate.render({
-            elem: '#lianxitime'
-        });
-    </script>
+  
 </body>
 
 </html>

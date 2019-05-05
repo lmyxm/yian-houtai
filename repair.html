@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
 	<link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
 
-	<!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
+	<link rel="stylesheet" type="text/css" href="./asset/css/timer.css">
 	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
 	<script type="text/javascript" src="./asset/js/timer.js"></script>
 	<script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
@@ -40,31 +40,63 @@
 				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
 					<div class="items">
 						<div>
-							<i>状态：</i>
+							<i>筛选条件：</i>
 							<select name="">
-								<option value="s">全部</option>
-								<option value="s">未审核</option>
-								<option value="d">待派单</option>
-								<option value="d">再次派单</option>
+								<option value="s">请选择</option>
+								<option value="s">工单编号</option>
+								<option value="d">医院</option>
+								<option value="d">科室</option>
+								<option value="f">职位</option>
+								<option value="f">联系人</option>
+								<option value="f">电话</option>
+								<option value="f">未审核</option>
+								<option value="f">待派单</option>
 								<option value="f">已拒绝</option>
+								<option value="f">再次派单</option>
 							</select>
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
-							<i>工单分类：</i>
+							<i>筛选条件：</i>
 							<select name="">
-								<option value="s">全部</option>
-								<option value="s">医院</option>
-								<option value="d">渠道</option>
+								<option value="s">请选择</option>
+								<option value="s">工单编号</option>
+								<option value="d">医院</option>
+								<option value="d">科室</option>
+								<option value="f">职位</option>
+								<option value="f">联系人</option>
+								<option value="f">电话</option>
+								<option value="f">未审核</option>
+								<option value="f">待派单</option>
+								<option value="f">已拒绝</option>
+								<option value="f">再次派单</option>
 							</select>
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 
 						<div>
-							<i>医院名称：</i> <input type="text" name="user.userName" class="w100" value="" />
+							<i>筛选条件：</i>
+							<select name="">
+								<option value="s">请选择</option>
+								<option value="s">工单编号</option>
+								<option value="d">医院</option>
+								<option value="d">科室</option>
+								<option value="f">职位</option>
+								<option value="f">联系人</option>
+								<option value="f">电话</option>
+								<option value="f">未审核</option>
+								<option value="f">待派单</option>
+								<option value="f">已拒绝</option>
+								<option value="f">再次派单</option>
+							</select>
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
-							<i>电话：</i> <input type="text" name="user.tel" class="w100" value="" />
+							<i>时&nbsp;间&nbsp;段：&nbsp;</i> <input type="text" name="user.userName" class="w100"
+								value="" />
+							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
-
+						
 						<div class="btns">
 
 							<input type="hidden" name="type" value="1">
@@ -89,7 +121,6 @@
 					<tr class="firstTr">
 						<td width="20"><input type="checkbox" name="_ids" onClick="_select_ids('auto',this)" /></td>
 						<td width="80">工单编号</td>
-						
 						<td width="80">医院</td>
 						<td width="40">科室</td>
 						<td width="40">职位</td>

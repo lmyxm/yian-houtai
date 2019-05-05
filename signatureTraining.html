@@ -10,15 +10,11 @@
     <link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
     <link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
 
-    <!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
-    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
-    <script type="text/javascript" src="./asset/js/timer.js"></script>
-    <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
-    <script type="text/javascript" src="./asset/js/window.js"></script>
+   
     <style>
         form.manage .radio {
-            height: 21px;
-
+            height: 20px;
+            ;
         }
 
         form.manage .radio>a:hover,
@@ -39,29 +35,8 @@
         }
 
         form.manage .lineac_w {
-            width: 750px;
+            width: 600px;
 
-        }
-
-        form.manage .lineac i.label {
-            font-weight: normal;
-            width: 80px;
-            text-align: left;
-            font-size: 14px;
-            padding: 0;
-        }
-
-        form.manage .lineac_w i.label {
-            width: 210px;
-            font-weight: normal;
-            font-size: 14px;
-            margin-right: 20px;
-            margin-bottom: 20px
-        }
-
-        form.manage .lineac_c i.label {
-            width: 330px;
-            font-weight: normal;
         }
 
         form.manage .linefont {
@@ -69,9 +44,114 @@
             display: inline-block;
             vertical-align: top;
         }
+
         form.manage .linefont i {
-           font-size: 20px;
-           line-height: 20px
+            font-size: 20px;
+            line-height: 20px
+        }
+
+
+        form.manage .lineac i.label {
+            font-weight: normal;
+            width: 120px;
+        }
+
+        form.manage .lineac_w i.label {
+            width: 140px;
+            font-weight: normal;
+        }
+
+        form.manage .lineac_c i.label {
+            width: 330px;
+            font-weight: normal;
+        }
+
+
+        .section .biaoge h3 {
+            height: 14px;
+            line-height: 14px;
+            text-align: center;
+            margin-left: 0;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+        }
+
+        .section.sectionEdit .biaogetitle {
+            margin-left: 6px;
+            width: 765px;
+        }
+
+        .biandan td,
+        .biandan th {
+            border: 1px solid #ccc;
+        }
+
+        .pdac {
+            padding: 0 10px;
+        }
+
+        .biandan .yanse {
+            background: #ccc;
+        }
+
+        .biandan input {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .biandan a {
+            pointer-events: none;
+
+        }
+
+        .biandan h4 {
+            height: 0px;
+            line-height: 0px;
+            padding-left: 10px;
+        }
+
+        .biandan p {
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .biandan .divDetail {
+            width: 500px;
+            padding: 10px;
+            word-break: break-all;
+        }
+
+        .biandan .divDetail01 {
+            width: 500px;
+            height: 50px;
+            word-break: break-all;
+        }
+
+
+        form.manage .lineac_w i.label {
+            width: inherit;
+        }
+
+        form.manage .lineac_w {
+            width: inherit;
+        }
+
+        form.manage textarea {
+            height: 30px;
+        }
+
+
+        .biaoge dl dd {
+            float: left;
+            width: 185px;
+            height: 30px;
+            line-height: 30px;
+            /* margin: 0 auto; */
+            padding: 0 15px;
+            border: 1px solid #b0b0ae;
+            margin: 0;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -91,201 +171,254 @@
                 </div>
             </div>
 
-            <form action="/manage/product_updateProductType.action" method="post" class="manage mt20"
-                enctype="multipart/form-data">
+            <form action="" method="post" class="manage mt20" enctype="multipart/form-data">
                 <div class="section sectionEdit">
                     <div class="title" onclick="toggleFilter(this)">
                         <div class="label cbg">培训报告单</div>
                         <div class="toggleFilter"></div>
                     </div>
-                    <div  >
-                        <div class="line linefont">
-                            <i class="label"><i class="x"></i>多个报修产品线:</i><i class="radio">
-                                <a class="cur"><input checked="checked" type="radio"
-                                        name="productType.display" value="1"> 呼吸机</a>
-                                <a><input type="radio" name="productType.display" value="0">
-                                    麻醉机</a>
-                                    <a><input type="radio" name="productType.display" value="0">
-                                        手术床</a>
-
-                            </i><i class="desc"></i>
-                        </div>
-                    </div>
-
-
                     <div class="data biaoge">
-                        <div class="line">
-                            <h3>一、产品信息</h3>
+                        <div class="biaogetitle">
+                            <img src="./asset/img/qianzilogo.jpg" alt="" style="    width: 155px;margin-bottom: -15px;">
+                            <h3>培训报告单</h3>
                         </div>
-                        <div class="line">
-                            <ul>
-                                <li>
-                                    <b>服务单号</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="line">
-                            <ul>
-                                <li>
-                                    <b>客户名称</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>联 系 人</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>联系电话</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>产品型号</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>机器编号</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>使用科室</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
+                        <table cellspacing="0" align="center" class="biandan">
 
-                            </ul>
+                            <!--caption:标题标签-->
+                            <!--tr:一行-->
 
-                        </div>
-                        <div class="line">
-                            <h3>二、培训内容</h3>
-                        </div>
-                        <div class="line">
-                            <ul class="tiankuang">
-                                <li>
-                                    <b style="width:220px;margin-right:15px;text-align: right;">培训讲师</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li style="margin:20px 0 20px">
-                                    <b style="width:220px;margin-right:15px;text-align: right;">整机介绍</b>
-                                    <textarea type="text" name="" id="" class="w257"></textarea>
-                                </li>
-                                <li>
+                            <tr>
+                                <!--th:表头的单元格-->
+                                <th colspan="2" class="pdac">
+                                    <p>派工单号：</p>
+                                </th>
+                                <th colspan="2">
+                                    <p>AEON/QP12-R5/R4</p>
+                                </th>
+                                <th colspan="2" class="pdac">
+                                    <p>产品线：</p>
+                                </th>
+                                <th colspan="4">
+                                    <p>AEON/QP12-R5/R4</p>
+                                </th>
+
+                            </tr>
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>一、产品信息</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" class="pdac">
+                                    <p>客户名称</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p style="width:150px"></p>
+                                </td>
+                                <td colspan="1" class="pdac">
+                                    <p style="width:150px">联 系 人</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p></p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p>联系电话</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p style="width:80px">18381884399</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="1" class="pdac">
+                                    <p>产品型号</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p style="width:150px"></p>
+                                </td>
+                                <td colspan="1" class="pdac">
+                                    <p style="width:150px">机器编号</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p></p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p>使用科室</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p></p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>二、培训内容</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>培训讲师</p>
+                                </td>
+                                <td colspan="7" class="pdac">
+                                    <p>李老师</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>整机介绍:</p>
+                                </td>
+                                <td colspan="7" class="pdac">
+                                    <p class="divDetail01">123</p>
+                                </td>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>客户评价</p>
+                                </td>
+                                <td colspan="7" class="pdac">
                                     <div class="line lineac_w">
-                                        <i class="label">客户评价</i><i class="radio">
+                                        <i class="label"></i><i class="radio">
                                             <a class="cur"><input checked="checked" type="radio"
-                                                    name="productType.display" value="1"> 非常满意</a>
+                                                    name="productType.display" value="1">非常满意</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 满意</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                一般</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 不满意</a>
                                         </i><i class="desc"></i>
                                     </div>
-
-                                </li>
-                                <li style="margin:10px 0 20px">
-                                    <b style="width:220px;margin-right:15px;text-align: right;">操作讲解</b>
-                                    <textarea type="text" name="" id="" class="w130"></textarea>
-                                </li>
-                                <li>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>操作讲解:</p>
+                                </td>
+                                <td colspan="7" class="pdac">
+                                    <p class="divDetail01">123</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>客户评价</p>
+                                </td>
+                                <td colspan="7" class="pdac">
                                     <div class="line lineac_w">
-                                        <i class="label">客户评价</i><i class="radio">
+                                        <i class="label"></i><i class="radio">
                                             <a class="cur"><input checked="checked" type="radio"
-                                                    name="productType.display" value="1"> 非常满意</a>
+                                                    name="productType.display" value="1">非常满意</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 满意</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                一般</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 不满意</a>
                                         </i><i class="desc"></i>
                                     </div>
-
-                                </li>
-                                <li style="margin:10px 0 20px">
-                                    <b style="width:220px;margin-right:15px;text-align: right;">维护保养</b>
-                                    <textarea type="text" name="" id="" class="w130"></textarea>
-                                </li>
-                                <li>
-                                        <div class="line lineac_w">
-                                                <i class="label">客户评价</i><i class="radio">
-                                                    <a class="cur"><input checked="checked" type="radio"
-                                                            name="productType.display" value="1"> 非常满意</a>
-                                                    <a><input type="radio" name="productType.display" value="0">
-                                                        满意</a>
-                                                    <a><input type="radio" name="productType.display" value="0">
-                                                        不满意</a>
-                                                </i><i class="desc"></i>
-                                            </div>
-                                </li>
-                                <li>
-                                    <b class="label"
-                                        style="width:220px;height: 100px;text-align:right;margin-right: 30px">客户签名</b>
-                                    <img src="./asset/img/bg.png" alt=""
-                                        style="width:120px;height:150px;display:inline-block;vertical-align: top;margin: 0 100px 20px 0">
-                                </li>
-                                <li style="margin-bottom:20px">
-                                    <b class="label" style="width:220px;text-align:right;margin-right: 15px">联系电话</b>
-                                    <input type="text" name="" id="" class="w200">
-                                </li>
-                                <li>
-                                    <div class="rili" style="left:480px"></div>
-                                    <b class="label" style="width:220px;text-align:right;margin-right: 15px">日期</b>
-                                    <input type="text" name="" id="fuwutime" class="w200">
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                        <div class="line">
-                            <h3>三、客户建议</h3>
-                        </div>
-                        <div class="line">
-                            <ul class="tiankuang">
-                                <li>
-                                    <textarea type="text" name="" id="" class="w257"
-                                        style="margin-left:180px"></textarea>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="line">
-                            <h3>四、联系我们</h3>
-                        </div>
-                        <div class="line">
-                            <ul class="tiankuang">
-                                <li>
-                                    <div class="line">
-                                        <i class="label"></i><i class="desc"
-                                            style="width:550px;line-height: 30px">非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线:
-                                        </i>
-                                        <i class="label"></i><i class="desc"
-                                            style="width:500px;line-height: 30px">1、800-810-8333.或+86 10- 58411198；</i>
-                                        <i class="label"></i><i class="desc"
-                                            style="width:500px;line-height: 30px">2、登陆我们的网站:http://www.aeonmed.com。 </i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>维护保养:</p>
+                                </td>
+                                <td colspan="7" class="pdac">
+                                    <p class="divDetail01">123</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>客户评价</p>
+                                </td>
+                                <td colspan="7" class="pdac">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a class="cur"><input checked="checked" type="radio"
+                                                    name="productType.display" value="1">非常满意</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                满意</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                一般</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                不满意</a>
+                                        </i><i class="desc"></i>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">
+                                    <p>客户签名：</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <img src="./asset/img/logo.png" alt=""
+                                        style="height:80px;width:150px;padding: 10px">
+                                </td>
 
-                        <div class="line">
-                            <a href="./repair.html" class="button button-sub ml140 ">修改</a>
-                            <a href="./repair.html" class="button button-sub ml140 ">返回</a>
-                            <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
-                            <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
-                        </div>
+                                <td colspan="2" class="pdac">
+                                    <p>联系电话：</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p>18381994300</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p>日 期:2019-05-01</p>
+                                </td>
+                            </tr>
+                            <!-- <td rowspan="2"></td> -->
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>三、客户建议</h4>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="10" class="pdac">
+                                    <p class="divDetail01">123</p>
+                                </td>
+                            </tr>
+
+
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>四、联系我们</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" class="pdac">
+                                    <p>非常感谢您选择谊安的产品,希望我们的产品和服务能使您满意。如需帮助，请拨打客户服务专线:</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" class="pdac">
+                                    <p style="    width: 628px;">1、800-810-8333.或400-610-8333</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" class="pdac">
+                                    <p>2、登陆我们的网站:http://www.aeonmed.com。</p>
+                                </td>
+                            </tr>
+
+                        </table>
                     </div>
+
+                    <div class="line" style="margin:30px 0 0 50px">
+                        <a href="./repair.html" class="button button-sub ml140 ">导出</a>
+                        <a href="./repair.html" class="button button-sub ml140 ">返回</a>
+                        <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
+                        <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
+                    </div>
+                </div>
             </form>
 
         </div>
     </div>
+
     <script type="text/javascript" src="./asset/js/tingyun.js"></script>
-    <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
-    <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
-    <script type="text/javascript" src="./asset/js/index.js"></script>
-    <script src="./laydate/laydate.js"></script> <!-- 改成你的路径 -->
-    <script>
-        //执行一个laydate实例
-        laydate.render({
-            elem: '#fuwutime'
-        });
-    </script>
+
 </body>
 
 </html>

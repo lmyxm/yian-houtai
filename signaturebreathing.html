@@ -10,14 +10,9 @@
     <link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
     <link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
 
-    <!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
-    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
-    <script type="text/javascript" src="./asset/js/timer.js"></script>
-    <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
-    <script type="text/javascript" src="./asset/js/window.js"></script>
     <style>
         form.manage .radio {
-            height: 22px;
+            height: 20px;
             ;
         }
 
@@ -43,6 +38,18 @@
 
         }
 
+        form.manage .linefont {
+            width: 600px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        form.manage .linefont i {
+            font-size: 20px;
+            line-height: 20px
+        }
+
+
         form.manage .lineac i.label {
             font-weight: normal;
             width: 120px;
@@ -57,16 +64,94 @@
             width: 330px;
             font-weight: normal;
         }
-        form.manage .linefont {
-            width: 600px;
-            display: inline-block;
-            vertical-align: top;
-        }
-        form.manage .linefont i {
-           font-size: 20px;
-           line-height: 20px
+
+
+        .section .biaoge h3 {
+            height: 14px;
+            line-height: 14px;
+            text-align: center;
+            margin-left: 0;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
         }
 
+        .section.sectionEdit .biaogetitle {
+            margin-left: 43px;
+            width: 692px;
+        }
+
+        .biandan td,
+        .biandan th {
+            border: 1px solid #ccc;
+        }
+
+        .pdac {
+            padding: 0 10px;
+        }
+
+        .biandan .yanse {
+            background: #ccc;
+        }
+
+        .biandan input {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .biandan a {
+            pointer-events: none;
+
+        }
+
+        .biandan h4 {
+            height: 0px;
+            line-height: 0px;
+            padding-left: 10px;
+        }
+
+        .biandan p {
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .biandan .divDetail {
+            width: 500px;
+            padding: 10px;
+            word-break: break-all;
+        }
+
+        .biandan .divDetail01 {
+            width: 539px;
+            padding: 10px;
+            word-break: break-all;
+        }
+
+
+        form.manage .lineac_w i.label {
+            width: inherit;
+        }
+
+        form.manage .lineac_w {
+            width: inherit;
+        }
+
+        form.manage textarea {
+            height: 30px;
+        }
+
+
+        .biaoge dl dd {
+            float: left;
+            width: 155.5px;
+            height: 30px;
+            line-height: 30px;
+            /* margin: 0 auto; */
+            padding: 0 37px;
+            border: 1px solid #b0b0ae;
+            margin: 0;
+            pointer-events: none;
+        }
     </style>
 </head>
 </head>
@@ -92,443 +177,468 @@
                         <div class="label cbg">呼吸机</div>
                         <div class="toggleFilter"></div>
                     </div>
-                    <div  >
-                        <div class="line linefont">
-                            <i class="label"><i class="x"></i>多个报修产品线:</i><i class="radio">
-                                <a class="cur"><input checked="checked" type="radio"
-                                        name="productType.display" value="1"> 呼吸机</a>
-                                <a><input type="radio" name="productType.display" value="0">
-                                    麻醉机</a>
-                                    <a><input type="radio" name="productType.display" value="0">
-                                        手术床</a>
-
-                            </i><i class="desc"></i>
-                        </div>
-                    </div>
+                  
                     <div class="data biaoge">
-                        <div class="line">
-                            <h3>一、产品使用维护基本信息</h3>
+                        <div class="biaogetitle">
+                            <img src="./asset/img/qianzilogo.jpg" alt="" style="    width: 155px;margin-bottom: -15px;">
+                            <h3>上门回访维护记录单</h3>
                         </div>
-                        <div class="line">
-                            <ul>
-                                <li>
-                                    <b>服务单号</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                            </ul>
-                        </div>
+                        <table cellspacing="0" align="center" class="biandan">
 
-                        <div class="line">
-                            <ul>
-                                <li>
-                                    <b>医院名称：</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>使用科室：</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>产品型号：</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>机器编号：</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>安装时间：</b>
-                                    <input type="text" name="" id="anzhuangtime" class="w257">
-                                </li>
-                                <li>
-                                    <b>使用频率：小时/周</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>维护频率：次/周</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
-                                <li>
-                                    <b>维护科室：</b>
-                                    <input type="text" name="" id="" class="w257">
-                                </li>
+                            <!--caption:标题标签-->
+                            <!--tr:一行-->
 
-                            </ul>
+                            <tr>
+                                <!--th:表头的单元格-->
+                                <th colspan="2" class="pdac">
+                                    <p>产品线</p>
+                                </th>
+                                <th colspan="2">
+                                    <p>呼吸机</p>
+                                </th>
+                                <th colspan="1" class="pdac">服务单号：</th>
+                                <th colspan="2" class="pdac">1929301923021</th>
+                                <th colspan="3">
+                                    <p>AEON/QP12-R5/R4</p>
+                                </th>
 
-                        </div>
-                        <div class="line">
-                            <h3>二、产品参数检测（运行检查）</h3>
-                        </div>
-                        <div class="line">
-                            <ul class="tiankuang">
-                                <li style="margin-bottom:20px">
-                                    <b style="margin-left:80px">基础设定：</b>
-                                    <input type="text" name="" id="">
-                                </li>
-                                <li style="margin-bottom:20px">
-                                    <b style="margin-left:80px">基础项目：</b>
-                                    <input type="text" name="" id="">
-                                </li>
-                                <li>
-                                    <u class="label" style="width:100px"></u>
-                                    <div class="box_hezi">
-                                        <dl>
-                                            <dd>
-                                                <div class="line lineac">
-                                                    <i class="label"><i class="x"></i>潮气量检测 :</i><i class="radio">
-                                                        <a class="cur"><input checked="checked" type="radio"
-                                                                name="productType.display" value="1"> 正常</a>
-                                                        <a><input type="radio" name="productType.display" value="0">
-                                                            故障</a>
+                            </tr>
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>一、产品使用维护基本信息</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">
+                                    <p>医院名称：</p>
+                                </td>
+                                <td colspan="3" class="pdac">
+                                    <p>医院名称：</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p>使用科室：</p>
+                                </td>
+                                <td colspan="3" class="pdac">
+                                    <p>使用科室：</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2" class="pdac">
+                                    <p>产品型号：</p>
+                                </th>
+                                <th colspan="2" class="pdac">
+                                    <p></p>
+                                </th>
 
-                                                    </i><i class="desc"></i>
-                                                </div>
-                                                <div class="line lineac">
-                                                    <i class="label"><i class="x"></i>窒息报警检测 :</i><i class="radio">
-                                                        <a class="cur"><input checked="checked" type="radio"
-                                                                name="productType.display" value="1"> 正常</a>
-                                                        <a><input type="radio" name="productType.display" value="0">
-                                                            故障</a>
+                                <th colspan="2" class="pdac">
+                                    <p>机器编号：</p>
+                                </th>
+                                <th colspan="2" class="pdac">
+                                    <p></p>
+                                </th>
+                                <th colspan="1" class="pdac">
+                                    <p>安装时间：</p>
+                                </th>
+                                <th colspan="1" class="pdac">
+                                    <p></p>
+                                </th>
 
-                                                    </i><i class="desc"></i>
-                                                </div>
+                            </tr>
+                            <tr>
+                                <th colspan="2" class="pdac">
+                                    <p>使用频率：</p>
+                                </th>
+                                <th colspan="2" class="pdac">
+                                    <p></p>
+                                </th>
 
-                                            </dd>
-                                            <dd>
-
-                                                <div class="line lineac">
-                                                    <i class="label"><i class="x"></i>气道峰值压力 :</i><i class="radio">
-                                                        <a class="cur"><input checked="checked" type="radio"
-                                                                name="productType.display" value="1"> 正常</a>
-                                                        <a><input type="radio" name="productType.display" value="0">
-                                                            故障</a>
-
-                                                    </i><i class="desc"></i>
-                                                </div>
-                                                <div class="line lineac">
-                                                    <i class="label"><i class="x"></i>氧浓度监测 :</i><i class="radio">
-                                                        <a class="cur"><input checked="checked" type="radio"
-                                                                name="productType.display" value="1"> 正常</a>
-                                                        <a><input type="radio" name="productType.display" value="0">
-                                                            故障</a>
-
-                                                    </i><i class="desc"></i>
-                                                </div>
-
-
-                                            </dd>
-                                            <dd>
-                                                <div class="line lineac">
-                                                    <i class="label"><i class="x"></i>触发功能检测 :</i><i class="radio">
-                                                        <a class="cur"><input checked="checked" type="radio"
-                                                                name="productType.display" value="1"> 正常</a>
-                                                        <a><input type="radio" name="productType.display" value="0">
-                                                            故障</a>
-
-                                                    </i><i class="desc"></i>
-                                                </div>
-                                                <div class="line lineac">
-                                                    <i class="label"><i class="x"></i>PEEP监测 :</i><i class="radio">
-                                                        <a class="cur"><input checked="checked" type="radio"
-                                                                name="productType.display" value="1"> 正常</a>
-                                                        <a><input type="radio" name="productType.display" value="0">
-                                                            故障</a>
-
-                                                    </i><i class="desc"></i>
-                                                </div>
-
-
-                                            </dd>
-                                            <dd>
-                                                <div class="line lineac">
-                                                    <i class="label"><i class="x"></i>总计呼吸频率检测 :</i><i class="radio">
-                                                        <a class="cur"><input checked="checked" type="radio"
-                                                                name="productType.display" value="1"> 正常</a>
-                                                        <a><input type="radio" name="productType.display" value="0">
-                                                            故障</a>
-
-                                                    </i><i class="desc"></i>
-                                                </div>
-                                                <div class="line lineac">
-                                                    <i class="label"><i class="x"></i>电池检测 :</i><i class="radio">
-                                                        <a class="cur"><input checked="checked" type="radio"
-                                                                name="productType.display" value="1"> 正常</a>
-                                                        <a><input type="radio" name="productType.display" value="0">
-                                                            故障</a>
-
-                                                    </i><i class="desc"></i>
-                                                </div>
-
-
-                                            </dd>
-                                        </dl>
+                                <th colspan="2" class="pdac">
+                                    <p>维护频率：</p>
+                                </th>
+                                <th colspan="2" class="pdac">
+                                    <p></p>
+                                </th>
+                                <th colspan="1" class="pdac">
+                                    <p>维护科室：</p>
+                                </th>
+                                <th colspan="1" class="pdac">
+                                    <p></p>
+                                </th>
+                            </tr>
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>二、产品参数检测（运行检查）</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>基础设定：</p>
+                                </td>
+                                <td colspan="7">
+                                    <div class="divDetail">
+                                        
                                     </div>
-                                </li>
-                                <li style="margin-bottom:20px;margin-top: 20px">
-                                    <b style="margin-left:80px">情况说明：</b>
-                                    <textarea type="text" name="" id=""></textarea>
-                                </li>
-                                <li>
-
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>基础项目：</p>
+                                </td>
+                                <td colspan="7">
+                                    <div class="divDetail">
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">潮气量监测</td>
+                                <td colspan="2">
                                     <div class="line lineac_w">
-                                        <i class="label"><i class="x"></i>检测结论 :</i><i class="radio">
+                                        <i class="label"></i><i class="radio">
                                             <a class="cur"><input checked="checked" type="radio"
-                                                    name="productType.display" value="1"> 各项参数正常，运行良好</a>
+                                                    name="productType.display" value="1">正常</a>
                                             <a><input type="radio" name="productType.display" value="0">
-                                                停止使用，建议维修</a>
-
+                                                故障</a>
                                         </i><i class="desc"></i>
                                     </div>
-
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <div class="line">
-                            <h3>三、产品维护保养逐项进行项目单</h3>
-                        </div>
-                        <div class="line">
-                            <ul class="tiankuang">
-                                <li>
-                                    <dl style="margin-left:150px">
-                                        <dd>
-                                            <input type="checkbox"><i>整机清洁擦拭</i>
-                                        </dd>
-                                    </dl>
-
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>电源线检查</i>
-                                        </dd>
-                                    </dl>
-
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>保险丝检查</i>
-                                        </dd>
-                                    </dl>
-
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>氧气空气管检查</i>
-                                        </dd>
-                                    </dl>
-
-                                </li>
-                                <li>
-                                    <dl style="margin-left:150px">
-                                        <dd>
-                                            <input type="checkbox"><i>机械臂灵活检查</i>
-                                        </dd>
-                                    </dl>
-
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>硅胶螺纹管检查</i>
-                                        </dd>
-                                    </dl>
-
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>湿化器功能检查</i>
-                                        </dd>
-                                    </dl>
-
-                                </li>
-
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>呼气阀清洁检查</i>
-                                        </dd>
-                                    </dl>
-
-                                </li>
-
-                                <li>
-                                    <dl style="margin-left:150px">
-                                        <dd>
-                                            <input type="checkbox"><i>安全阀检查</i>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>屏幕插线检查</i>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>内部管路检查</i>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dd>
-                                            <input type="checkbox"><i>气阻检查</i>
-                                        </dd>
-                                    </dl>
-                                </li>
-
-                                <li>
+                                </td>
+                                <td colspan="2" class="pdac">窒息报警检测</td>
+                                <td colspan="1">
                                     <div class="line lineac_w">
-                                        <i class="label" style="width:160px">维护保养结果确认 :</i><i class="radio">
-                                            <a class="cur"><input checked="checked" type="radio"
-                                                    name="productType.display" value="1"> 状态良好</a>
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">正常</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                故障</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+                                </td>
+                                <td colspan="2" class="pdac">气道峰值压力</td>
+                                <td colspan="1">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">正常</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                故障</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">氧浓度监测</td>
+                                <td colspan="2">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">正常</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                故障</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+                                </td>
+                                <td colspan="2" class="pdac">触发功能检测</td>
+                                <td colspan="1">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">正常</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                故障</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+                                </td>
+                                <td colspan="2" class="pdac">PEEP监测</td>
+                                <td colspan="1">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">正常</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                故障</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="pdac">总计呼吸频率检测</td>
+                                <td colspan="2">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">正常</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                故障</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+                                </td>
+                                <td colspan="2" class="pdac">电池检测</td>
+                                <td colspan="1">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">正常</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                故障</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+                                </td>
+                                <td colspan="3"></td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>情况说明</p>
+                                </td>
+                                <td colspan="7">
+                                    <div class="divDetail">
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>检测结论</p>
+                                </td>
+                                <td colspan="7">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">各项参数正常，运行良好</a>
+                                            <a><input type="radio" name="productType.display" value="0">
+                                                停止使用，建议维修</a>
+                                        </i><i class="desc"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- <td rowspan="2"></td> -->
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>三、产品维护保养逐项进行项目单</h4>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="
+                                display: block;
+                                margin-left: 42px;">
+                            <dl>
+                                <dd>
+                                    <input type="checkbox" checked><i>整机清洁擦拭</i>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"><i>电源线检查</i>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"><i>保险丝检查</i>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dd>
+                                    <input type="checkbox"><i>氧气空气管检查</i>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"><i>机械臂灵活检查</i>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"><i>硅胶螺纹管检查</i>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dd>
+                                    <input type="checkbox"><i>湿化器功能检查</i>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"><i>呼气阀清洁检查</i>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"><i>安全阀检查</i>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dd>
+                                    <input type="checkbox"><i>屏幕插线检查</i>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"><i>内部管路检查</i>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"><i>气阻检查</i>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <table cellspacing="0" align="center" class="biandan">
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>维护保养结果确认：</p>
+                                </td>
+                                <td colspan="7">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">状态良好</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 部分部件老化，建议更换</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 停止使用，更换老化部件</a>
-
                                         </i><i class="desc"></i>
                                     </div>
-                                </li>
-
-
-                            </ul>
-
-                        </div>
-                        <div class="line">
-                            <h3>四、工程师建议：</h3>
-                        </div>
-                        <div class="line">
-                            <ul class="tiankuang">
-                                <li>
-                                    <div class="line">
-                                        <i class="label">产品维护情况:</i><textarea type="text" name="productType.sort"
-                                            class="w250" value=""></textarea><i class="desc"></i>
+                                </td>
+                            </tr>
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>四、工程师建议：</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>产品维护情况：</p>
+                                </td>
+                                <td colspan="7">
+                                    <div class="divDetail divDetail01">
+                                        
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="line">
-                                        <i class="label">建议更换部件:</i><textarea type="text" name="productType.sort"
-                                            class="w250" value=""></textarea><i class="desc"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>建议更换部件：</p>
+                                </td>
+                                <td colspan="7">
+                                    <div class="divDetail divDetail01">
+                                        
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="line">
-                                        <i class="label">其他:</i><textarea type="text" name="productType.sort"
-                                            class="w250" value=""></textarea><i class="desc"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>其他：</p>
+                                </td>
+                                <td colspan="7">
+                                    <div class="divDetail divDetail01">
+                                        
                                     </div>
-                                </li>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>服务人员签名：</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <img src="./asset/img/logo.png" alt=""
+                                        style="height:80px;width:150px;padding: 10px">
+                                </td>
+                                <td colspan="5" class="pdac">
+                                    <p>日 期:2019-05-01</p>
+                                </td>
+                            </tr>
 
-                                <li>
-                                    <b class="label"
-                                        style="width:150px;height: 100px;text-align:right;margin-right: 30px">服务人员签名</b>
-                                    <img src="./asset/img/bg.png" alt=""
-                                        style="width:120px;height:150px;display:inline-block;vertical-align: top;margin: 20px 100px 20px 0">
+                            <tr class="yanse">
+                                <td colspan="10">
+                                    <h4>五、客户确认及建议</h4>
+                                </td>
+                            </tr>
+                            <tr>
 
-                                </li>
-                                <li>
-                                    <div class="rili"></div>
-                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
-                                    <input type="text" name="" id="qianmingtime01" class="w200">
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="line">
-                            <h3>五、客户确认及建议</h3>
-                        </div>
-                        <div class="line">
-
-                            <ul class="tiankuang">
-                                <li>
-                                    <div class="line lineac_c">
-                                        <i class="label">工程师对规定项目栏内项目是否逐一检查确认 :</i><i class="radio">
-                                            <a class="cur"><input checked="checked" type="radio"
-                                                    name="productType.display" value="1"> 是</a>
+                                <td colspan="5" class="pdac">
+                                    <p>工程师对规定项目栏内项目是否逐一检查确认 ：</p>
+                                </td>
+                                <td colspan="5">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">是</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 否</a>
 
                                         </i><i class="desc"></i>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="line lineac_c">
-                                        <i class="label">工程师的服务水平是否满意 :</i><i class="radio">
-                                            <a class="cur"><input checked="checked" type="radio"
-                                                    name="productType.display" value="1"> 是</a>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td colspan="5" class="pdac">
+                                    <p>工程师的服务水平是否满意：</p>
+                                </td>
+                                <td colspan="5">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">是</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 否</a>
 
                                         </i><i class="desc"></i>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="line lineac_c ">
-                                        <i class="label">产品质量综合评价是否满意 :</i><i class="radio">
-                                            <a class="cur"><input checked="checked" type="radio"
-                                                    name="productType.display" value="1"> 是</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td colspan="5" class="pdac">
+                                    <p>产品质量综合评价是否满意：</p>
+                                </td>
+                                <td colspan="5">
+                                    <div class="line lineac_w">
+                                        <i class="label"></i><i class="radio">
+                                            <a><input checked="checked" type="radio" name="productType.display"
+                                                    value="1">是</a>
                                             <a><input type="radio" name="productType.display" value="0">
                                                 否</a>
 
                                         </i><i class="desc"></i>
                                     </div>
-                                </li>
+                                </td>
+                            </tr>
 
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>客户建议：</p>
+                                </td>
+                                <td colspan="7">
+                                    <div class="divDetail divDetail01">
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="pdac">
+                                    <p>客户签名：</p>
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <img src="./asset/img/logo.png" alt=""
+                                        style="height:80px;width:150px;padding: 10px">
+                                </td>
+                                <td colspan="2" class="pdac">
+                                    <p>联系电话</p>
+                                </td>
+                                <td colspan="3" class="pdac">
+                                    <p>18381994300</p>
+                                </td>
+                            </tr>
 
-                                <li>
-                                    <b class="label"
-                                        style="width:150px;height: 100px;text-align:right;margin-right: 30px;margin-left: 50px">客户签字</b>
-                                    <img src="./asset/img/bg.png" alt=""
-                                        style="width:120px;height:150px;display:inline-block;vertical-align: top;margin: 0 50px 20px 0">
-
-                                </li>
-                                <li>
-                                    <div class="rili"></div>
-                                    <b class="label" style="width:150px;text-align:right;margin-right: 30px">日期</b>
-                                    <input type="text" name="" id="qianmingtime02" class="w200">
-                                </li>
-                            </ul>
-
-                        </div>
-
-
-
-                        <div class="line">
-                            <a href="./repair.html" class="button button-sub ml140 ">修改</a>
-                            <a href="./repair.html" class="button button-sub ml140 ">返回</a>
-                            <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
-                            <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
-                        </div>
+                        </table>
                     </div>
+
+
+
+                    <div class="line" style="margin:30px 0 0 50px">
+                        <a href="./repair.html" class="button button-sub ml140 ">导出</a>
+                        <a href="./repair.html" class="button button-sub ml140 ">返回</a>
+                        <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
+                        <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
+                    </div>
+                </div>
             </form>
 
         </div>
     </div>
     <script type="text/javascript" src="./asset/js/tingyun.js"></script>
-    <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
-    <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
-    <script type="text/javascript" src="./asset/js/index.js"></script>
-    <script src="./laydate/laydate.js"></script> <!-- 改成你的路径 -->
-    <script>
-        //执行一个laydate实例
-        laydate.render({
-            elem: '#anzhuangtime'
-        });
-        laydate.render({
-            elem: '#qianmingtime01'
-        });
-        laydate.render({
-            elem: '#qianmingtime02'
-        });
-    </script>
+   
 </body>
 
 </html>
