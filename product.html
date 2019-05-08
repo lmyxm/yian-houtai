@@ -44,53 +44,64 @@
 				</div>
 				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
 					<div class="items">
+
+
 						<div>
-							<i>筛选条件：</i>
+							<i>产品线：</i>
 							<select name="">
 								<option value="s">请选择</option>
-								<option value="s">产品线</option>
-								<option value="d">产品名称</option>
-								<option value="d">产品型号</option>
-								<option value="f">安装人</option>
-								<option value="f">创建时间</option>
-								<option value="f">编辑时间</option>
+								<option value="f">呼吸机</option>
+								<option value="f">麻醉机</option>
+								<option value="f">手术床</option>
+								<option value="f">无影灯</option>
 							</select>
-							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
-							<i>筛选条件：</i>
+							<i>产品型号：</i>
 							<select name="">
 								<option value="s">请选择</option>
-								<option value="s">产品线</option>
-								<option value="d">产品名称</option>
-								<option value="d">产品型号</option>
-								<option value="f">安装人</option>
-								<option value="f">创建时间</option>
-								<option value="f">编辑时间</option>
+								<option value="f">型号1</option>
+								<option value="f">型号2</option>
+								<option value="f">型号3</option>
+								<option value="f">型号4</option>
 							</select>
-							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
+
 						<div>
-							<i>筛选条件：</i>
-							<select name="">
-								<option value="s">请选择</option>
-								<option value="s">产品线</option>
-								<option value="d">产品名称</option>
-								<option value="d">产品型号</option>
-								<option value="f">安装人</option>
-								<option value="f">创建时间</option>
-								<option value="f">编辑时间</option>
-							</select>
-							<input type="text" name="user.userName" class="w100" value="" />
+							<i>产品名称：</i>
+							<input type="text" name="user.userName" class="w150" value="" />
 						</div>
+						
 
 						<div class="btns">
 							<input type="hidden" name="type" value="1">
-							<input id="search" type="button" value="筛选结果" class="button" class="link-add" /><a
-								href="/manage/user_listUser.action?type=1" class="ml20">重新查询</a><a id="export"
-								class="ml20">批量导出</a>
+							<input id="search" type="button" value="筛选结果" class="button" class="link-add" />
+							<input type="button" value="高级查询" class="button" id="btngaojichaxun" />
+							<a href="" class="ml20">重新查询</a>
+							<a id="export" class="ml20">批量导出</a>
 						</div>
 
+						<div class="gaojichaxun ">
+
+							<div class="boxlist">
+								<i>序列号：</i>
+								<input type="text" class=" w150 " value="" />
+								
+							</div>
+							<div class="boxlist">
+								<i>安装日期：</i>
+								<input type="text" class=" w100 " id="kaishitime" value="" />
+								&nbsp;&nbsp;-&nbsp;&nbsp;
+								<input type="text" class=" w100 " id="kaishitime" value="" />
+							</div>
+							<div class="boxlist">
+								<i>创建时间：</i>
+								<input type="text" class=" w100 " id="kaishitime" value="" />
+								&nbsp;&nbsp;-&nbsp;&nbsp;
+								<input type="text" class=" w100 " id="kaishitime" value="" />
+							</div>
+						
+						</div>
 					</div>
 				</form>
 			</div>

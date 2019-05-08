@@ -39,50 +39,37 @@
 				</div>
 				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
 					<div class="items">
+
 						<div>
-							<i>筛选条件：</i>
-							<select name="">
-								<option value="s">请选择</option>
-								<option value="s">员工名称</option>
-								<option value="s">电话</option>
-								<option value="d">省份</option>
-								<option value="d">市</option>
-								<option value="d">地区</option>
-								<option value="f">邮箱</option>
-							</select>
+							<i>员工名称：</i>
+							<input type="text" name="user.userName" class="w100" value="" />
+						</div>
+
+						<div>
+							<i>电话：</i>
 							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
-							<i>筛选条件：</i>
-							<select name="">
-								<option value="s">请选择</option>
-								<option value="s">员工名称</option>
-								<option value="s">电话</option>
-								<option value="d">省份</option>
-								<option value="d">市</option>
-								<option value="d">地区</option>
-								<option value="f">邮箱</option>
-							</select>
+							<i>省份：</i>
 							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div>
-							<i>筛选条件：</i>
-							<select name="">
-								<option value="s">请选择</option>
-								<option value="s">员工名称</option>
-								<option value="s">电话</option>
-								<option value="d">省份</option>
-								<option value="d">市</option>
-								<option value="d">地区</option>
-								<option value="f">邮箱</option>
-							</select>
+							<i>市：</i>
 							<input type="text" name="user.userName" class="w100" value="" />
 						</div>
 						<div class="btns">
 							<input type="hidden" name="type" value="1">
-							<input id="search" type="button" value="筛选结果" class="button" class="link-add" /><a
-								href="/manage/user_listUser.action?type=1" class="ml20">重新查询</a><a id="export"
-								class="ml20">批量导出</a>
+							<input id="search" type="button" value="筛选结果" class="button" class="link-add" />
+							<input type="button" value="高级查询" class="button" id="btngaojichaxun" />
+							<a href="" class="ml20">重新查询</a>
+							<a id="export" class="ml20">批量导出</a>
+						</div>
+
+						<div class="gaojichaxun ">
+							<div class="boxlist">
+								<i>邮箱：</i>
+								<input type="text" name="user.userName" class="w100" value="" />
+							</div>
 						</div>
 
 					</div>
@@ -101,7 +88,8 @@
 						<td width="10">序号</td>
 						<td width="80">员工名称</td>
 						<td width="80">电话</td>
-						<td width="80">省，市，地区</td>
+						<td width="80">省</td>
+						<td width="80">市</td>
 						<td width="80">邮箱</td>
 
 						<td width="10" class="manage">管理</td>
@@ -112,7 +100,9 @@
 						<td>1</td>
 						<td>张三</td>
 						<td>13521757074</td>
-						<td>河北省，北京市，朝阳区</td>
+						<td>河北省</td>
+
+						<td>北京市</td>
 						<td>18381994300@qq.com</td>
 
 
@@ -125,11 +115,13 @@
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
 						<td>1</td>
-						
+
 
 						<td>张三</td>
 						<td>13521757074</td>
-						<td>河北省，北京市，朝阳区</td>
+						<td>河北省</td>
+
+						<td>北京市</td>
 						<td>18381994300@qq.com</td>
 
 
@@ -141,11 +133,13 @@
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
 						<td>1</td>
-						
+
 
 						<td>张三</td>
 						<td>13521757074</td>
-						<td>河北省，北京市，朝阳区</td>
+						<td>河北省</td>
+
+						<td>北京市</td>
 						<td>18381994300@qq.com</td>
 
 
@@ -157,11 +151,13 @@
 					<tr _id="">
 						<td><input type="checkbox" name="ids" value="14" /></td>
 						<td>1</td>
-						
+
 
 						<td>张三</td>
 						<td>13521757074</td>
-						<td>河北省，北京市，朝阳区</td>
+						<td>河北省</td>
+
+						<td>北京市</td>
 						<td>18381994300@qq.com</td>
 
 
@@ -175,7 +171,9 @@
 						<td>1</td>
 						<td>张三</td>
 						<td>13521757074</td>
-						<td>河北省，北京市，朝阳区</td>
+						<td>河北省</td>
+
+						<td>北京市</td>
 						<td>18381994300@qq.com</td>
 						<td class="manage"><a href="./employeesUpdate.html" class="edit" title="编辑"></a><a class="del"
 								title="删除"></a>

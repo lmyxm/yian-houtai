@@ -463,13 +463,13 @@ form.manage .line {
 
 form.manage .boxlist {
     width: 100%;
-    height: 300px;
+    height: 340px;
     overflow: hidden;
 }
 
 form.manage .boxlist ul {
     width: 100%;
-    height: 320px;
+    height: 370px;
     overflow: scroll
 }
 
@@ -477,6 +477,13 @@ form.manage .boxlist ul li {
     line-height: 30px;
     height: 30px;
 }
+form.manage .boxlist ul li {
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+
 
 form.manage .boxlist ul .ac {
     color: #27affd
@@ -1041,7 +1048,7 @@ form.filter .items i:first-child {
 form.filter .items>div {
     float: left;
     width: auto;
-    height: 40px;
+    /* height: 40px; */
     margin-right: 20px
 }
 
@@ -1750,4 +1757,16 @@ div.desc i.desc {
     position: absolute;
     top: 10px;
     left:705px;
+}
+form.manage .gaojichaxun {
+    width: 100%;
+    display: none
+}
+
+form.manage .gaojichaxun .boxlist {
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+    margin:20px 20px 0 0
 }

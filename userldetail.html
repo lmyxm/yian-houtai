@@ -28,7 +28,7 @@
         <div class="TY-rightBox">
             <div class="phead">
                 <div class="curnav">
-                    <label>医院用户详情</label>
+                    <label>渠道用户详情</label>
                 </div>
             </div>
 
@@ -36,16 +36,21 @@
                 enctype="multipart/form-data">
                 <div class="section sectionEdit">
                     <div class="title" onclick="toggleFilter(this)">
-                        <div class="label cbg">医院用户详情</div>
+                        <div class="label cbg">渠道用户详情</div>
                         <div class="toggleFilter"></div>
                     </div>
                     <div class="data">
+                            <div class="line">
+                                    <i class="label">客户类型</i>
+                                    <select name="">
+                                            <option value="s">请选择类型</option>
+                                            <option value="s">医院</option>
+                                            <option value="d">个人</option>
+                                        </select>
+                                    <i class="desc" id="i1"></i>
+                                </div>
                         <div class="line">
-                            <i class="label">客户编码:</i><input class="w200" type="text" name="productType.name"
-                                value=""><i class="desc" id="i1"></i>
-                        </div>
-                        <div class="line">
-                            <i class="label">客户名称:</i><input type="text" name="productType.sort" class="w200" value=""
+                            <i class="label">名称:</i><input type="text" name="productType.sort" class="w200" value=""
                                 onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">

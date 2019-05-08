@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>谊安微信客服</title>
+    <title>维修报告单</title>
     <link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
     <link type="text/css" rel="stylesheet" href="./asset/css/index.css">
     <link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
@@ -28,7 +28,7 @@
         <div class="TY-rightBox">
             <div class="phead">
                 <div class="curnav">
-                    <label>客户管理</label>
+                    <label>添加渠道用户</label>
                 </div>
             </div>
 
@@ -36,91 +36,77 @@
                 enctype="multipart/form-data">
                 <div class="section sectionEdit">
                     <div class="title" onclick="toggleFilter(this)">
-                        <div class="label cbg">添加客户信息</div>
+                        <div class="label cbg">添加渠道用户</div>
                         <div class="toggleFilter"></div>
                     </div>
                     <div class="data">
                         <div class="line">
-                            <i class="label">客户类型:</i>
+                            <i class="label">客户类型</i>
                             <select name="">
                                 <option value="s">请选择类型</option>
-                                <option value="s">医院用户</option>
-                                <option value="d">渠道用户</option>
+                                <option value="s">医院</option>
+                                <option value="d">个人</option>
                             </select>
                             <i class="desc" id="i1"></i>
                         </div>
-
                         <div class="line">
-                            <i class="label">客户编码:</i><input class="w200" type="text" name="productType.name" value=""><i
-                                class="desc" id="i1"></i>
+                            <i class="label">名称:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                            <i class="label">客户名称:</i><input type="text" name="productType.sort" class="w200" value=""><i
-                                class="desc"></i>
-                        </div>
-                        
-                        <div class="line">
-                            <i class="label">省份:</i><select name="">
-                                <option value="s">请选择省份</option>
-                                <option value="s">河北省</option>
-                                <option value="d">四川省</option>
-                            </select><i class="desc"></i>
+                            <i class="label">城市:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                            <i class="label">城市:</i><select name="">
-                                <option value="s">请选择城市</option>
-                                <option value="s">北京</option>
-                                <option value="d">成都</option>
-                            </select><i
-                                class="desc"></i>
+                            <i class="label">省份:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                            <i class="label">联系人:</i><input type="text" name="productType.sort" class="w200" value=""><i
-                                class="desc"></i>
+                            <i class="label">联系人:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                            <i class="label">单位电话:</i><input type="text" name="productType.sort" class="w200" value=""><i
-                                class="desc"></i>
+                            <i class="label">单位电话:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
+                        </div>
+                        <div class="line">
+                            <i class="label">科室:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
 
                         <div class="line">
-                            <i class="label">终端客户级别 :</i><input type="text" name="productType.sort" class="w200" value=""><i
-                                class="desc"></i>
+                            <i class="label">终端客户级别 :</i><input type="text" name="productType.sort" class="w200"
+                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                            <i class="label">客户服务等级:</i><input type="text" name="productType.sort" class="w200" value=""><i
-                                class="desc"></i>
+                            <i class="label">客户服务等级:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
 
                         <div class="line">
-                            <i class="label">地址:</i><input type="text" name="productType.sort" class="w200"
-                                value=""><i class="desc"></i>
+                            <i class="label">地址:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                            <i class="label">邮编:</i><input type="text" name="productType.sort" class="w200"
-                                value=""><i class="desc"></i>
+                            <i class="label">邮编:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                            <i class="label">使用科室:</i><input type="text" name="productType.sort" class="w200" value=""><i
-                                class="desc"></i>
+                            <i class="label">使用科室:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                            <i class="label">安装人:</i><input type="text" name="productType.sort" class="w200" value=""><i
-                                class="desc"></i>
+                            <i class="label">终端客户类型 :</i><input type="text" name="productType.sort" class="w200"
+                                value="" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
                         <div class="line">
-                            <i class="label">科室:</i><input type="text" name="productType.sort" class="w200" value=""><i
-                                class="desc"></i>
+                            <i class="label">国家:</i><input type="text" name="productType.sort" class="w200" value=""
+                                onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');"><i class="desc"></i>
                         </div>
-                      
+
                         <div class="line">
-                            <i class="label">国家:</i><input type="text" name="productType.sort" class="w200"
-                                value=""><i class="desc"></i>
-                        </div>
-                     
-                        <div class="line">
-                            <a href="./customer.html" class="button button-sub ml140 ">提交保存</a>
-                            <a href="./customer.html" class="button button-sub ml140 ">返回</a>
+                            <a href="./hospital.html" class="button button-sub ml140 ">添加</a>
+                            <a href="./hospital.html" class="button button-sub ml140 ">返回</a>
                             <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
                             <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->
                         </div>

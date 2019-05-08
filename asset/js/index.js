@@ -201,6 +201,13 @@ $(iframe).load(function(){
 	// return findLinkTag(url);
 });
 
+
+$('#btngaojichaxun').click(function(){
+	$('.gaojichaxun').fadeToggle();
+
+})
+
+
 //首次载入时
 window._body = $(document.body);
 var url=_body.attr('url');
