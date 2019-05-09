@@ -41,10 +41,35 @@
                     </div>
                     <div class="data">
                         <div class="line">
-                            <i class="label">产品线:</i><select name="" >
+                            <i class="label">产品线:</i>
+                            <select name="">
                                 <option value="s">请选择</option>
                                 <option value="s">呼吸机</option>
                                 <option value="s">麻醉机</option>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <i class="label">型号:</i>
+                            <select name="">
+                                <option value="s">请选择</option>
+                                <option value="s">呼吸机</option>
+                                <option value="s">麻醉机</option>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <i class="label">类型:</i>
+                            <select name="">
+                                <option value="s">请选择</option>
+                                <option value="s">呼吸机</option>
+                                <option value="s">麻醉机</option>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <i class="label">展示区分:</i>
+                            <select name="">
+                                <option value="s">请选择</option>
+                                <option value="s">客户</option>
+                                <option value="s">员工</option>
                             </select>
                         </div>
                         <div class="line">
@@ -52,47 +77,45 @@
                                 class="desc" id="i1"></i>
                         </div>
                         <div class="line">
-                                <i class="label">内容:</i><textarea class="w200" type="text" name="productType.name" value=""></textarea><i
-                                    class="desc" id="i1"></i>
-                            </div>
-                      
+                            <i class="label">内容:</i><textarea class="w200" type="text" name="productType.name"
+                                value=""></textarea><i class="desc" id="i1"></i>
+                        </div>
+
                         <div class="line">
-                                <i class="label fl mt5"><i class="x">*</i>缩略图一 :</i>
-                                <div class="ueImgWrap">
-                                    <div class="imageWrap">
-                                        <div id="txshow" class="image imageContain" style="background-image:url(/upload/img/19310d347da94ff9bec2d1de45c5fe56.jpg)"></div>
-                                        <div class="desc">
-                                            <h1>注意事项：</h1>
-                                            <i>1、上传格式为：JPG，JPEG，PNG，GIF 格式的图片；可使用PS/2345看图王/QQ截图处理图片；</i> <i>2、单张图片上传最大限制为2M，为保证浏览速度及展示效果，请在保证图片清晰的情况下尽量压缩图片；</i>
-                                            <!-- <i>3、最佳图片尺寸（像素）：<i class="x">1169*336</i>；也可上传长宽比例相同的图片； -->
-                                            </i>
-                                        </div>
+                            <i class="label fl mt5"><i class="x">*</i>缩略图一 :</i>
+                            <div class="ueImgWrap">
+                                <div class="imageWrap">
+                                    <div id="txshow" class="image imageContain"
+                                        style="background-image:url(/upload/img/19310d347da94ff9bec2d1de45c5fe56.jpg)">
                                     </div>
-                                    <div class="inpWrap">
-                                        <div class="file">
-                                            <input type="file" name="img1" id="fielinput">选择图片
-                                        </div>
+                                    <div class="desc">
+                                        <h1>注意事项：</h1>
+                                        <i>1、上传格式为：JPG，JPEG，PNG，GIF 格式的图片；可使用PS/2345看图王/QQ截图处理图片；</i>
+                                        <i>2、单张图片上传最大限制为2M，为保证浏览速度及展示效果，请在保证图片清晰的情况下尽量压缩图片；</i>
+                                        <!-- <i>3、最佳图片尺寸（像素）：<i class="x">1169*336</i>；也可上传长宽比例相同的图片； -->
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="inpWrap">
+                                    <div class="file">
+                                        <input type="file" name="img1" id="fielinput">选择图片
                                     </div>
                                 </div>
                             </div>
-                            <div class="line">
-                                    <i class="label fl mt5"><i class="x">*</i>上传文本格式 :</i>
-                                    <div class="ueImgWrap">
-                                        <div class="imageWrap">
-                                            <div class="desc">
-                                                <h1>注意事项：</h1>
-                                                <i>1、上传格式为：JPG，JPEG，PNG，GIF 格式的图片；可使用PS/2345看图王/QQ截图处理图片；</i> <i>2、单张图片上传最大限制为2M，为保证浏览速度及展示效果，请在保证图片清晰的情况下尽量压缩图片；</i>
-                                                <!-- <i>3、最佳图片尺寸（像素）：<i class="x">1169*336</i>；也可上传长宽比例相同的图片； -->
-                                                </i>
-                                            </div>
-                                        </div>
-                                        <div class="inpWrap">
-                                            <div class="file">
-                                                <input type="file" name="img1" id="fielinput">选择文本
-                                            </div>
-                                        </div>
+                        </div>
+                        <div class="line">
+                            <i class="label fl mt5"><i class="x">*</i>上传文本/文件</i>
+                            <div class="ueImgWrap">
+                                <div class="imageWrap">
+                                    
+                                </div>
+                                <div class="inpWrap">
+                                    <div class="file">
+                                        <input type="file" name="img1" id="fielinput">选择文本
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
 
 
@@ -102,7 +125,7 @@
                                 class="desc"></i>
                         </div>
                         <div class="line">
-                            <a href="./lead.html" class="button button-sub ml140 ">修改</a>
+                            <a href="./lead.html" class="button button-sub ml140 ">提交</a>
                             <a href="./lead.html" class="button button-sub ml140 ">返回</a>
                             <!-- <input type="botton" class="button button-sub ml140 " value="提交保存" style="width:50px"> -->
                             <!-- <input type="botton" class="button button-sub ml140 " value="返回" style="width:50px"> -->

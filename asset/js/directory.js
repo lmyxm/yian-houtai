@@ -18,7 +18,7 @@ document.writeln('               <div menu="">');
 document.writeln('                 <a class="nav" onclick="secMenu(this)"><i class="ico"></i><i	class="ico-tg"></i><i>用户分类</i></a>');
 document.writeln('                 <dl >');
 document.writeln('                    <dd>');
-document.writeln('                      <a target="page" href="./hospital.html"><i class="ico"></i><i>客户用户</i></a>');
+document.writeln('                      <a target="page" href="./hospital.html"><i class="ico"></i><i>医院/家庭客户</i></a>');
 document.writeln('                    </dd>');
 document.writeln('                    <dd>');
 document.writeln('                      <a target="page" href="./channel.html"><i class="ico"></i><i>渠道用户</i></a>');

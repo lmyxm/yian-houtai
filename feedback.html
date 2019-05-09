@@ -39,6 +39,24 @@
                 <form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
                     <div class="items">
 
+                        <div >
+                            <i>产品线：</i>
+                            <select name="">
+                                <option value="s">请选择</option>
+                                <option value="s">呼吸机</option>
+                                <option value="d">麻醉机</option>
+                                <option value="d">手术床</option>
+                            </select>
+                        </div>
+                        <div>
+                            <i>机型：</i>
+                            <select name="">
+                                <option value="s">请选择</option>
+                                <option value="s">机型1</option>
+                                <option value="d">机型2</option>
+                                <option value="d">机型3</option>
+                            </select>
+                        </div>
                         <div>
                             <i>产品名称：</i>
 
@@ -49,23 +67,41 @@
 
                             <input type="text" name="user.userName" class="w100" value="" />
                         </div>
-                        <div>
-                            <i>联系人：</i>
-
-                            <input type="text" name="user.userName" class="w100" value="" />
-                        </div>
-                        <div>
-                            <i>电话：</i>
-
-                            <input type="text" name="user.userName" class="w100" value="" />
-                        </div>
 
                         <div class="btns">
                             <input type="hidden" name="type" value="1">
-                            <input id="search" type="button" value="筛选结果" class="button" class="link-add" /><a
+                            <input id="search" type="button" value="筛选结果" class="button" class="link-add" />
+                            <input type="button" value="高级查询" class="button" id="btngaojichaxun" />
+                            <a
                                 href="/manage/user_listUser.action?type=1" class="ml20">重新查询</a><a id="export"
                                 class="ml20">批量导出</a>
                         </div>
+
+
+
+                        <div class="gaojichaxun ">
+                            <div class="boxlist">
+                                <i>联系人：</i>
+                                <input type="text" name="user.userName" class="w100" value="" />
+                            </div>
+                            <div class="boxlist">
+                                <i>电话：</i>
+                                <input type="text" name="user.userName" class="w100" value="" />
+                            </div>
+
+                            <div class="boxlist">
+                                <i>反馈产品的评价：</i>
+                                <select name="">
+                                    <option value="s">请选择</option>
+                                    <option value="s">90</option>
+                                    <option value="s">80</option>
+                                    <option value="s">70</option>
+                                    <option value="s">60</option>
+                                </select>
+                            </div>
+
+                        </div>
+
 
                     </div>
                 </form>

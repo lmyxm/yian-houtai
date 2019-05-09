@@ -205,7 +205,10 @@ $(iframe).load(function(){
 $('#btngaojichaxun').click(function(){
 	$('.gaojichaxun').fadeToggle();
 
+
 })
+
+
 
 
 //首次载入时

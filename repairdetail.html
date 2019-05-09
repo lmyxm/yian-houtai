@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>谊安微信客服</title>
+	<link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
+	<link type="text/css" rel="stylesheet" href="./asset/css/index.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
+
+	
+	<link rel="stylesheet" type="text/css" href="./asset/css/timer.css">
+	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
+	<script type="text/javascript" src="./asset/js/timer.js"></script>
+	<script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
+	<script type="text/javascript" src="./asset/js/pager.js"></script>
+	<script type="text/javascript" src="./asset/js/window.js"></script>
+	
+</head>
+</head>
+
+<body>
+
+	<div class="TY-mainLay">
+		<!-- 左边按钮 -->
+		<script src="./asset/js/directory.js"></script>
+		<!-- 左边按钮 -->
+		<div class="TY-rightBox">
+			<div class="phead">
+				<div class="curnav">
+					<label>工单详情</label>
+				</div>
+			</div>
+			<div class="section">
+
+				<div class="title" onClick="toggleFilter(this)">
+					<div class="label searchLabel cbg">结果筛选</div>
+					<div class="toggleFilter"></div>
+				</div>
+
+				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
+					<div class="items">
+						<!-- <div>
+							<i>状态：</i>
+							<select name="">
+								<option value="s">请选择</option>
+								<option value="f">未审核</option>
+								<option value="f">待派单</option>
+								<option value="f">已拒绝</option>
+								<option value="f">再次派单</option>
+							</select>
+						</div> -->
+
+						<!-- <div>
+							<i>工单编号：</i>
+							<input type="text" name="user.userName" class="w150" value="" />
+						</div> -->
+						<div>
+							<i>客户名称：</i>
+							<input type="text" name="user.userName" class="w150" value="" />
+                        </div>
+                        <div >
+                            <i>联系人：</i>
+                            <input type="text" name="user.userName" class="w100" value="" />
+                        </div>
+                        <div >
+                            <i>电话：</i>
+                            <input type="text" name="user.userName" class="w100" value="" />
+                        </div>
+
+						<div class="btns">
+							<input type="hidden" name="type" value="1">
+							<input id="search" type="button" value="筛选结果" class="button" class="link-add" />
+							<input type="button" value="高级查询" class="button" id="btngaojichaxun" />
+							<a href="" class="ml20">重新查询</a>
+							<a id="export" class="ml20">批量导出</a>
+						</div>
+
+						<div class="gaojichaxun ">
+
+<!-- 							
+							<div class="boxlist">
+								<i>科室：</i>
+								<select name="">
+									<option value="s">请选择</option>
+									<option value="s">科室1</option>
+									<option value="d">科室2</option>
+								</select>
+							</div> -->
+							
+							
+						</div>
+
+					</div>
+				</form>
+			</div>
+			<div class="section">
+				<div class="title">
+					<div class="label cbg">工单详情列表</div>
+					
+				</div>
+				<table class="list" border=0 cellpadding=0>
+					<tr class="firstTr">
+                        <td width="20"><input type="checkbox" name="_ids" onClick="_select_ids('auto',this)" /></td>
+                        
+                        <td width="80">类型</td>
+						<td width="80">客户名称</td>
+						<td width="40">级别</td>
+						<td width="40">产品线</td>
+						<td width="80">型号（设备机型）</td>
+						<td width="80">联系人</td>
+						<td width="40">电话</td>
+						<td width="20" >解决办法</td>
+						<td width="20" >设备号</td>
+                        <td width="10" >物料编码</td>
+                        <td width="20" >员工编号</td>
+                        <td width="10" >员工名称</td>
+                        
+					</tr>
+
+					<tr _id="">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td>回访</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>一等甲级</td>
+						<td>麻醉机</td>
+						<td>型号1</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td >更换配件</td>
+                        <td >设备号1</td>
+                        <td >物料编码1</td>
+                        <td >1919929201</td>
+                        <td>张三</td>
+					</tr>
+
+					<tr _id="">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td>回访</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>一等甲级</td>
+						<td>呼吸机</td>
+						<td>型号1</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td >更换配件</td>
+                        <td >设备号1</td>
+                        <td >物料编码1</td>
+                        <td >1919929201</td>
+                        <td>张三</td>
+					</tr>
+
+					<tr _id="">
+						<td><input type="checkbox" name="ids" value="14" /></td>
+						<td>回访</td>
+						<td>重庆医科大学附属第一医院</td>
+						<td>一等甲级</td>
+						<td>无影灯</td>
+						<td>型号1</td>
+						<td>徐靖淋</td>
+						<td>13224001233</td>
+						<td >更换配件</td>
+                        <td >设备号1</td>
+                        <td >物料编码1</td>
+                        <td >1919929201</td>
+                        <td>张三</td>
+					</tr>
+
+				
+
+				</table>
+				<div class="clear">
+					<div class="select_ids">
+						<a class="bar" onClick="_select_ids('all')">全选</a> <a class="bar"
+							onClick="_select_ids('fan')">反选</a> <a class="bar" onClick="_select_ids('wu')">全不选</a>
+						<i></i> <a class="bar"
+							onClick="_dels('/manage/user_deleteSelectUser.action?page=1&type=1&')">批量删除</a>
+					</div>
+					<ul style="    float: left;
+					height: 40px;
+					line-height: 40px;
+					padding-left: 15px;">
+						<li style="display:inline-block;vertical-align: top;">未审核：12</li>
+						<li style="display:inline-block;vertical-align: top;margin-left: 10px">已审核：42</li>
+						<li style="display:inline-block;vertical-align: top;margin-left: 10px">已完成：345</li>
+					</ul>
+					<div class="paging">
+						<i class="tp">共1页(9条)
+						</i><i class="ml10">跳至</i><input type="text" class="inppage" /><i class="i555">回车跳转</i>
+					</div>
+					<div id="pager">
+						<div class="pager-box">
+							<div class="pager">
+								<a class="prev " href="javascrpt:;">上一页</a><a class="number "
+									href="javascript:void(0);">1</a><a class="next " href="javascrpt:;">下一页</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
+	<script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="./asset/js/mousewheel.js"></script>
+	<script type="text/javascript" src="./asset/js/index.js"></script>
+	
+	
+</body>
+
+</html>
