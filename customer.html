@@ -40,7 +40,16 @@
                 <form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
                     <div class="items">
                         <div>
-                            <i>客户编码：</i>
+                            <i>产品线：</i>
+                            <select name="">
+                                    <option value="s">请选择</option>
+                                    <option value="s">呼吸机</option>
+                                    <option value="d">麻醉机</option>
+                                    <option value="d">无影灯</option>
+                                </select>
+                        </div>
+                        <div>
+                            <i>型号：</i>
                             <input type="text" name="user.userName" class="w150" value="" />
                         </div>
                         <div>
@@ -48,12 +57,8 @@
                             <input type="text" name="user.userName" class="w150" value="" />
                         </div>
                         <div>
-                            <i>联系人：</i>
-                            <input type="text" name="user.userName" class="w100" value="" />
-                        </div>
-                        <div>
-                            <i>单位电话：</i>
-                            <input type="text" name="user.userName" class="w100" value="" />
+                            <i>产品：</i>
+                            <input type="text" name="user.userName" class="w150" value="" />
                         </div>
 
                         <div class="btns">
@@ -74,29 +79,40 @@
                                 </select>
                             </div>
                             <div class="boxlist">
-                                <i>市：</i>
-                                <select name="">
-                                    <option value="s">请选择</option>
-                                    <option value="s">北京</option>
-                                    <option value="d">成都</option>
-                                    <option value="d">深圳</option>
-                                </select>
-                            </div>
-                            <div class="boxlist">
-                                    <i>邮编：</i>
-                                    <input type="text" name="user.userName" class="w100" value="" />
+                                    <i>城市：</i>
+                                    <select name="">
+                                        <option value="s">请选择</option>
+                                        <option value="s">北京市</option>
+                                        <option value="d">深圳市</option>
+                                    </select>
                                 </div>
                             <div class="boxlist">
-                                <i>终端客户级别：</i>
+                                <i>级别：</i>
                                 <select name="">
                                     <option value="s">请选择</option>
-                                    <option value="s">标准客户</option>
-
+                                    <option value="s">一级</option>
+                                    <option value="d">二级</option>
+                                    <option value="d">三级</option>
                                 </select>
+                            </div>
+                            <div class="boxlist">
+                                    <i>联系人：</i>
+                                    <input type="text" name="user.userName" class="w100" value="" />
+                                </div>
+                                <div class="boxlist">
+                                        <i>联系电话：</i>
+                                        <input type="text" name="user.userName" class="w100" value="" />
+                                    </div>
+
+                                
+                            <div class="boxlist">
+                                <i>派工单号：</i>
+                                <input type="text" name="user.userName" class="w100" value="AZ-20100623-0018" />
+                                
                             </div>
 
                             <div class="boxlist">
-                                <i>客户服务等级：</i>
+                                <i>序列号：</i>
                                 <select name="">
                                     <option value="s">请选择</option>
                                     <option value="s">一等甲级</option>
@@ -109,7 +125,7 @@
                             </div>
                             
                             <div class="boxlist">
-                                <i>使用科室：</i>
+                                <i>安装人：</i>
                                 <select name="">
                                     <option value="s">请选择</option>
                                     <option value="s">科室1</option>
@@ -119,7 +135,7 @@
 
 
                             <div class="boxlist">
-                                <i>终端客户类型：</i>
+                                <i>科室：</i>
                                 
                                 <select name="">
                                     <option value="s">请选择</option>
@@ -136,11 +152,17 @@
                                 </select>
                             </div>
                             <div class="boxlist">
-                                <i>创建时间：</i>
+                                <i>保修日期：</i>
                                 <input type="text" name="user.userName" class="w100" value="" />
                                 &nbsp;&nbsp;-&nbsp;&nbsp;
                                 <input type="text" name="user.userName" class="w100" value="" />
                             </div>
+                            <div class="boxlist">
+                                    <i>创建日期：</i>
+                                    <input type="text" name="user.userName" class="w100" value="" />
+                                    &nbsp;&nbsp;-&nbsp;&nbsp;
+                                    <input type="text" name="user.userName" class="w100" value="" />
+                                </div>
 
 
 

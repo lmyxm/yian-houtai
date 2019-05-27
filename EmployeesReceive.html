@@ -33,24 +33,36 @@
 					<label>数据统计</label>
 				</div>
 			</div>
+
 			<div class="section">
 				<div class="title" onClick="toggleFilter(this)">
-					<div class="label searchLabel cbg">产品线-图形统计</div>
+					<div class="label searchLabel cbg">员工-接单图形统计</div>
 					<div class="toggleFilter"></div>
 				</div>
 				<!-- 统计图 -->
 
 				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
 					<div class="items">
+						<div class="btns">
+							<input id="search" type="button" value="总体" class="button" class="link-add" />
+						</div>
+
 						<div>
-							<i>年份：</i>
+							<i>省份：</i>
 							<select name="">
-								<option value="d">2020</option>
-								<option value="d">2019</option>
-								<option value="d">2018</option>
-								<option value="s">2017</option>
-								<option value="d">2016</option>
-								<option value="s">2015</option>
+								<option value="d">北京</option>
+								<option value="d">深圳</option>
+								<option value="d">上海</option>
+								<option value="s">四川</option>
+							</select>
+						</div>
+						<div>
+							<i>员工：</i>
+							<select name="">
+								<option value="d">张三</option>
+								<option value="d">李四</option>
+								<option value="d">王五</option>
+								<option value="s">马六</option>
 							</select>
 						</div>
 
@@ -84,7 +96,7 @@
 
 			<div class="section">
 				<div class="title">
-					<div class="label cbg">产品线-数据统计</div>
+					<div class="label cbg">员工-接单统计</div>
 					<!-- <div class="links" style="margin-left:50px">
 						<a href="./statisticalAdd.html" class="button addButton"><i>添加数据</i></a>
 					</div> -->
@@ -93,158 +105,69 @@
 					<tbody>
 						<tr class="firstTr">
 							<td width="20"><input type="checkbox" name="_ids" onclick="_select_ids('auto',this)"></td>
-							<td width="30">产品线</td>
-							<td width="40">安装数量</td>
-							<td width="30">维修数量</td>
-							<td width="30">回访数量</td>
-							<td width="80">培训数量</td>
-							<td width="80">专项数量</td>
-							<td width="80">物料领用</td>
+							<td width="30">维护人员</td>
+							<td width="30">维护人员所在省份</td>
+							<td width="40">接单数量</td>
+							<td width="30">拒单数量</td>
+							<td width="30">接单超时次数</td>
 						</tr>
 						<tr _id="">
 							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>麻醉机</td>
-							<td>123</td>
+							<td>张三</td>
+							<td>北京</td>
 							<td>432</td>
 							<td>325</td>
 							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
+							
 						</tr>
 						<tr _id="">
 							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>塔桥</td>
-							<td>123</td>
+							<td>李四</td>
+							<td>深圳</td>
 							<td>432</td>
 							<td>325</td>
 							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
+							
 						</tr>
 						<tr _id="">
 							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>监护仪</td>
-							<td>123</td>
+							<td>王五</td>
+							<td>四川</td>
 							<td>432</td>
 							<td>325</td>
 							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
+						
+							
 						</tr>
 						<tr _id="">
 							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>蒸发罐</td>
-							<td>123</td>
+							<td>王五</td>
+							<td>四川</td>
 							<td>432</td>
 							<td>325</td>
 							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
+							
 						</tr>
 						<tr _id="">
 							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>转卖品</td>
-							<td>123</td>
+							<td>王五</td>
+							<td>四川</td>
 							<td>432</td>
 							<td>325</td>
 							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
+							
+							
 						</tr>
 						<tr _id="">
 							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>净化</td>
-							<td>123</td>
+							<td>王五</td>
+							<td>四川</td>
 							<td>432</td>
 							<td>325</td>
 							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
+						
+							
 						</tr>
-						<tr _id="">
-							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>呼吸机</td>
-							<td>123</td>
-							<td>432</td>
-							<td>325</td>
-							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
-						</tr>
-						<tr _id="">
-							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>输注泵</td>
-							<td>123</td>
-							<td>432</td>
-							<td>325</td>
-							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
-						</tr>
-						<tr _id="">
-							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>费用</td>
-							<td>123</td>
-							<td>432</td>
-							<td>325</td>
-							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
-						</tr>
-						<tr _id="">
-							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>吊塔</td>
-							<td>123</td>
-							<td>432</td>
-							<td>325</td>
-							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
-						</tr>
-						<tr _id="">
-							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>无影灯</td>
-							<td>123</td>
-							<td>432</td>
-							<td>325</td>
-							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
-						</tr>
-						<tr _id="">
-							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>手术床</td>
-							<td>123</td>
-							<td>432</td>
-							<td>325</td>
-							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
-						</tr>
-						<tr _id="">
-							<td><input type="checkbox" name="ids" value="40"></td>
-							<td>配件</td>
-							<td>123</td>
-							<td>432</td>
-							<td>325</td>
-							<td>253</td>
-							<td>232</td>
-							<td>182</td>
-
-						</tr>
-
 
 					</tbody>
 				</table>
@@ -271,14 +194,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
+		</div>
 	</div>
 	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
 	<script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
 	<script type="text/javascript" src="./asset/js/mousewheel.js"></script>
 	<script type="text/javascript" src="./asset/js/index.js"></script>
-
+	
 </body>
 
 </html>

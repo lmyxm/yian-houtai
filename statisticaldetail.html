@@ -2,88 +2,368 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>谊安微信客服</title>
-    <link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
-    <link type="text/css" rel="stylesheet" href="./asset/css/index.css">
-    <link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
-    <link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
-    <link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>谊安微信客服</title>
+	<link type="text/css" rel="stylesheet" href="./asset/css/tingyun.css">
+	<link type="text/css" rel="stylesheet" href="./asset/css/index.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/tingyun.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/sitecatalog.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/pager.css">
 
-    <!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
-    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
-    <script type="text/javascript" src="./asset/js/timer.js"></script>
-    <script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
-    <script type="text/javascript" src="./asset/js/pager.js"></script>
-    <script type="text/javascript" src="./asset/js/window.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="./asset/css/timer.css"> -->
+	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
+	<script type="text/javascript" src="./asset/js/timer.js"></script>
+	<script type="text/javascript" src="./asset/js/sitecatalog.js"></script>
+	<script type="text/javascript" src="./asset/js/pager.js"></script>
+	<script type="text/javascript" src="./asset/js/window.js"></script>
+
+
 </head>
 </head>
 
 <body>
 
-    <div class="TY-mainLay">
-        <!-- 左边按钮 -->
-        <script src="./asset/js/directory.js"></script>
-        <!-- 左边按钮 -->
-        <div class="TY-rightBox">
-            <div class="phead">
-                <div class="curnav">
-                    <label>数据统计</label>
-                </div>
+	<div class="TY-mainLay">
+		<!-- 左边按钮 -->
+		<script src="./asset/js/directory.js"></script>
+		<!-- 左边按钮 -->
+		<div class="TY-rightBox">
+			<div class="phead">
+				<div class="curnav">
+					<label>数据统计</label>
+				</div>
+			</div>
+			<div class="section">
+				<div class="title" onClick="toggleFilter(this)">
+					<div class="label searchLabel cbg">结果筛选</div>
+					<div class="toggleFilter"></div>
+				</div>
+				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
+					<div class="items">
+						<div>
+							<i>年份：</i>
+							<select name="">
+								<option value="s">请选择</option>
+								<option value="s">2015</option>
+								<option value="d">2016</option>
+								<option value="s">2017</option>
+								<option value="d">2018</option>
+								<option value="d">2019</option>
+								<option value="d">2020</option>
+							</select>
+						</div>
+
+						<div class="btns">
+							<input type="hidden" name="type" value="1">
+							<input id="search" type="button" value="筛选结果" class="button" class="link-add" />
+							<!-- <input type="button" value="高级查询" class="button" id="btngaojichaxun" /> -->
+							<a href="" class="ml20">重新查询</a>
+							<a id="export" class="ml20">批量导出</a>
+						</div>
+
+						<div class="gaojichaxun ">
+							<!-- <div class="boxlist">
+								<i>省份：</i>
+								<select name="">
+									<option value="s">请选择</option>
+									<option value="f">河北省</option>
+									<option value="f">广东省</option>
+								</select>
+							</div> -->
+
+
+
+						</div>
+
+					</div>
+				</form>
+			</div>
+
+			<div class="section">
+				<div class="title">
+					<div class="label cbg">产品线-数据统计</div>
+					<!-- <div class="links" style="margin-left:50px">
+						<a href="./statisticalAdd.html" class="button addButton"><i>添加数据</i></a>
+					</div> -->
+				</div>
+				<!-- <table class="list" border="0" cellpadding="0">
+					<tbody>
+						<tr class="firstTr">
+							<td width="20"><input type="checkbox" name="_ids" onclick="_select_ids('auto',this)"></td>
+							<td width="30">产品线</td>
+							<td width="40">安装数量</td>
+							<td width="30">维修数量</td>
+							<td width="30">回访数量</td>
+							<td width="80">培训数量</td>
+							<td width="80">专项数量</td>
+							<td width="80">物料领用</td>
+							<td width="30">图形管理</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>麻醉机</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>塔桥</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>监护仪</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>蒸发罐</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>转卖品</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>净化</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>呼吸机</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>输注泵</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>费用</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>吊塔</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>无影灯</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>手术床</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+						<tr _id="">
+							<td><input type="checkbox" name="ids" value="40"></td>
+							<td>配件</td>
+							<td>123</td>
+							<td>432</td>
+							<td>325</td>
+							<td>253</td>
+							<td>232</td>
+							<td>182</td>
+							<td>
+								<a href="./statisticaldetail.html">图形化查看</a>
+							</td>
+						</tr>
+
+
+					</tbody>
+				</table> -->
+
+				<div id="echarts_productLine" style="display: block;width: 95% ;height:400px;margin: 30px 15px;"></div>
+
+			</div>
+            <div class="line" style="margin-bottom: 50px">
+                <a href="./statistical.html" class="button button-sub ml140  ">返回</a>
             </div>
 
-            <div class="section">
-                <div class="title">
-                    <div class="label cbg">数据统计</div>
-                </div>
-                <table class="list" border="0" cellpadding="0">
-                    <tbody>
-                        <tr class="firstTr">
-                            <td width="40">年份</td>
-                            <td width="80">不良配件ID</td>
-                            <td width="80">不良配件名称</td>
-                            <td width='80'>今年数量</td>
-                            <!-- <td width='80'>不良配件总数</td> -->
-                            <td width="80">总生产台数</td>
-                            <td width='80'>故障率</td>
-                            <td width='80'>保内占比</td>
-                            <td width="80">不良占比</td>
 
-                            <td width='80'>一季度</td>
-                            <td width='80'>二季度</td>
-                            <td width='80'>三季度</td>
-                            <td width='80'>四季度</td>
-                        </tr>
-                        <tr _id="">
-                            <td>2014</td>
-                            <td>123456</td>
-                            <td>校验</td>
-                            <td>47</td>
-                            <!-- <td>163</td> -->
-                            <td>275</td>
-                            <td>29.85%</td>
-                            <td>59.27%</td>
-                            <td>30.06%</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="line" style="margin:30px 0">
-                    <a href="./statistical.html" class="button button-sub ml140 ">返回</a>
-                </div>
-            </div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
+	<script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="./asset/js/mousewheel.js"></script>
+	<script type="text/javascript" src="./asset/js/index.js"></script>
+	<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.min.js"></script>
+	<script>
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('echarts_productLine'));
+
+		// 指定图表的配置项和数据
+		option = {
+			title: {
+				text: '产品线-数据统计'
+			},
+			tooltip: {
+				trigger: 'axis'
+			},
+			legend: {
+				data: ['安装数量', '维修数量', '回访数量', '培训数量', '专项数量', '物料领用']
+			},
+			grid: {
+				left: '3%',
+				right: '4%',
+				bottom: '3%',
+				containLabel: true
+			},
+			toolbox: {
+				feature: {
+					saveAsImage: {}
+				}
+			},
+			xAxis: {
+				type: 'category',
+				boundaryGap: false,
+				data: ['麻醉机', '塔桥', '监护仪', '蒸发罐', '转卖品', '净化', '雾化器', '呼吸机', '输注泵', '空压机', '费用', '吊塔', '无影灯', '手术床', '配件']
+			},
+			yAxis: {
+				type: 'value'
+			},
+			series: [{
+					name: '安装数量',
+					type: 'line',
+					stack: '总量',
+					data: [120, 132, 101, 134, 90, 230, 210, 132, 101, 134, 90, 230, 210, 210, 210]
+				},
+				{
+					name: '维修数量',
+					type: 'line',
+					stack: '总量',
+					data: [220, 182, 191, 234, 290, 330, 310,220, 182, 191, 234, 290, 330, 310, 310]
+				},
+				{
+					name: '回访数量',
+					type: 'line',
+					stack: '总量',
+					data: [150, 232, 201, 154, 190, 330, 410,150, 232, 201, 154, 190, 330, 410, 330]
+				},
+				{
+					name: '培训数量',
+					type: 'line',
+					stack: '总量',
+					data: [320, 332, 301, 334, 390, 330, 320,320, 332, 301, 334, 390, 330, 320, 330]
+				},
+				{
+					name: '专项数量',
+					type: 'line',
+					stack: '总量',
+					data: [820, 932, 901, 934, 1290, 1330, 1320,820, 932, 901, 934, 1290, 1330, 1320,1330]
+				}, {
+					name: '物料领用',
+					type: 'line',
+					stack: '总量',
+					data: [820, 932, 901, 934, 1290, 1330, 1320,820, 932, 901, 934, 1290, 1330, 1320, 1330]
+				},
+			]
+		};
 
 
-
-        </div>
-    </div>
-    <script type="text/javascript" src="./asset/js/tingyun.js"></script>
-    <script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
-    <script type="text/javascript" src="./asset/js/mousewheel.js"></script>
-    <script type="text/javascript" src="./asset/js/index.js"></script>
+		// 使用刚指定的配置项和数据显示图表。
+		myChart.setOption(option);
+	</script>
 </body>
 
 </html>

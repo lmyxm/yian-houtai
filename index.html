@@ -12,7 +12,7 @@
 
 	<div class="TY-mainLay">
 
-			<!-- <div class="TY-leftNav">
+		<!-- <div class="TY-leftNav">
 					<div class="TY-leftInfor">
 						<div class="partPic">
 							<i class="pic" style=""></i>
@@ -131,13 +131,383 @@
 		<script src="./asset/js/directory.js"></script>
 		<!-- 左边按钮 -->
 		<div class="TY-rightBox">
-			123
+			<div class="phead">
+				<div class="curnav">
+					<label>数据统计</label>
+				</div>
+			</div>
+			<div class="section">
+				<div class="title" onClick="toggleFilter(this)">
+					<div class="label searchLabel cbg">产品线-图形统计</div>
+					<div class="toggleFilter"></div>
+				</div>
+				<!-- 统计图 -->
+				<div id="echarts_productLine" style="display: block;width: 95% ;height:400px;margin: 30px 15px;"></div>
+
+				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
+					<div class="items">
+						<div>
+							<i>年份：</i>
+							<select name="">
+								<option value="d">2020</option>
+								<option value="d">2019</option>
+								<option value="d">2018</option>
+								<option value="s">2017</option>
+								<option value="d">2016</option>
+								<option value="s">2015</option>
+							</select>
+						</div>
+
+						<div class="btns">
+							<input type="hidden" name="type" value="1">
+							<input id="search" type="button" value="筛选结果" class="button" class="link-add" />
+							<!-- <input type="button" value="高级查询" class="button" id="btngaojichaxun" /> -->
+							<a href="" class="ml20">重新查询</a>
+							<a id="export" class="ml20">批量导出</a>
+							<a id="export" class="ml20" href="./statistical.html">产品线-列表统计</a>
+						</div>
+
+						<div class="gaojichaxun ">
+							<!-- <div class="boxlist">
+								<i>省份：</i>
+								<select name="">
+									<option value="s">请选择</option>
+									<option value="f">河北省</option>
+									<option value="f">广东省</option>
+								</select>
+							</div> -->
+
+
+
+						</div>
+
+					</div>
+					<!-- <div id="echarts_productLine" style="display: block;width: 95% ;height:400px;margin: 30px 15px;"></div> -->
+
+				</form>
+			</div>
+			<div class="section">
+				<div class="title" onClick="toggleFilter(this)">
+					<div class="label searchLabel cbg">员工-接单图形统计</div>
+					<div class="toggleFilter"></div>
+				</div>
+				<!-- 统计图 -->
+				<div id="echarts_employees" style="display: block;width: 95% ;height:300px;margin: 30px 15px;"></div>
+
+				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
+					<div class="items">
+						<div class="btns">
+							<input id="search" type="button" value="总体" class="button" class="link-add" />
+						</div>
+
+						<div>
+							<i>省份：</i>
+							<select name="">
+								<option value="d">北京</option>
+								<option value="d">深圳</option>
+								<option value="d">上海</option>
+								<option value="s">四川</option>
+							</select>
+						</div>
+						<div>
+							<i>员工：</i>
+							<select name="">
+								<option value="d">张三</option>
+								<option value="d">李四</option>
+								<option value="d">王五</option>
+								<option value="s">马六</option>
+							</select>
+						</div>
+
+						<div class="btns">
+							<input type="hidden" name="type" value="1">
+							<input id="search" type="button" value="筛选结果" class="button" class="link-add" />
+							<!-- <input type="button" value="高级查询" class="button" id="btngaojichaxun" /> -->
+							<a href="" class="ml20">重新查询</a>
+							<a id="export" class="ml20">批量导出</a>
+							<a id="export" class="ml20" href="./EmployeesReceive.html">员工接单列表统计</a>
+						</div>
+
+						<div class="gaojichaxun ">
+							<!-- <div class="boxlist">
+								<i>省份：</i>
+								<select name="">
+									<option value="s">请选择</option>
+									<option value="f">河北省</option>
+									<option value="f">广东省</option>
+								</select>
+							</div> -->
+
+
+
+						</div>
+
+					</div>
+					<!-- <div id="echarts_productLine" style="display: block;width: 95% ;height:400px;margin: 30px 15px;"></div> -->
+
+				</form>
+			</div>
+
+
+			<div class="section">
+				<div class="title" onClick="toggleFilter(this)">
+					<div class="label searchLabel cbg">用户-上线图形统计</div>
+					<div class="toggleFilter"></div>
+				</div>
+				<!-- 统计图 -->
+				<div id="echarts_user" style="display: block;width: 95% ;height:300px;margin: 30px 15px;"></div>
+
+
+				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
+					<div class="items">
+						<div class="btns">
+							<a id="export" class="ml20" href="./UsersOnline.html">用户上线列表统计</a>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="section">
+				<div class="title" onClick="toggleFilter(this)">
+					<div class="label searchLabel cbg">产品故障，二次上门，客户更换配件-图形统计</div>
+					<div class="toggleFilter"></div>
+				</div>
+				<!-- 统计图 -->
+				<div id="echarts_parts" style="display: block;width: 95% ;height:300px;margin: 30px 15px;"></div>
+				<form id="form1" action="/manage/user_listUser.action?type=1" method="get" class="filter manage">
+					<div class="items">
+						<div class="btns">
+							<a id="export" class="ml20" href="./FailureParts.html">产品故障，二次上门，客户更换配件列表统计</a>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="./asset/js/tingyun.js"></script>
 	<script type="text/javascript" src="./asset/js/mCustomScrollbar.min.js"></script>
 	<script type="text/javascript" src="./asset/js/mousewheel.js"></script>
 	<script type="text/javascript" src="./asset/js/index.js"></script>
+
+	<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts-en.min.js"></script>
+	<script>
+		// 基于准备好的dom，初始化echarts实例
+		var echarts_productLine = echarts.init(document.getElementById('echarts_productLine'));
+		var echarts_employees = echarts.init(document.getElementById('echarts_employees'));
+		var echarts_user = echarts.init(document.getElementById('echarts_user'));
+		var echarts_parts = echarts.init(document.getElementById('echarts_parts'));
+
+		// 产品线
+		var productLine = {
+
+			title: {
+				text: '产品线-数据统计'
+			},
+			tooltip: {
+				trigger: 'axis'
+			},
+			legend: {
+				data: ['安装数量', '维修数量', '回访数量', '培训数量', '专项数量', '物料领用']
+			},
+			grid: {
+				left: '3%',
+				right: '4%',
+				bottom: '3%',
+				containLabel: true
+			},
+			toolbox: {
+				feature: {
+					saveAsImage: {}
+				}
+			},
+			xAxis: {
+				type: 'category',
+				boundaryGap: false,
+				data: ['麻醉机', '塔桥', '监护仪', '蒸发罐', '转卖品', '净化', '雾化器', '呼吸机', '输注泵', '空压机', '费用', '吊塔', '无影灯', '手术床', '配件']
+			},
+			yAxis: {
+				type: 'value'
+			},
+			series: [{
+					name: '安装数量',
+					type: 'line',
+					stack: '总量',
+					data: [120, 132, 101, 134, 90, 230, 210, 132, 101, 134, 90, 230, 210, 210, 210]
+				},
+				{
+					name: '维修数量',
+					type: 'line',
+					stack: '总量',
+					data: [220, 182, 191, 234, 290, 330, 310, 220, 182, 191, 234, 290, 330, 310, 310]
+				},
+				{
+					name: '回访数量',
+					type: 'line',
+					stack: '总量',
+					data: [150, 232, 201, 154, 190, 330, 410, 150, 232, 201, 154, 190, 330, 410, 330]
+				},
+				{
+					name: '培训数量',
+					type: 'line',
+					stack: '总量',
+					data: [320, 332, 301, 334, 390, 330, 320, 320, 332, 301, 334, 390, 330, 320, 330]
+				},
+				{
+					name: '专项数量',
+					type: 'line',
+					stack: '总量',
+					data: [820, 932, 901, 934, 1290, 1330, 1320, 820, 932, 901, 934, 1290, 1330, 1320, 1330]
+				}, {
+					name: '物料领用',
+					type: 'line',
+					stack: '总量',
+					data: [820, 932, 901, 934, 1290, 1330, 1320, 820, 932, 901, 934, 1290, 1330, 1320, 1330]
+				},
+			]
+		};
+
+		//员工接单情况
+		var employees = {
+			title: {
+				text: '员工接单情况',
+				// subtext: '纯属虚构',
+				x: 'center'
+			},
+			tooltip: {
+				trigger: 'item',
+				formatter: "{a} <br/>{b} : {c} ({d}%)"
+			},
+			legend: {
+				orient: 'vertical',
+				left: 'left',
+				data: ['接单数量', '拒单数量', '接单超时次数']
+			},
+			series: [{
+				name: '访问来源',
+				type: 'pie',
+				radius: '55%',
+				center: ['50%', '60%'],
+				data: [{
+						value: 335,
+						name: '接单数量'
+					},
+					{
+						value: 310,
+						name: '拒单数量'
+					},
+					{
+						value: 234,
+						name: '接单超时次数'
+					},
+
+				],
+				itemStyle: {
+					emphasis: {
+						shadowBlur: 10,
+						shadowOffsetX: 0,
+						shadowColor: 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}]
+		};
+
+
+		//用户上线统计
+		var user = {
+			title: {
+				text: '用户上线统计',
+				// subtext: '纯属虚构',
+				x: 'center'
+			},
+			tooltip: {
+				trigger: 'item',
+				formatter: "{a} <br/>{b} : {c} ({d}%)"
+			},
+			legend: {
+				orient: 'vertical',
+				left: 'left',
+				data: ['客户', '渠道', '员工']
+			},
+			series: [{
+				name: '访问来源',
+				type: 'pie',
+				radius: '55%',
+				center: ['50%', '60%'],
+				data: [{
+						value: 335,
+						name: '客户'
+					},
+					{
+						value: 310,
+						name: '渠道'
+					},
+					{
+						value: 234,
+						name: '员工'
+					},
+
+				],
+				itemStyle: {
+					emphasis: {
+						shadowBlur: 10,
+						shadowOffsetX: 0,
+						shadowColor: 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}]
+		};
+
+
+		var Failureparts = {
+			title: {
+				text: '产品故障，二次上门，客户更换配件',
+				// subtext: '纯属虚构',
+				x: 'center'
+			},
+			tooltip: {
+				trigger: 'item',
+				formatter: "{a} <br/>{b} : {c} ({d}%)"
+			},
+			legend: {
+				orient: 'vertical',
+				left: 'left',
+				data: ['产品故障数量', '二次上门数量', '客户更换配件']
+			},
+			series: [{
+				name: '访问来源',
+				type: 'pie',
+				radius: '55%',
+				center: ['50%', '60%'],
+				data: [{
+						value: 335,
+						name: '产品故障数量'
+					},
+					{
+						value: 310,
+						name: '二次上门数量'
+					},
+					{
+						value: 234,
+						name: '客户更换配件'
+					},
+
+				],
+				itemStyle: {
+					emphasis: {
+						shadowBlur: 10,
+						shadowOffsetX: 0,
+						shadowColor: 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}]
+		};
+
+		// 产品线
+		echarts_productLine.setOption(productLine);
+		echarts_employees.setOption(employees);
+		echarts_user.setOption(user);
+		echarts_parts.setOption(Failureparts);
+	</script>
 </body>
 
 </html>
